@@ -96,7 +96,9 @@ Zdroj pravdy je `~/marketing/vseobecne/feed_prevodnik/`, repo `https://github.co
 
 1. Naklonuj repo do scratchpadu: `git clone https://github.com/marek90x/feedy.git`.
 2. Skopíruj súbory: `rsync -a --exclude __pycache__ ~/marketing/vseobecne/feed_prevodnik/ <klon>/`.
-3. Skontroluj, že v nich nie sú tokeny ani maily (repo je verejné).
+3. Skontroluj, že v nich nie sú tokeny ani maily, **bez výnimiek vo filtri** (repo je verejné a história sa
+   nedá bez force pushu vyčistiť; 6. 11. 2026 takto do histórie unikol Marekov mail):
+   `grep -rnE "@[a-z0-9.-]+\.[a-z]{2,}|token|password|secret" <klon> --exclude-dir=.git` a každý nález vysvetli.
 4. `git add` **s vymenovanými súbormi** (hook blokuje `git add -A` aj tu), autor
    `marek90x@users.noreply.github.com`, správa končí riadkom `Co-Authored-By`.
 5. `git push`. Push ide tokenom **mac-mini-trading** (Contents + Workflows); nové repo by sa doňho muselo pridať.
