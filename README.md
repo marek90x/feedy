@@ -3,8 +3,8 @@
 Stiahne produktový feed klienta, opraví ho podľa konfigurácie a zverejní opravenú kópiu na GitHub Pages.
 Platforma (Zboží, neskôr Google Merchant či Meta katalóg) ťahá opravený feed namiesto pôvodného.
 
-**Pred akoukoľvek zmenou si prečítaj [PASCE.md](PASCE.md).** Je tam špecifikácia, validátor a pasce,
-ktoré platia pre všetkých klientov.
+**Pred akoukoľvek zmenou si prečítaj [POSTUP.md](POSTUP.md)** (krok za krokom: nový klient, nová platforma,
+zverejnenie) **a [PASCE.md](PASCE.md)** (špecifikácie, validátory a pasce pre všetkých klientov).
 
 ## Súbory
 
@@ -31,15 +31,13 @@ Kód 2 = poistka alebo chyba aspoň u jedného klienta; jeho opravený feed osta
 
 | Klient | Platforma | Zdroj | Opravený feed |
 |---|---|---|---|
-| Voono | Zboží | https://www.voono.cz/app/uploads/xml/feed_zbozi_1.xml | `voono/zbozi.xml` na GitHub Pages |
+| Voono | Zboží | https://www.voono.cz/app/uploads/xml/feed_zbozi_1.xml | https://marek90x.github.io/feedy/voono/zbozi.xml (ostrý od 6. 11. 2026) |
 
 ## Nový klient alebo platforma
 
-Skopíruj `klienti/voono_zbozi.json`, uprav ho a prejdi kontrolný zoznam v `PASCE.md`. Novú platformu
-treba doplniť do `PLATFORMY` v `prevod.py` (namespace, názvy polí, zoznam kategórií).
+Postup krok za krokom je v [POSTUP.md](POSTUP.md).
 
 ## Zverejnenie
 
-Zdroj pravdy je tento priečinok v `~/marketing`. Verejné repo `feedy` na GitHube obsahuje jeho kópiu:
-po zmene skopíruj súbory do klonu repa a pushni. GitHub Pages: Settings → Pages → Deploy from branch,
-`main`, priečinok `/docs`.
+Zdroj pravdy je tento priečinok v `~/marketing`; verejné repo `marek90x/feedy` je jeho kópia (postup v `POSTUP.md`, krok 7).
+GitHub Pages: `main`, priečinok `/docs`.

@@ -2,6 +2,7 @@
 
 **Platí pre každý prevodník feedu, pre každého klienta a platformu.** Pred novou konfiguráciou
 alebo zmenou pravidiel si tento súbor prečítaj celý a prejdi kontrolný zoznam na konci.
+Postup krok za krokom (vrátane zverejnenia) je v [POSTUP.md](POSTUP.md).
 Nové pasce dopisuj sem, nie do poznámok klienta.
 
 ## Zdroje pravdy
