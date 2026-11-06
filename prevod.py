@@ -126,6 +126,36 @@ def nastav(polozka, tag, ns, text, pred=None):
     el.text = text
 
 
+def parametre(polozka, ns):
+    return {(p.findtext('{%s}PARAM_NAME' % ns) or '').strip(): (p.findtext('{%s}VAL' % ns) or '').strip()
+            for p in polozka.findall('{%s}PARAM' % ns)}
+
+
+def novy_nazov(polozka, ns, pravidla, aktualny):
+    """Názov podľa šablóny. Kľúč (napr. časť URL) určí šablónu; neznámy kľúč = Poistka, nič sa nehádže naslepo."""
+    m = re.search(pravidla['kluc']['regex'], hodnota(polozka, pravidla['kluc']['pole'], ns))
+    if not m:
+        predpona = pravidla.get('predpona_ostatnym', '')
+        if predpona and predpona.strip().lower() not in aktualny.lower():
+            return predpona + aktualny
+        return aktualny
+    sablona = pravidla['mapa'].get(m.group(1))
+    if sablona is None:
+        raise Poistka('„%s“ (%s) nemá v konfigurácii overenú šablónu názvu' % (aktualny, m.group(1)))
+    od = pravidla['odtien']
+    mo = re.search(od['regex'], hodnota(polozka, od['pole'], ns))
+    odtien = mo.group(1) if mo else ''
+    for vzor, nahrada in od.get('upravy', []):
+        odtien = re.sub(vzor, nahrada, odtien)
+    par = parametre(polozka, ns)
+
+    def dosad(x):
+        meno, _, filtr = x.group(1).partition('|')
+        val = odtien.strip() if meno == 'odtien' else par.get(meno.split(':', 1)[1], '') if meno.startswith('param:') else ''
+        return val.lower() if filtr == 'lower' else val
+    return re.sub(r'\s+', ' ', re.sub(r'\{([^}]+)\}', dosad, pravidla['sablony'][sablona])).strip()
+
+
 def najdi_kategoriu(polozka, ns, konf):
     pid = hodnota(polozka, PLATFORMY[konf['platforma']]['id'], ns)
     if pid in konf.get('kategorie_podla_id', {}):
@@ -251,9 +281,25 @@ def preved(konf, zoznam_kategorii=None, popisy=None):
         nastav(p, pl['kategoria'], ns, kat)
         suhrn['kategoria'][kat] = suhrn['kategoria'].get(kat, 0) + 1
 
+        # Až po kategórii: pravidlá kategórií sa viažu na pôvodný názov.
+        if konf.get('premenovat'):
+            for pole in konf['premenovat']['polia']:
+                povodny = hodnota(p, pole, ns)
+                novy = novy_nazov(p, ns, konf['premenovat'], povodny)
+                if novy != povodny:
+                    nastav(p, pole, ns, novy)
+                    suhrn['opravy']['nazov_rozsireny'] = suhrn['opravy'].get('nazov_rozsireny', 0) + 1
+
     if bez_kategorie:
         raise Poistka('%d ponúk nemá v konfigurácii cieľovú kategóriu: %s'
                       % (len(bez_kategorie), '; '.join(bez_kategorie[:10])))
+    # Validátor Zboží berie duplicitný PRODUCTNAME ako chybu a pravidlá chcú každú ponuku len raz.
+    nazvy = {}
+    for p in koren.findall('{%s}%s' % (ns, pl['polozka'])):
+        nazvy.setdefault(hodnota(p, 'PRODUCTNAME', ns), []).append(hodnota(p, pl['id'], ns))
+    duplicity = {n: ids for n, ids in nazvy.items() if len(ids) > 1}
+    if duplicity:
+        raise Poistka('duplicitné PRODUCTNAME: %s' % '; '.join('%s (%s)' % (n, ', '.join(i)) for n, i in list(duplicity.items())[:5]))
     vystup = len(koren.findall('{%s}%s' % (ns, pl['polozka'])))
     suhrn['vystup_ponuk'] = vystup
     if vystup < konf.get('min_vystup', 1):

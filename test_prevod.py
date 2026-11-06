@@ -76,13 +76,33 @@ class Test(unittest.TestCase):
     def test_mrtva_url_vyradi(self):
         druha = ('2', 'Henna Red', 'Henna Red', 'https://www.voono.cz/b', '')
         with mock.patch.object(prevod, 'http_stav', side_effect=lambda u: 404 if u.endswith('/b') else 200):
-            _, s = self.preved(feed(DOBRA, DOBRA[:0] + ('3',) + DOBRA[1:], druha), konf(over_url=True))
+            _, s = self.preved(feed(DOBRA, ('3', 'Henna Black', 'Henna Black', 'https://www.voono.cz/c', ''), druha), konf(over_url=True))
         self.assertEqual(s['vyradene'], {'URL nefunguje': 1})
 
     def test_spadnuty_web_zastavi(self):
         with mock.patch.object(prevod, 'http_stav', return_value=503):
             with self.assertRaises(prevod.Poistka):
                 self.preved(feed(DOBRA), konf(over_url=True))
+
+    def test_duplicitny_nazov_zastavi(self):
+        with self.assertRaises(prevod.Poistka):
+            self.preved(feed(DOBRA, ('2',) + DOBRA[1:]), konf())
+
+    def test_premenovanie(self):
+        k = konf(premenovat={'polia': ['PRODUCTNAME'], 'kluc': {'pole': 'URL', 'regex': '/barvy/([^/?]+)/'},
+                             'odtien': {'pole': 'PRODUCT', 'regex': '^(?:Henna )?(.+)$'},
+                             'sablony': {'h': 'VOONO Henna barva na vlasy {odtien}'}, 'mapa': {'copper': 'h'},
+                             'predpona_ostatnym': 'VOONO '})
+        xml, _ = self.preved(feed(('1', 'Henna Copper', 'Henna Copper', 'https://voono.cz/barvy/copper/', ''),
+                                  ('2', 'Henna sampon', 'Henna sampon', 'https://voono.cz/sampon/', '')), k)
+        self.assertIn('<PRODUCTNAME>VOONO Henna barva na vlasy Copper</PRODUCTNAME>', xml.decode())
+        self.assertIn('<PRODUCTNAME>VOONO Henna sampon</PRODUCTNAME>', xml.decode())
+
+    def test_neznamy_odtien_zastavi(self):
+        k = konf(premenovat={'polia': ['PRODUCTNAME'], 'kluc': {'pole': 'URL', 'regex': '/barvy/([^/?]+)/'},
+                             'odtien': {'pole': 'PRODUCT', 'regex': '(.+)'}, 'sablony': {}, 'mapa': {}})
+        with self.assertRaises(prevod.Poistka):
+            self.preved(feed(('1', 'Henna Nova', 'Henna Nova', 'https://voono.cz/barvy/nova/', '')), k)
 
     def test_ean(self):
         self.assertTrue(prevod.ean_platny('8595654000015'))

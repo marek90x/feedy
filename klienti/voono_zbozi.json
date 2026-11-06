@@ -129,5 +129,61 @@
   "\\s*[-–]?\\s*ZACHRA[ŇN] PRODUKT.*$"
  ],
  "over_url": true,
- "max_podiel_mrtvych": 0.6
+ "max_podiel_mrtvych": 0.6,
+ "premenovat": {
+  "_poznamka": "Šablóna podľa zloženia z „Složení“ na stránke produktu, overené 6. 11. 2026. Henna = obsahuje Lawsonia. Nový odtieň: over zloženie a doplň do mapy, inak beh zastaví poistka.",
+  "polia": [
+   "PRODUCTNAME",
+   "PRODUCT"
+  ],
+  "kluc": {
+   "pole": "URL",
+   "regex": "/vlasova-pece/barvy/([^/?]+)/"
+  },
+  "odtien": {
+   "pole": "PRODUCT",
+   "regex": "^(?:Henna )?(.+?)\\s+-\\s+(?:S obalem|Bez obalu)",
+   "upravy": [
+    [
+     "\"",
+     ""
+    ],
+    [
+     "\\s+-\\s+",
+     " "
+    ]
+   ]
+  },
+  "sablony": {
+   "henna": "VOONO Henna barva na vlasy {odtien} {param:Objem} {param:Balení|lower}",
+   "prirodna": "VOONO Přírodní barva na vlasy {odtien} {param:Objem} {param:Balení|lower}",
+   "indigo": "VOONO Indigo přírodní barva na vlasy {param:Objem} {param:Balení|lower}",
+   "cassia": "VOONO Cassia Obovata bezbarvá henna {param:Objem} {param:Balení|lower}",
+   "predpigmentacni": "VOONO Předpigmentační henna barva na vlasy {param:Objem} {param:Balení|lower}",
+   "mix": "VOONO Mix at home sada přírodních barev na vlasy"
+  },
+  "mapa": {
+   "burgundy": "henna",
+   "peach-blonde": "henna",
+   "chestnut": "henna",
+   "fire-red": "henna",
+   "strawberry-blonde": "henna",
+   "henna-wine-red": "henna",
+   "henna-soft-black": "henna",
+   "henna-rose-brown": "henna",
+   "henna-orange": "henna",
+   "henna-medium-brown": "henna",
+   "henna-light-brown": "henna",
+   "henna-dark-brown": "henna",
+   "henna-copper": "henna",
+   "champagne-pink-blonde": "prirodna",
+   "light-ash-brown": "prirodna",
+   "dark-ash-blonde": "prirodna",
+   "indigo": "indigo",
+   "cassia-obovata-bezbarva": "cassia",
+   "predpigmentacni-barva": "predpigmentacni",
+   "mix-at-home-by-voono": "mix"
+  },
+  "predpona_ostatnym": "VOONO "
+ }
 }

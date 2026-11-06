@@ -46,7 +46,13 @@ E-shopové feedy bývajú zanedbané. Klientovi nič neopravujeme vo feede, ale 
 - Ponuka bez cieľovej kategórie **zastaví celý beh**: nový produkt na webe = doplniť pravidlo, nie hádať.
 - Po každej zmene pravidiel skontroluj súhrn `docs/<klient>/<platforma>_suhrn.json`: počty vyradených, `bez_popisu`, rozdelenie kategórií.
 - Woo Store API vracia len zverejnené produkty; čo v ňom nie je, býva aj 404 na webe.
-- Zmena `PRODUCTNAME` môže zmeniť párovanie s kartou produktu na Zboží; meň ho len o odstránenie balastu, výrobcu nepridávaj do názvu bez overenia.
+- **Rozšírené názvy (`premenovat`)**: tvrdenie v názve musí sedieť so zložením na webe. Voono 6. 11. 2026: 7 z 20 „farieb“ hennu neobsahuje (Champagne Pink, Light Ash Brown, Dark Ash Blonde, Indigo, Cassia, Mix), preto majú vlastnú šablónu. Šablóna sa vyberá podľa overenej mapy (kľúč z URL); **neznámy produkt v mape zastaví beh**, nový odtieň sa najprv overí na webe („Složení“).
+- Premenovanie beží až **po** priradení kategórie, pravidlá kategórií sa viažu na pôvodný názov („^tricholog“ by po pridaní „VOONO“ nesedel).
+- Duplicitný `PRODUCTNAME` zastaví beh (validátor ho berie ako chybu).
+- **Párovanie s kartami Zboží sa nesmie premiešať.** Pred každou zmenou názvov, EAN alebo vyradením ulož stav a po importe ho porovnaj:
+  `python3 skills/sklik/zbozi_parovanie.py <klient> <premiseId> --uloz logs/zbozi_parovanie_<klient>_<datum>.json` a potom `--porovnaj`.
+  Kód 1 = ponuka zmenila kartu, stratila párovanie alebo pribudla; pozri ju ešte v ten deň. Voono pred zmenou: 113 ponúk, všetky spárované, každá s inou kartou (`logs/zbozi_parovanie_voono_2026-11-06_pred.json`).
+- Zboží importuje feed podľa svojho rozvrhu (Voono max. 4× denne, `maxFeedDownloadsPerDay`), výsledok zmeny vidno až po importe.
 - `IMGURL`: zmena obrázka bez zmeny URL sa na Zboží neprejaví (špecifikácia).
 - GitHub vypne plánované behy vo verejnom repe po 60 dňoch bez commitu; súhrn preto nesie dátum (`den`), aby denne vznikol commit.
 - Klienti sú oddelení: vlastný konfiguračný súbor, výstup aj `povolene_domeny`. URL mimo domény klienta zastaví beh.
