@@ -233,5 +233,8 @@
   },
   "predpona_ostatnym": "VOONO "
  },
- "gtin_predpona": "859"
+ "gtin_predpona": "859",
+ "obrazky_z_webu": true,
+ "obrazky_vynechat": "/cover-barva-maska-miska\\.png$",
+ "_obrazky": "Galéria z Woo (variant, potom rodič). cover-barva-maska-miska.png je náhľad videa so symbolom prehrávania, v katalógu sa nedá prehrať."
 }

@@ -32,7 +32,7 @@ Kód 2 = poistka alebo chyba aspoň u jedného klienta; jeho opravený feed osta
 | Klient | Platforma | Zdroj | Opravený feed |
 |---|---|---|---|
 | Voono | Zboží | https://www.voono.cz/app/uploads/xml/feed_zbozi_1.xml | https://marek90x.github.io/feedy/voono/zbozi.xml (ostrý od 6. 11. 2026) |
-| Voono CZ | Meta katalóg (nový CZ katalóg) | https://www.voono.cz/app/uploads/xml/feed_google_merchants_1.xml + Woo Store API (ceny, sklad) | https://marek90x.github.io/feedy/voono/meta.xml (pripravený 6. 11. 2026, čaká na zverejnenie) |
+| Voono CZ | Meta katalóg (nový CZ katalóg) | https://www.voono.cz/app/uploads/xml/feed_google_merchants_1.xml + Woo Store API (ceny, sklad) | https://marek90x.github.io/feedy/voono/meta.xml (ostrý od 6. 11. 2026, katalóg „VOONO CZ \| feed 2027 m“ 28998039579846275, feed 1421935526282230, hodinovo, pixel CZ 405460924254766) |
 
 ## Nový klient alebo platforma
 

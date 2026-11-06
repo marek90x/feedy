@@ -142,6 +142,18 @@ class Test(unittest.TestCase):
         self.assertIn('<g:brand>VOONO</g:brand>', t)
         self.assertEqual(s['opravy']['cena_z_webu'], 1)
 
+    def test_meta_obrazky_z_webu(self):
+        w = self.woo(279, 279)
+        w['images'] = [{'src': 'https://www.voono.cz/i.jpg'}, {'src': 'https://www.voono.cz/vlasy.jpg'},
+                       {'src': 'https://www.voono.cz/cover-barva-maska-miska.png'}, {'src': 'https://cdn.cizi.com/x.jpg'}]
+        xml, s = self.meta([('1', 'Copper', 'https://www.voono.cz/barvy/copper/', '')], {'1': w},
+                           obrazky_z_webu=True, obrazky_vynechat='/cover-barva-maska-miska\\.png$')
+        t = xml.decode()
+        self.assertEqual(t.count('<g:additional_image_link>'), 1)
+        self.assertIn('vlasy.jpg', t)
+        self.assertNotIn('cover-barva', t)
+        self.assertEqual(s['opravy']['obrazky_z_webu'], 1)
+
     def test_meta_bez_akcie_bez_sale_price(self):
         xml, _ = self.meta([('1', 'Copper', 'https://www.voono.cz/barvy/copper/', '')], {'1': self.woo(279, 279)})
         self.assertNotIn('sale_price', xml.decode())

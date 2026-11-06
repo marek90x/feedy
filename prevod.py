@@ -420,8 +420,26 @@ def preved_meta(konf, woo, taxonomia=None):
             host = urllib.parse.urlsplit(polia[pole]).hostname or ''
             if not any(host == d or host.endswith('.' + d) for d in domeny):
                 raise Poistka('%s %s mimo povolených domén: %s' % (pole, pid, polia[pole]))
-        polia['additional_image_link'] = [u for u in polia['additional_image_link']
-                                          if any((urllib.parse.urlsplit(u).hostname or '') in (d, 'www.' + d) for d in domeny)]
+        # Galéria z webu: obrázky variantu a potom rodiča (Google feed pri farbách posiela len jeden).
+        if konf.get('obrazky_z_webu'):
+            web = [x['src'] for x in w.get('images', [])]
+            if polia['item_group_id'] in woo:
+                web += [x['src'] for x in woo[polia['item_group_id']].get('images', [])]
+            z_feedu = set(polia['additional_image_link'])
+            polia['additional_image_link'] += web
+        vynechat = konf.get('obrazky_vynechat')
+        videne = {polia['image_link']}
+        dalsie = []
+        for u in polia['additional_image_link']:
+            if u in videne or (vynechat and re.search(vynechat, u)):
+                continue
+            if not any((urllib.parse.urlsplit(u).hostname or '') in (d, 'www.' + d) for d in domeny):
+                continue
+            videne.add(u)
+            dalsie.append(u)
+        polia['additional_image_link'] = dalsie[:konf.get('max_dalsich_obrazkov', 20)]
+        if konf.get('obrazky_z_webu') and set(polia['additional_image_link']) - z_feedu:
+            suhrn['opravy']['obrazky_z_webu'] = suhrn['opravy'].get('obrazky_z_webu', 0) + 1
 
         # Cena a zľava z webu. Feed sa porovná, rozdiel ide do súhrnu.
         bezna, mena = cena(w, 'regular_price')
