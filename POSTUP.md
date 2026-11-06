@@ -21,7 +21,8 @@ a platformu na nový feed prepína Marek, nie Claude.
 |---|---|---|---|
 | Zboží.cz / Sklik Nákupy | https://napoveda.sklik.cz/reklamy/xml-feed/specifikace/ | https://prodejce.seznam.cz/n/validace-feedu/ | hotová (`zbozi`) |
 | Google Merchant Center | https://support.google.com/merchants/answer/7052112 | diagnostika v Merchant Center (Marek) | **treba doplniť** |
-| Ďalšie (Meta katalóg, Heureka…) | nájdi oficiálnu špecifikáciu a zapíš ju do tabuľky v `PASCE.md` | | **treba doplniť** |
+| Meta katalóg (Commerce Manager) | https://developers.facebook.com/docs/marketing-api/catalog/reference/ | verejný validátor nie je: po nahratí diagnostika katalógu (Meta MCP `ads_catalog_get_diagnostics`) | hotová (`meta`, vlastná funkcia `preved_meta`) |
+| Ďalšie (Heureka…) | nájdi oficiálnu špecifikáciu a zapíš ju do tabuľky v `PASCE.md` | | **treba doplniť** |
 
 Špecifikáciu prečítaj celú (stačí cez web-fetch agenta) a vypíš si povinné polia, formáty, zakázaný obsah
 a pravidlá, čo sa nesmie inzerovať. Ak platforma nemá verejný validátor, zapíš do `PASCE.md`, ako sa výstup overí.

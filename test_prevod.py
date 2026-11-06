@@ -79,6 +79,12 @@ class Test(unittest.TestCase):
             _, s = self.preved(feed(DOBRA, ('3', 'Henna Black', 'Henna Black', 'https://www.voono.cz/c', ''), druha), konf(over_url=True))
         self.assertEqual(s['vyradene'], {'URL nefunguje': 1})
 
+    def test_mimo_webu_vyradi(self):
+        druha = ('2', 'Henna Red', 'Henna Red', 'https://www.voono.cz/b', '')
+        with mock.patch.object(prevod, 'stiahni', return_value=feed(DOBRA, druha)):
+            _, s = prevod.preved(konf(), None, None, {'1': {}})
+        self.assertEqual(s['vyradene'], {'nie je na webe (Woo)': 1})
+
     def test_spadnuty_web_zastavi(self):
         with mock.patch.object(prevod, 'http_stav', return_value=503):
             with self.assertRaises(prevod.Poistka):
@@ -103,6 +109,82 @@ class Test(unittest.TestCase):
                              'odtien': {'pole': 'PRODUCT', 'regex': '(.+)'}, 'sablony': {}, 'mapa': {}})
         with self.assertRaises(prevod.Poistka):
             self.preved(feed(('1', 'Henna Nova', 'Henna Nova', 'https://voono.cz/barvy/nova/', '')), k)
+
+    # --- Meta ---------------------------------------------------------------------------------
+    def meta(self, polozky, woo, **zmena):
+        k = {'klient': 'test', 'platforma': 'meta', 'zdroj': 'x', 'povolene_domeny': ['voono.cz'], 'mena': 'CZK',
+             'min_ponuk': 1, 'gtin_predpona': '859', 'doplnit': {'brand': 'VOONO', 'condition': 'new'},
+             'vyradit': [{'pole': 'title', 'regex': '1000\\s?g', 'dovod': 'b2b'}],
+             'kategorie': [{'pole': 'link', 'regex': '/barvy/', 'kategoria': 'Barvy', 'gpc': 2814}],
+             'stitky': {'custom_label_0': {'typ': 'akcia', 'ano': 'akce', 'nie': 'bez akce'}}}
+        k.update(zmena)
+        telo = ''.join('<item><g:id>%s</g:id><g:title>%s</g:title><g:description>&lt;p&gt;Popis&lt;/p&gt;</g:description>'
+                       '<g:link>%s</g:link><g:image_link>https://www.voono.cz/i.jpg</g:image_link>'
+                       '<g:price>249.00 CZK</g:price><g:availability>in_stock</g:availability><g:gtin>%s</g:gtin></item>' % p
+                       for p in polozky)
+        xml = ('<rss xmlns:g="%s" version="2.0"><channel>%s</channel></rss>' % (prevod.G, telo)).encode()
+        with mock.patch.object(prevod, 'stiahni', return_value=xml):
+            return prevod.preved_meta(k, woo)
+
+    @staticmethod
+    def woo(bezna, akcna, sklad=True):
+        return {'prices': {'regular_price': str(bezna * 100), 'sale_price': str(akcna * 100), 'currency_minor_unit': 2,
+                           'currency_code': 'CZK'}, 'is_in_stock': sklad, 'variation': 'Balení: Bez obalu, Objem: 100 g'}
+
+    def test_meta_cena_a_akcia_z_webu(self):
+        xml, s = self.meta([('1', 'Copper', 'https://www.voono.cz/barvy/copper/', '8595654000015')],
+                           {'1': self.woo(299, 259)})
+        t = xml.decode()
+        self.assertIn('<g:price>299.00 CZK</g:price>', t)
+        self.assertIn('<g:sale_price>259.00 CZK</g:sale_price>', t)
+        self.assertIn('<g:custom_label_0>akce</g:custom_label_0>', t)
+        self.assertIn('<g:description>Popis</g:description>', t)
+        self.assertIn('<g:brand>VOONO</g:brand>', t)
+        self.assertEqual(s['opravy']['cena_z_webu'], 1)
+
+    def test_meta_bez_akcie_bez_sale_price(self):
+        xml, _ = self.meta([('1', 'Copper', 'https://www.voono.cz/barvy/copper/', '')], {'1': self.woo(279, 279)})
+        self.assertNotIn('sale_price', xml.decode())
+
+    def test_meta_mimo_webu_a_1000g_vyradi(self):
+        _, s = self.meta([('1', 'Copper', 'https://www.voono.cz/barvy/copper/', ''),
+                          ('2', 'Copper 1000g', 'https://www.voono.cz/barvy/copper-1000/', ''),
+                          ('3', 'Copper bez obalu', 'https://www.voono.cz/barvy/copper/?x=1', '')],
+                         {'1': self.woo(279, 279), '2': self.woo(700, 700)})
+        self.assertEqual(s['vyradene'], {'b2b': 1, 'nie je na webe (Woo)': 1})
+        self.assertEqual(s['vystup_ponuk'], 1)
+
+    def test_meta_interny_a_zdielany_gtin_vynecha(self):
+        xml, _ = self.meta([('1', 'Copper', 'https://www.voono.cz/barvy/copper/', '10000113'),
+                            ('2', 'Orange', 'https://www.voono.cz/barvy/orange/', '8595654000015'),
+                            ('3', 'Wine', 'https://www.voono.cz/barvy/wine/', '8595654000015')],
+                           {i: self.woo(279, 279) for i in '123'})
+        self.assertNotIn('<g:gtin>', xml.decode())
+
+    def test_meta_cudzia_domena_zastavi(self):
+        with self.assertRaises(prevod.Poistka):
+            self.meta([('1', 'Copper', 'https://jahodarna.cz/barvy/copper/', '')], {'1': self.woo(279, 279)})
+
+    def test_meta_bez_kategorie_zastavi(self):
+        with self.assertRaises(prevod.Poistka):
+            self.meta([('1', 'Šampon', 'https://www.voono.cz/sampon/', '')], {'1': self.woo(279, 279)})
+
+    def test_meta_ina_mena_zastavi(self):
+        w = self.woo(12, 12)
+        w['prices']['currency_code'] = 'EUR'
+        with self.assertRaises(prevod.Poistka):
+            self.meta([('1', 'Copper', 'https://www.voono.cz/barvy/copper/', '')], {'1': w})
+
+    def test_meta_neznamy_odtien_v_stitku_zastavi(self):
+        st = {'custom_label_1': {'typ': 'mapa', 'pole': 'link', 'regex': '/barvy/([^/?]+)/', 'mapa': {}}}
+        with self.assertRaises(prevod.Poistka):
+            self.meta([('1', 'Copper', 'https://www.voono.cz/barvy/copper/', '')], {'1': self.woo(279, 279)}, stitky=st)
+
+    def test_meta_presmerovanie_na_kategoriu_je_mrtve(self):
+        self.assertFalse(prevod.url_ziva((200, 'https://www.voono.cz/e-shop/a/eko/?x=1',
+                                          'https://www.voono.cz/kategorie-produktu/sety/?x=1')))
+        self.assertTrue(prevod.url_ziva((200, 'https://www.voono.cz/e-shop/a/eko/?x=1', 'https://www.voono.cz/e-shop/a/eko/?x=1')))
+        self.assertFalse(prevod.url_ziva((404, 'https://www.voono.cz/a/', 'https://www.voono.cz/a/')))
 
     def test_ean(self):
         self.assertTrue(prevod.ean_platny('8595654000015'))

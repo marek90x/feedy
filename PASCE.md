@@ -11,6 +11,8 @@ Nové pasce dopisuj sem, nie do poznámok klienta.
 |---|---|---|
 | Zboží.cz / Sklik Nákupy | https://napoveda.sklik.cz/reklamy/xml-feed/specifikace/ | https://prodejce.seznam.cz/n/validace-feedu/ (URL alebo súbor, max. 150 MB) |
 | Zboží.cz, pravidlá obsahu | https://napoveda.sklik.cz/pravidla/pravidla-a-podminky-zbozi-cz/pravidla-pro-internetove-obchody/ | |
+| Meta katalóg | https://developers.facebook.com/docs/marketing-api/catalog/reference/ (Help Center https://www.facebook.com/business/help/120325381656392 sa automaticky nedá prečítať) | bez verejného validátora; po nahratí diagnostika katalógu cez Meta MCP |
+| Google taxonómia (pre Meta `google_product_category`) | https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt | prevodník ju sťahuje pri každom behu, neexistujúce ID = poistka |
 | Zboží.cz, strom kategórií | https://www.zbozi.cz/static/categories.csv (cp1250, `;`) | prevodník ho sťahuje pri každom behu |
 
 **Výstup sa nasadzuje až vtedy, keď validátor napíše „Feed je v pořádku“.** Validátor kontroluje
@@ -27,6 +29,7 @@ E-shopové feedy bývajú zanedbané. Klientovi nič neopravujeme vo feede, ale 
 | **Neexistujúce produkty:** URL vracia 404 (koncepty, skryté produkty, `?post_type=product&p=ID`) | 70 zo 171 ponúk (sady, eko balíčky, vianočné kazety, ZACHRAŇ PRODUKT, „- test“) | `over_url`: každá URL sa overí, nefunkčná ponuka sa vyradí |
 | Spadnutý web by vyradil všetko | | `max_podiel_mrtvych`: keď nefunguje viac než nastavený podiel URL, feed sa nezverejní |
 | B2B balenia v B2C feede | 22× 1000 g | `vyradit` regexom |
+| **Voono: predáva sa len kozmetika** (Marek 6. 11. 2026): miska, dóza, zástěra, čepice, rukavice, teploměr, kartáč | 7 | `vyradit` vo všetkých Voono feedoch; kategória „Pomůcky“ zámerne neexistuje, nová pomôcka zastaví beh |
 | Dárkové poukazy | 2 | `vyradit` (vlastné poukazy shopu Zboží povoľuje, Marek ich nechce) |
 | Duplikáty „(Kopírovat)“ | 6 | `vyradit` |
 | Duplicitné PRODUCTNAME | 3 dvojice; všetky boli 404 | rieši `over_url`; validátor duplicity hlási ako chybu |
@@ -40,6 +43,21 @@ E-shopové feedy bývajú zanedbané. Klientovi nič neopravujeme vo feede, ale 
 | Kategória e-shopu nesedí na produkt (psí šampón vo Vlasovej péči, cassia v Maskách) | | mapuj podľa **názvu produktu a URL**, nie podľa kategórie e-shopu |
 | Chýba výrobca | 201 | `doplnit.MANUFACTURER` |
 | Poradie elementov: validátor hlási „Extra element EAN in interleave“ | zdroj | prevodník zapisuje XML nanovo, výstup prešiel |
+
+### Google Merchant feed Voono ako zdroj pre Meta (6. 11. 2026)
+
+| Pasca | Voono 6. 11. 2026 | Čo s tým |
+|---|---|---|
+| **Zrušený produkt presmeruje na kategóriu s HTTP 200** (varianty `?attribute_…` skrytých sád: Eko balíček, Předpigmentační set, Set pro začátečníky, Set pro cestovatele) | 38 položiek, `http_stav` ich berie ako živé | živá URL = cieľ po presmerovaní ostal na tej istej ceste produktu; presmerovanie na `/kategorie-produktu/` = mŕtva. Druhá kontrola: ID musí byť vo Woo Store API |
+| **Ceny variantov sú v Google feede staré**, hoci feed má rovnaký čas generovania ako Zboží | 21 z 123 živých: „Bez obalu 100 g“ 249 namiesto 279 Kč, 500 g 629 namiesto 649, Cassia 229 namiesto 249 | cenu a `sale_price` brať z Woo Store API (`prices.regular_price`, `prices.sale_price`, v halieroch), feed nie je zdroj ceny |
+| Masážny kartáč: 259,70 v oboch feedoch, web 371 Kč | 1 | to isté: cena z webu |
+| `product_type` je zoznam všetkých kategórií e-shopu cez „\|“ | 179 z 194, 15 prázdnych | vlastná jedna cesta podľa názvu/URL, ako pri Zboží |
+| `google_product_category` chýba | 108 z 194 | doplniť ID z taxonómie Google |
+| Chýba `brand` a `condition` (Meta: povinné) | 194 | `doplnit` |
+| Pixel Voono CZ posiela Woo ID (ViewContent zhoda 97 %) | | `g:id` sa **nesmie** meniť, inak katalógové reklamy prestanú párovať |
+| Interné 8-miestne kódy prejdú kontrolnou číslicou (10000113, 10000106) | 2 | `gtin_predpona: "859"`; zdieľaný GTIN medzi produktmi sa vynechá |
+| „Hair of Gaurí 100 g“ (44294) je na webe za 0 Kč bez kategórie: darček k objednávke, nie predajný produkt; pixel ho posiela | | do feedu nepatrí, nulová cena = vyradenie |
+| Meta katalóg „VOONO katalog \| New“ plní WooCommerce plugin a mieša CZ (CZK) aj SK (EUR) | 339 položiek, 199× nesúlad meny, 500 g varianty za 0 Kč | do katalógu s pluginom sa feed s rovnakými ID nepridáva (prepisovali by sa) |
 
 ### Ďalej platí
 

@@ -405,30 +405,6 @@ Díky přírodním bio olejům a extraktům budou tvé vlasy vyživené, lesklé
     <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Vlasová regenerace</CATEGORYTEXT>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>7100</ITEM_ID>
-    <PRODUCT>Dóza na VOONO směs bez obalu</PRODUCT>
-    <PRODUCTNAME>Dóza na VOONO směs bez obalu</PRODUCTNAME>
-    <DESCRIPTION>4000ml Dóza z EKO plastu na 1kg balení s VOONO etiketou.</DESCRIPTION>
-    <URL>https://www.voono.cz/e-shop/vlasova-pece/1000g-baleni/doza-na-voono-smes/</URL>
-    <IMGURL>https://www.voono.cz/app/uploads/2024/04/voono-barva-bezobal-1312x1080px.jpg</IMGURL>
-    <PRICE_VAT>249</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <EXTRA_MESSAGE />
-    <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky</CATEGORYTEXT>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>7096</ITEM_ID>
-    <PRODUCT>Kadeřnická zástěra s VOONO logem</PRODUCT>
-    <PRODUCTNAME>Kadeřnická zástěra s VOONO logem</PRODUCTNAME>
-    <DESCRIPTION>Profesionální kadeřnická zástěra ochrání oděv před zašpiněním přírodní barvou.</DESCRIPTION>
-    <URL>https://www.voono.cz/e-shop/ostatni/kadernicka-zastera/</URL>
-    <IMGURL>https://www.voono.cz/app/uploads/2024/04/zastera.png</IMGURL>
-    <PRICE_VAT>499</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <EXTRA_MESSAGE />
-    <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky</CATEGORYTEXT>
-  </SHOPITEM>
-  <SHOPITEM>
     <ITEM_ID>3321</ITEM_ID>
     <PRODUCT>VOONO Henna barva na vlasy Chestnut 100 g s obalem</PRODUCT>
     <PRODUCTNAME>VOONO Henna barva na vlasy Chestnut 100 g s obalem</PRODUCTNAME>
@@ -511,26 +487,6 @@ Díky přírodním bio olejům a extraktům budou tvé vlasy vyživené, lesklé
     <ITEMGROUP_ID>3307</ITEMGROUP_ID>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>3309</ITEM_ID>
-    <PRODUCT>VOONO Henna barva na vlasy Fire red 500 g bez obalu</PRODUCT>
-    <PRODUCTNAME>VOONO Henna barva na vlasy Fire red 500 g bez obalu</PRODUCTNAME>
-    <DESCRIPTION>Oproti tmavšímu odstínu Orange budou tvoje vlasy výraznější, zářivější, naprosto ohnivé.</DESCRIPTION>
-    <URL>https://www.voono.cz/e-shop/vlasova-pece/barvy/fire-red/?attribute_pa_baleni=bez-obalu&amp;attribute_pa_objem=500-g</URL>
-    <IMGURL>https://www.voono.cz/app/uploads/2024/01/vo-fire-red-odstin.jpg</IMGURL>
-    <PRICE_VAT>269</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Barvy na vlasy</CATEGORYTEXT>
-    <PARAM>
-      <PARAM_NAME>Balení</PARAM_NAME>
-      <VAL>Bez obalu</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>Objem</PARAM_NAME>
-      <VAL>500 g</VAL>
-    </PARAM>
-    <ITEMGROUP_ID>3307</ITEMGROUP_ID>
-  </SHOPITEM>
-  <SHOPITEM>
     <ITEM_ID>3722</ITEM_ID>
     <PRODUCT>VOONO Set pro ohnivě červenou</PRODUCT>
     <PRODUCTNAME>VOONO Set pro ohnivě červenou</PRODUCTNAME>
@@ -542,18 +498,6 @@ Je to jednoduché a rychlé! Dodej svým vlasům odstín ohnivě červený odst�
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <EXTRA_MESSAGE />
     <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Kosmetické sady</CATEGORYTEXT>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>3717</ITEM_ID>
-    <PRODUCT>VOONO Keramická miska</PRODUCT>
-    <PRODUCTNAME>VOONO Keramická miska</PRODUCTNAME>
-    <DESCRIPTION>Autorská keramická miska na barvení vlasů nebo na používání bylinných masek.</DESCRIPTION>
-    <URL>https://www.voono.cz/e-shop/ostatni/keramicka-miska/</URL>
-    <IMGURL>https://www.voono.cz/app/uploads/2024/01/VO-miska-web.jpg</IMGURL>
-    <PRICE_VAT>590</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <EXTRA_MESSAGE />
-    <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky</CATEGORYTEXT>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>3715</ITEM_ID>
@@ -644,18 +588,6 @@ Trápí tě poškozené vlasy? Pokud ano, tohle ti zaručeně pomůže.</DESCRIP
     <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Šampony</CATEGORYTEXT>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>3675</ITEM_ID>
-    <PRODUCT>VOONO Masážní kartáč z ekoplastu růžový</PRODUCT>
-    <PRODUCTNAME>VOONO Masážní kartáč z ekoplastu růžový</PRODUCTNAME>
-    <DESCRIPTION>Masážní ekologická pomůcka na vlasy ti pomůže zbavit se mazu, nečistot i zbytků stylingových přípravků mnohem lépe než jen pomocí prstů. Kromě toho je masáž velice příjemná a stimuluje růst nový vlasů</DESCRIPTION>
-    <URL>https://www.voono.cz/e-shop/ostatni/masazni-kartac-z-ekoplastu-ruzovy/</URL>
-    <IMGURL>https://www.voono.cz/app/uploads/2023/03/20-sleva-65.png</IMGURL>
-    <PRICE_VAT>259.7</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <EXTRA_MESSAGE />
-    <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky</CATEGORYTEXT>
-  </SHOPITEM>
-  <SHOPITEM>
     <ITEM_ID>3670</ITEM_ID>
     <PRODUCT>VOONO Cestovní mini kondicionér s Ambrou pro lesklé vlasy</PRODUCT>
     <PRODUCTNAME>VOONO Cestovní mini kondicionér s Ambrou pro lesklé vlasy</PRODUCTNAME>
@@ -706,26 +638,6 @@ Trápí tě poškozené vlasy? Pokud ano, tohle ti zaručeně pomůže.</DESCRIP
     <PARAM>
       <PARAM_NAME>Balení</PARAM_NAME>
       <VAL>S obalem</VAL>
-    </PARAM>
-    <PARAM>
-      <PARAM_NAME>Objem</PARAM_NAME>
-      <VAL>100 g</VAL>
-    </PARAM>
-    <ITEMGROUP_ID>3653</ITEMGROUP_ID>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>3739</ITEM_ID>
-    <PRODUCT>VOONO Předpigmentační henna barva na vlasy 100 g bez obalu</PRODUCT>
-    <PRODUCTNAME>VOONO Předpigmentační henna barva na vlasy 100 g bez obalu</PRODUCTNAME>
-    <DESCRIPTION>Trápí tě šediny a odrosty, musíš barvit dvoufázově a odstín Copper je na tebe moc výrazný nebo ho barva nepřekryje? Novinka v podobě předpigmentační barvy je to pravé pro tebe.</DESCRIPTION>
-    <URL>https://www.voono.cz/e-shop/vlasova-pece/barvy/predpigmentacni-barva/?attribute_pa_baleni=bez-obalu&amp;attribute_pa_objem=100-g</URL>
-    <IMGURL>https://www.voono.cz/app/uploads/2024/01/voono-henna-bezobalu-sacek-1.jpg</IMGURL>
-    <PRICE_VAT>279</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Barvy na vlasy</CATEGORYTEXT>
-    <PARAM>
-      <PARAM_NAME>Balení</PARAM_NAME>
-      <VAL>Bez obalu</VAL>
     </PARAM>
     <PARAM>
       <PARAM_NAME>Objem</PARAM_NAME>
@@ -873,18 +785,6 @@ Tuhý kondicionér je vhodný pro všechny typy vlasů.</DESCRIPTION>
     <ITEMGROUP_ID>3624</ITEMGROUP_ID>
   </SHOPITEM>
   <SHOPITEM>
-    <ITEM_ID>3618</ITEM_ID>
-    <PRODUCT>VOONO Termo čepice</PRODUCT>
-    <PRODUCTNAME>VOONO Termo čepice</PRODUCTNAME>
-    <DESCRIPTION>Nová VOONO termo čepice zajistí, že tvé vlasy budou při barvení po celou dobu v teple. Díky tomu dosáhneš rychlejšího a efektivnějšího konečného výsledku.</DESCRIPTION>
-    <URL>https://www.voono.cz/e-shop/ostatni/termo-cepice/</URL>
-    <IMGURL>https://www.voono.cz/app/uploads/2021/03/na-vrh-bez-na-zvu-29.png</IMGURL>
-    <PRICE_VAT>699</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <EXTRA_MESSAGE />
-    <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky</CATEGORYTEXT>
-  </SHOPITEM>
-  <SHOPITEM>
     <ITEM_ID>3607</ITEM_ID>
     <PRODUCT>VOONO Ibišek</PRODUCT>
     <PRODUCTNAME>VOONO Ibišek</PRODUCTNAME>
@@ -935,18 +835,6 @@ Tuhý kondicionér je vhodný pro všechny typy vlasů.</DESCRIPTION>
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <EAN>8595654000367</EAN>
     <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Stylingové přípravky</CATEGORYTEXT>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>3483</ITEM_ID>
-    <PRODUCT>VOONO Eko vegan zero waste rukavice</PRODUCT>
-    <PRODUCTNAME>VOONO Eko vegan zero waste rukavice</PRODUCTNAME>
-    <DESCRIPTION>Pár zero waste rukavic (bez obalu) určených pro barvení vlasů. Jsou vyrobeny z ekologického materiálu na bázi rostlin. Po použití je stačí opláchnout a znovu použít.</DESCRIPTION>
-    <URL>https://www.voono.cz/e-shop/ostatni/eko-vegan-zero-waste-rukavice/</URL>
-    <IMGURL>https://www.voono.cz/app/uploads/2024/01/vyr_96_vyr_96VGL-M.jpg</IMGURL>
-    <PRICE_VAT>100</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <EXTRA_MESSAGE />
-    <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky</CATEGORYTEXT>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>3454</ITEM_ID>
@@ -1449,19 +1337,6 @@ Trápí tě poškozené vlasy? Pokud ano, tohle ti zaručeně pomůže.</DESCRIP
     <EXTRA_MESSAGE />
     <EAN>8595654001524</EAN>
     <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Odličování pleti a očí | Odličovače</CATEGORYTEXT>
-  </SHOPITEM>
-  <SHOPITEM>
-    <ITEM_ID>3449</ITEM_ID>
-    <PRODUCT>VOONO Teploměr</PRODUCT>
-    <PRODUCTNAME>VOONO Teploměr</PRODUCTNAME>
-    <DESCRIPTION>Lihový teploměr, který ti napomůže přesně určit správnou teplotu vody, která je důležitá pro dosažení požadovaného barevného výsledku.</DESCRIPTION>
-    <URL>https://www.voono.cz/e-shop/ostatni/teplomer/</URL>
-    <IMGURL>https://www.voono.cz/app/uploads/2024/01/teplomer.jpg</IMGURL>
-    <PRICE_VAT>169</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <EXTRA_MESSAGE />
-    <EAN>8595654000152</EAN>
-    <MANUFACTURER>VOONO</MANUFACTURER><CATEGORYTEXT>Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky</CATEGORYTEXT>
   </SHOPITEM>
   <SHOPITEM>
     <ITEM_ID>26811</ITEM_ID>

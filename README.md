@@ -1,7 +1,7 @@
 # Feed prevodník
 
 Stiahne produktový feed klienta, opraví ho podľa konfigurácie a zverejní opravenú kópiu na GitHub Pages.
-Platforma (Zboží, neskôr Google Merchant či Meta katalóg) ťahá opravený feed namiesto pôvodného.
+Platforma (Zboží, Meta katalóg, neskôr Google Merchant) ťahá opravený feed namiesto pôvodného.
 
 **Pred akoukoľvek zmenou si prečítaj [POSTUP.md](POSTUP.md)** (krok za krokom: nový klient, nová platforma,
 zverejnenie) **a [PASCE.md](PASCE.md)** (špecifikácie, validátory a pasce pre všetkých klientov).
@@ -32,6 +32,7 @@ Kód 2 = poistka alebo chyba aspoň u jedného klienta; jeho opravený feed osta
 | Klient | Platforma | Zdroj | Opravený feed |
 |---|---|---|---|
 | Voono | Zboží | https://www.voono.cz/app/uploads/xml/feed_zbozi_1.xml | https://marek90x.github.io/feedy/voono/zbozi.xml (ostrý od 6. 11. 2026) |
+| Voono CZ | Meta katalóg (nový CZ katalóg) | https://www.voono.cz/app/uploads/xml/feed_google_merchants_1.xml + Woo Store API (ceny, sklad) | https://marek90x.github.io/feedy/voono/meta.xml (pripravený 6. 11. 2026, čaká na zverejnenie) |
 
 ## Nový klient alebo platforma
 

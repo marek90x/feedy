@@ -45,6 +45,9 @@ PLATFORMY = {
 }
 
 
+TAXONOMIA_GOOGLE = 'https://www.google.com/basepages/producttype/taxonomy-with-ids.en-US.txt'
+
+
 class Poistka(Exception):
     """Opravený feed sa nesmie zverejniť."""
 
@@ -131,9 +134,10 @@ def parametre(polozka, ns):
             for p in polozka.findall('{%s}PARAM' % ns)}
 
 
-def novy_nazov(polozka, ns, pravidla, aktualny):
-    """Názov podľa šablóny. Kľúč (napr. časť URL) určí šablónu; neznámy kľúč = Poistka, nič sa nehádže naslepo."""
-    m = re.search(pravidla['kluc']['regex'], hodnota(polozka, pravidla['kluc']['pole'], ns))
+def novy_nazov(ziskaj, par, pravidla, aktualny):
+    """Názov podľa šablóny. Kľúč (napr. časť URL) určí šablónu; neznámy kľúč = Poistka, nič sa nehádže naslepo.
+    `ziskaj(pole)` vráti hodnotu poľa ponuky, `par` sú parametre ponuky (Objem, Balení)."""
+    m = re.search(pravidla['kluc']['regex'], ziskaj(pravidla['kluc']['pole']))
     if not m:
         predpona = pravidla.get('predpona_ostatnym', '')
         if predpona and predpona.strip().lower() not in aktualny.lower():
@@ -143,11 +147,10 @@ def novy_nazov(polozka, ns, pravidla, aktualny):
     if sablona is None:
         raise Poistka('„%s“ (%s) nemá v konfigurácii overenú šablónu názvu' % (aktualny, m.group(1)))
     od = pravidla['odtien']
-    mo = re.search(od['regex'], hodnota(polozka, od['pole'], ns))
+    mo = re.search(od['regex'], ziskaj(od['pole']))
     odtien = mo.group(1) if mo else ''
     for vzor, nahrada in od.get('upravy', []):
         odtien = re.sub(vzor, nahrada, odtien)
-    par = parametre(polozka, ns)
 
     def dosad(x):
         meno, _, filtr = x.group(1).partition('|')
@@ -166,7 +169,7 @@ def najdi_kategoriu(polozka, ns, konf):
     return None
 
 
-def preved(konf, zoznam_kategorii=None, popisy=None):
+def preved(konf, zoznam_kategorii=None, popisy=None, woo=None):
     """Vráti (bajty XML, súhrn). Pri porušení poistky vyhodí Poistka."""
     pl = PLATFORMY[konf['platforma']]
     ns = pl['ns']
@@ -209,6 +212,9 @@ def preved(konf, zoznam_kategorii=None, popisy=None):
                       if re.search(v['regex'], hodnota(p, v['pole'], ns), re.I)), None)
         if not dovod and hodnota(p, 'URL', ns) in mrtve:
             dovod = 'URL nefunguje'
+        # Variant, ktorý web nepozná (Voono: Předpigmentační bez obalu, Fire red 500 g), sa kúpiť nedá.
+        if not dovod and woo is not None and hodnota(p, pl['id'], ns) not in woo:
+            dovod = 'nie je na webe (Woo)'
         if not dovod:
             try:
                 if float(hodnota(p, 'PRICE_VAT', ns).replace(',', '.')) <= 0:
@@ -285,7 +291,7 @@ def preved(konf, zoznam_kategorii=None, popisy=None):
         if konf.get('premenovat'):
             for pole in konf['premenovat']['polia']:
                 povodny = hodnota(p, pole, ns)
-                novy = novy_nazov(p, ns, konf['premenovat'], povodny)
+                novy = novy_nazov(lambda f: hodnota(p, f, ns), parametre(p, ns), konf['premenovat'], povodny)
                 if novy != povodny:
                     nastav(p, pole, ns, novy)
                     suhrn['opravy']['nazov_rozsireny'] = suhrn['opravy'].get('nazov_rozsireny', 0) + 1
@@ -309,13 +315,258 @@ def preved(konf, zoznam_kategorii=None, popisy=None):
     return xml, suhrn
 
 
+# ---------------------------------------------------------------------------------------------------
+# Meta katalóg (Commerce Manager): zdroj je Google Merchant RSS klienta, výstup RSS s menným priestorom g:.
+# Špecifikácia: https://developers.facebook.com/docs/marketing-api/catalog/reference/ (pasce v PASCE.md).
+
+G = 'http://base.google.com/ns/1.0'
+
+
+def woo_vsetko(url):
+    """Produkty aj varianty z verejného WooCommerce Store API podľa ID. Čo tu nie je, sa na webe kúpiť nedá."""
+    vsetko = {}
+    for typ in ('', 'type=variation&'):
+        strana = 1
+        while True:
+            oddelovac = '&' if '?' in url else '?'
+            data = json.loads(stiahni('%s%s%sper_page=100&page=%d' % (url, oddelovac, typ, strana)))
+            for p in data:
+                vsetko[str(p['id'])] = p
+            if len(data) < 100:
+                break
+            strana += 1
+    return vsetko
+
+
+def http_ciel(url):
+    """(HTTP kód, cieľová URL po presmerovaní). Zrušený produkt Woo presmeruje na kategóriu s kódom 200."""
+    for metoda in ('HEAD', 'GET'):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, method=metoda, headers=UA), timeout=30) as o:
+                return o.status, o.geturl()
+        except urllib.error.HTTPError as e:
+            if e.code == 405 and metoda == 'HEAD':
+                continue
+            return e.code, url
+        except Exception as e:
+            chyba = str(e)[:60]
+    return chyba, url
+
+
+def url_ziva(stav):
+    kod, povodna, ciel = stav
+    if not (isinstance(kod, int) and kod < 400):
+        return False
+    return urllib.parse.urlsplit(ciel).path.rstrip('/') == urllib.parse.urlsplit(povodna).path.rstrip('/')
+
+
+def taxonomia_google(url):
+    """ID kategórií z taxonómie Google (riadky „ID - cesta“)."""
+    return {r.split(' - ', 1)[0].strip() for r in stiahni(url).decode('utf-8').splitlines() if ' - ' in r}
+
+
+def cena(woo, pole):
+    pr = woo['prices']
+    return int(pr[pole]) / 10 ** pr['currency_minor_unit'], pr['currency_code']
+
+
+def preved_meta(konf, woo, taxonomia=None):
+    """Vráti (bajty XML, súhrn). Cena, zľava a sklad sú z webu (Woo Store API), nie z feedu (Voono: staré ceny variantov)."""
+    gv = lambda it, t: (it.findtext('{%s}%s' % (G, t)) or '').strip()
+    try:
+        koren = ET.fromstring(stiahni(konf['zdroj']))
+    except Exception as e:
+        raise Poistka('zdrojový feed sa nedá stiahnuť alebo prečítať: %s' % e)
+    polozky = koren.findall('channel/item')
+    suhrn = {'klient': konf['klient'], 'platforma': konf['platforma'], 'zdroj_ponuk': len(polozky), 'vyradene': {},
+             'kategoria': {}, 'stitky': {}, 'opravy': {'cena_z_webu': 0, 'sklad_z_webu': 0, 'gtin_odstraneny': 0,
+                                                     'nazov_rozsireny': 0, 'popis_z_webu': 0},
+             'zmeny_cien': [], 'bez_popisu': []}
+    if len(polozky) < konf['min_ponuk']:
+        raise Poistka('zdroj má %d ponúk, minimum je %d' % (len(polozky), konf['min_ponuk']))
+    if len(woo) < konf.get('min_woo', 1):
+        raise Poistka('Woo Store API vrátilo %d produktov, web je asi nedostupný' % len(woo))
+
+    mrtve = set()
+    if konf.get('over_url'):
+        urls = sorted({gv(p, 'link') for p in polozky})
+        with concurrent.futures.ThreadPoolExecutor(8) as ex:
+            stavy = dict(zip(urls, ex.map(http_ciel, urls)))
+        mrtve = {u for u, (kod, ciel) in stavy.items() if not url_ziva((kod, u, ciel))}
+        podiel = len(mrtve) / max(len(urls), 1)
+        if podiel > konf.get('max_podiel_mrtvych', 0.5):
+            raise Poistka('%d z %d URL nefunguje (%.0f %%), web je asi nedostupný' % (len(mrtve), len(urls), 100 * podiel))
+
+    domeny = konf['povolene_domeny']
+    vystup, bez_kategorie, gtiny = [], [], {}
+    for p in polozky:
+        pid = gv(p, 'id')
+        w = woo.get(pid)
+        dovod = next((v['dovod'] for v in konf.get('vyradit', []) if re.search(v['regex'], gv(p, v['pole']), re.I)), None)
+        if not dovod and gv(p, 'link') in mrtve:
+            dovod = 'URL nefunguje'
+        if not dovod and w is None:
+            dovod = 'nie je na webe (Woo)'
+        if not dovod and cena(w, 'regular_price')[0] <= 0:
+            dovod = 'nulová cena'
+        if dovod:
+            suhrn['vyradene'][dovod] = suhrn['vyradene'].get(dovod, 0) + 1
+            continue
+
+        polia = {'id': pid, 'item_group_id': gv(p, 'item_group_id'), 'title': bez_html(gv(p, 'title')),
+                 'link': gv(p, 'link'), 'image_link': gv(p, 'image_link'),
+                 'additional_image_link': [e.text.strip() for e in p.findall('{%s}additional_image_link' % G) if e.text]}
+        for pole in ('link', 'image_link'):
+            host = urllib.parse.urlsplit(polia[pole]).hostname or ''
+            if not any(host == d or host.endswith('.' + d) for d in domeny):
+                raise Poistka('%s %s mimo povolených domén: %s' % (pole, pid, polia[pole]))
+        polia['additional_image_link'] = [u for u in polia['additional_image_link']
+                                          if any((urllib.parse.urlsplit(u).hostname or '') in (d, 'www.' + d) for d in domeny)]
+
+        # Cena a zľava z webu. Feed sa porovná, rozdiel ide do súhrnu.
+        bezna, mena = cena(w, 'regular_price')
+        akcna, _ = cena(w, 'sale_price')
+        if mena != konf['mena']:
+            raise Poistka('%s má menu %s, feed je v %s' % (pid, mena, konf['mena']))
+        feed_cena = gv(p, 'price').split()[0] if gv(p, 'price') else ''
+        feed_akcia = gv(p, 'sale_price').split()[0] if gv(p, 'sale_price') else feed_cena
+        if feed_cena != '%.2f' % bezna or feed_akcia != '%.2f' % akcna:
+            suhrn['opravy']['cena_z_webu'] += 1
+            suhrn['zmeny_cien'].append('%s %s: feed %s/%s, web %.2f/%.2f' % (pid, polia['title'], feed_cena, feed_akcia, bezna, akcna))
+        polia['price'] = '%.2f %s' % (bezna, mena)
+        polia['sale_price'] = '%.2f %s' % (akcna, mena) if akcna < bezna else ''
+        sklad = 'in stock' if w.get('is_in_stock') else 'out of stock'
+        if sklad.replace(' ', '_') != gv(p, 'availability'):
+            suhrn['opravy']['sklad_z_webu'] += 1
+        polia['availability'] = sklad
+
+        popis = cisty_text(gv(p, 'description'))
+        if not popis:
+            popis = cisty_text(w.get('short_description') or w.get('description') or '')
+            if popis:
+                suhrn['opravy']['popis_z_webu'] += 1
+        if not popis:
+            suhrn['bez_popisu'].append('%s %s' % (pid, polia['title']))
+        polia['description'] = popis[:9999]
+
+        gtin = gv(p, 'gtin')
+        if gtin and ean_platny(gtin) and gtin.startswith(konf.get('gtin_predpona', '')):
+            polia['gtin'] = gtin
+            gtiny.setdefault(gtin, []).append(pid)
+        elif gtin:
+            suhrn['opravy']['gtin_odstraneny'] += 1
+
+        polia.update(konf.get('doplnit', {}))
+        ziskaj = lambda f: polia.get(f, '')
+        kat = najdi_kategoriu_meta(ziskaj, konf)
+        if kat is None:
+            bez_kategorie.append('%s %s' % (pid, polia['title']))
+            continue
+        polia['product_type'], polia['google_product_category'] = kat['kategoria'], str(kat['gpc'])
+        if taxonomia is not None and polia['google_product_category'] not in taxonomia:
+            raise Poistka('google_product_category %s neexistuje' % polia['google_product_category'])
+        suhrn['kategoria'][kat['kategoria']] = suhrn['kategoria'].get(kat['kategoria'], 0) + 1
+
+        # Štítky pre sady produktov. Neznámy kľúč v mape = Poistka (nový odtieň treba zaradiť ručne).
+        for meno, st in konf.get('stitky', {}).items():
+            hodn = st_hodnota(st, polia)
+            if hodn:
+                polia[meno] = hodn
+                suhrn['stitky'].setdefault(meno, {})
+                suhrn['stitky'][meno][hodn] = suhrn['stitky'][meno].get(hodn, 0) + 1
+
+        # Až po kategórii: pravidlá kategórií sa viažu na pôvodný názov. Parametre z variantu na webe.
+        if konf.get('premenovat'):
+            par = dict(re.findall(r'([^:,]+):\s*([^,]+)', w.get('variation') or ''))
+            par = {k.strip(): v.strip() for k, v in par.items()}
+            novy = novy_nazov(ziskaj, par, konf['premenovat'], polia['title'])
+            if novy != polia['title']:
+                polia['title'] = novy
+                suhrn['opravy']['nazov_rozsireny'] += 1
+        if len(polia['title']) > 200:
+            raise Poistka('%s: názov má %d znakov, Meta povoľuje 200' % (pid, len(polia['title'])))
+        vystup.append(polia)
+
+    if bez_kategorie:
+        raise Poistka('%d ponúk nemá v konfigurácii cieľovú kategóriu: %s' % (len(bez_kategorie), '; '.join(bez_kategorie[:10])))
+    # Zdieľaný GTIN medzi rôznymi produktmi (Voono to má) by Meta mohla spojiť; zdieľaný sa vynechá.
+    for gtin, ids in gtiny.items():
+        if len(ids) > 1:
+            for polia in vystup:
+                if polia.get('gtin') == gtin:
+                    del polia['gtin']
+                    suhrn['opravy']['gtin_odstraneny'] += 1
+    nazvy = {}
+    for polia in vystup:
+        nazvy.setdefault(polia['title'], []).append(polia['id'])
+    duplicity = {n: i for n, i in nazvy.items() if len(i) > 1}
+    if duplicity:
+        raise Poistka('duplicitné názvy: %s' % '; '.join('%s (%s)' % (n, ', '.join(i)) for n, i in list(duplicity.items())[:5]))
+    skupiny = {pol['item_group_id'] for pol in vystup if pol['item_group_id']}
+    konflikt = [pol['id'] for pol in vystup if pol['id'] in skupiny]
+    if konflikt:
+        raise Poistka('ID sa zhoduje s item_group_id inej ponuky (Meta: retailer_id_used_by_group): %s' % ', '.join(konflikt))
+    suhrn['vystup_ponuk'] = len(vystup)
+    if len(vystup) < konf.get('min_vystup', 1):
+        raise Poistka('po úprave ostalo %d ponúk, minimum je %d' % (len(vystup), konf['min_vystup']))
+    return zapis_rss(konf, vystup), suhrn
+
+
+def najdi_kategoriu_meta(ziskaj, konf):
+    for pravidlo in konf['kategorie']:
+        if re.search(pravidlo['regex'], ziskaj(pravidlo['pole']), re.I):
+            return pravidlo
+    return None
+
+
+def st_hodnota(st, polia):
+    """Hodnota štítku: 'akcia' (je zľava), alebo mapa podľa kľúča z poľa."""
+    if st['typ'] == 'akcia':
+        return st['ano'] if polia.get('sale_price') else st['nie']
+    m = re.search(st['regex'], polia.get(st['pole'], ''))
+    if not m:
+        return ''
+    if m.group(1) not in st['mapa']:
+        raise Poistka('„%s“ (%s) nemá v konfigurácii štítok %s' % (polia['title'], m.group(1), st.get('popis', '')))
+    return st['mapa'][m.group(1)]
+
+
+PORADIE_META = ['id', 'item_group_id', 'title', 'description', 'link', 'image_link', 'additional_image_link',
+                'availability', 'condition', 'price', 'sale_price', 'brand', 'gtin', 'google_product_category',
+                'product_type', 'custom_label_0', 'custom_label_1', 'custom_label_2', 'custom_label_3', 'custom_label_4']
+
+
+def zapis_rss(konf, vystup):
+    ET.register_namespace('g', G)
+    rss = ET.Element('rss', {'version': '2.0'})
+    kanal = ET.SubElement(rss, 'channel')
+    for tag, text in (('title', konf.get('nazov', konf['klient'])), ('link', 'https://' + konf['povolene_domeny'][0]),
+                      ('description', 'Opravený feed pre Meta katalóg')):
+        ET.SubElement(kanal, tag).text = text
+    for polia in vystup:
+        it = ET.SubElement(kanal, 'item')
+        for pole in PORADIE_META:
+            hodn = polia.get(pole)
+            for h in (hodn if isinstance(hodn, list) else [hodn]):
+                if h:
+                    ET.SubElement(it, '{%s}%s' % (G, pole)).text = h
+    ET.indent(rss)
+    return ET.tostring(rss, encoding='utf-8', xml_declaration=True)
+
+
 def spracuj(cesta, vystup_koren):
     with open(cesta, encoding='utf-8') as f:
         konf = json.load(f)
-    pl = PLATFORMY[konf['platforma']]
-    zoznam = kategorie_zbozi(pl['zoznam_kategorii']) if pl.get('zoznam_kategorii') else None
-    popisy = popisy_woo(konf['popisy']['url']) if konf.get('popisy', {}).get('zdroj') == 'woo_store' else None
-    xml, suhrn = preved(konf, zoznam, popisy)
+    if konf['platforma'] == 'meta':
+        xml, suhrn = preved_meta(konf, woo_vsetko(konf['woo']), taxonomia_google(TAXONOMIA_GOOGLE))
+    else:
+        pl = PLATFORMY[konf['platforma']]
+        zoznam = kategorie_zbozi(pl['zoznam_kategorii']) if pl.get('zoznam_kategorii') else None
+        popisy = popisy_woo(konf['popisy']['url']) if konf.get('popisy', {}).get('zdroj') == 'woo_store' else None
+        woo = woo_vsetko(konf['over_woo']) if konf.get('over_woo') else None
+        if woo is not None and len(woo) < konf.get('min_woo', 100):
+            raise Poistka('Woo Store API vrátilo %d produktov, web je asi nedostupný' % len(woo))
+        xml, suhrn = preved(konf, zoznam, popisy, woo)
     ciel = os.path.join(vystup_koren, konf['vystup'])
     os.makedirs(os.path.dirname(ciel), exist_ok=True)
     docasny = ciel + '.tmp'

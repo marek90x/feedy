@@ -23,6 +23,11 @@
    "pole": "PRODUCT",
    "regex": "^Dárkový poukaz",
    "dovod": "dárkový poukaz"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "miska|dóza|zástěra|čepice|rukavice|teploměr|kartáč",
+   "dovod": "pomôcky (len kozmetika, Marek 6. 11.)"
   }
  ],
  "cistit_nazvy": {
@@ -118,11 +123,6 @@
    "pole": "PRODUCT",
    "regex": "krém|gel",
    "kategoria": "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Pleťové krémy"
-  },
-  {
-   "pole": "PRODUCT",
-   "regex": "miska|dóza|zástěra|čepice|rukavice|teploměr|kartáč",
-   "kategoria": "Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky"
   }
  ],
  "popis_zo_zakladneho": [
@@ -185,5 +185,6 @@
    "mix-at-home-by-voono": "mix"
   },
   "predpona_ostatnym": "VOONO "
- }
+ },
+ "over_woo": "https://www.voono.cz/wp-json/wc/store/v1/products"
 }

@@ -2,7 +2,6 @@
  "bez_popisu": [],
  "den": "2026-11-06",
  "kategoria": {
-  "Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky": 7,
   "Kosmetika a drogerie | Kosmetika | Kosmetické sady": 7,
   "Kosmetika a drogerie | Kosmetika | Opalování | Přípravky na opalování | Krémy na opalování": 1,
   "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Pleťová séra": 4,
@@ -11,7 +10,7 @@
   "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Odličování pleti a očí | Odličovače": 1,
   "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Čištění pleti a očí | Pleťové peelingy": 1,
   "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Čištění pleti a očí | Pleťové vody a tonika": 1,
-  "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Barvy na vlasy": 42,
+  "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Barvy na vlasy": 40,
   "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Kondicionéry a balzámy": 8,
   "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Stylingové přípravky": 2,
   "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Vlasová regenerace": 9,
@@ -20,20 +19,22 @@
  },
  "klient": "voono",
  "opravy": {
-  "ean_odstraneny": 30,
-  "html_v_nazve": 41,
-  "html_v_popise": 57,
-  "kod_v_nazve": 101,
-  "nazov_rozsireny": 196,
-  "popis_doplneny": 44
+  "ean_odstraneny": 23,
+  "html_v_nazve": 39,
+  "html_v_popise": 50,
+  "kod_v_nazve": 92,
+  "nazov_rozsireny": 182,
+  "popis_doplneny": 42
  },
  "platforma": "zbozi",
  "vyradene": {
   "1000 g (B2B)": 22,
   "URL nefunguje": 70,
   "dárkový poukaz": 2,
-  "kópia produktu": 6
+  "kópia produktu": 6,
+  "nie je na webe (Woo)": 2,
+  "pomôcky (len kozmetika, Marek 6. 11.)": 7
  },
- "vystup_ponuk": 101,
+ "vystup_ponuk": 92,
  "zdroj_ponuk": 201
 }

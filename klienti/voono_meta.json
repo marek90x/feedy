@@ -1,0 +1,237 @@
+{
+ "klient": "voono",
+ "platforma": "meta",
+ "nazov": "VOONO",
+ "zdroj": "https://www.voono.cz/app/uploads/xml/feed_google_merchants_1.xml",
+ "vystup": "voono/meta.xml",
+ "povolene_domeny": [
+  "voono.cz"
+ ],
+ "mena": "CZK",
+ "woo": "https://www.voono.cz/wp-json/wc/store/v1/products",
+ "min_woo": 100,
+ "min_ponuk": 150,
+ "min_vystup": 80,
+ "over_url": true,
+ "max_podiel_mrtvych": 0.6,
+ "_poznamka": "Meta katalóg CZ (nový katalóg, Marek 6. 11. 2026). ID = Woo ID, páruje sa s pixelom CZ 405460924254766; ID nikdy nemeniť. Cena, zľava a sklad sa berú z webu (Woo Store API), Google feed má staré ceny variantov.",
+ "vyradit": [
+  {
+   "pole": "title",
+   "regex": "1000\\s?g",
+   "dovod": "1000 g (B2B)"
+  },
+  {
+   "pole": "title",
+   "regex": "Kopírovat",
+   "dovod": "kópia produktu"
+  },
+  {
+   "pole": "title",
+   "regex": "^Dárkový poukaz",
+   "dovod": "dárkový poukaz"
+  },
+  {
+   "pole": "title",
+   "regex": "miska|dóza|zástěra|čepice|rukavice|teploměr|kartáč",
+   "dovod": "pomôcky (len kozmetika, Marek 6. 11.)"
+  }
+ ],
+ "doplnit": {
+  "brand": "VOONO",
+  "condition": "new"
+ },
+ "kategorie": [
+  {
+   "pole": "title",
+   "regex": "psí šampon",
+   "kategoria": "Ostatní > Psí kosmetika",
+   "gpc": 6406
+  },
+  {
+   "pole": "link",
+   "regex": "/vlasova-pece/barvy/(champagne-pink-blonde|light-ash-brown|dark-ash-blonde)/",
+   "kategoria": "Barvy na vlasy > Bez henny",
+   "gpc": 2814
+  },
+  {
+   "pole": "link",
+   "regex": "/vlasova-pece/barvy/(indigo|cassia-obovata-bezbarva|predpigmentacni-barva|mix-at-home-by-voono)/",
+   "kategoria": "Barvy na vlasy > Indigo, Cassia a ostatní",
+   "gpc": 2814
+  },
+  {
+   "pole": "link",
+   "regex": "/vlasova-pece/barvy/",
+   "kategoria": "Barvy na vlasy > Henna",
+   "gpc": 2814
+  },
+  {
+   "pole": "title",
+   "regex": "kazeta|\\bset\\b|^dárek|^malý dárek|balíček",
+   "kategoria": "Dárkové sady",
+   "gpc": 6069
+  },
+  {
+   "pole": "title",
+   "regex": "^(cestovní )?mini.*kondicionér",
+   "kategoria": "Vlasová péče > Cestovní mini",
+   "gpc": 543616
+  },
+  {
+   "pole": "title",
+   "regex": "^(cestovní )?mini",
+   "kategoria": "Vlasová péče > Cestovní mini",
+   "gpc": 543615
+  },
+  {
+   "pole": "title",
+   "regex": "šamp(on|uk)",
+   "kategoria": "Vlasová péče > Šampony",
+   "gpc": 543615
+  },
+  {
+   "pole": "title",
+   "regex": "kondicionér",
+   "kategoria": "Vlasová péče > Kondicionéry",
+   "gpc": 543616
+  },
+  {
+   "pole": "title",
+   "regex": "fixační|sea salt",
+   "kategoria": "Vlasová péče > Styling",
+   "gpc": 1901
+  },
+  {
+   "pole": "title",
+   "regex": "maska|^tricholog|^ibišek|^amla|hair of gaurí|oplach|balzám|keratinový sprej|detox c",
+   "kategoria": "Vlasová péče > Masky a regenerace",
+   "gpc": 486
+  },
+  {
+   "pole": "title",
+   "regex": "sérum",
+   "kategoria": "Pleťová péče > Séra",
+   "gpc": 567
+  },
+  {
+   "pole": "title",
+   "regex": "toner",
+   "kategoria": "Pleťová péče > Čištění",
+   "gpc": 543658
+  },
+  {
+   "pole": "title",
+   "regex": "peeling",
+   "kategoria": "Pleťová péče > Čištění",
+   "gpc": 6262
+  },
+  {
+   "pole": "title",
+   "regex": "oil to milk",
+   "kategoria": "Pleťová péče > Čištění",
+   "gpc": 2526
+  },
+  {
+   "pole": "title",
+   "regex": "spf",
+   "kategoria": "Pleťová péče > Ochrana před sluncem",
+   "gpc": 2844
+  },
+  {
+   "pole": "title",
+   "regex": "krém|gel",
+   "kategoria": "Pleťová péče > Krémy",
+   "gpc": 2592
+  }
+ ],
+ "stitky": {
+  "custom_label_0": {
+   "typ": "akcia",
+   "ano": "akce",
+   "nie": "bez akce",
+   "popis": "akce"
+  },
+  "custom_label_1": {
+   "typ": "mapa",
+   "popis": "tón barvy",
+   "pole": "link",
+   "regex": "/vlasova-pece/barvy/([^/?]+)/",
+   "mapa": {
+    "burgundy": "červená a měděná",
+    "peach-blonde": "blond",
+    "chestnut": "hnědá",
+    "fire-red": "červená a měděná",
+    "strawberry-blonde": "blond",
+    "henna-wine-red": "červená a měděná",
+    "henna-soft-black": "černá",
+    "henna-rose-brown": "hnědá",
+    "henna-orange": "červená a měděná",
+    "henna-medium-brown": "hnědá",
+    "henna-light-brown": "hnědá",
+    "henna-dark-brown": "hnědá",
+    "henna-copper": "červená a měděná",
+    "champagne-pink-blonde": "blond",
+    "light-ash-brown": "hnědá",
+    "dark-ash-blonde": "blond",
+    "indigo": "černá",
+    "cassia-obovata-bezbarva": "bezbarvá",
+    "predpigmentacni-barva": "předpigmentace",
+    "mix-at-home-by-voono": "mix"
+   }
+  }
+ },
+ "premenovat": {
+  "_poznamka": "Šablóna podľa zloženia z „Složení“ na stránke produktu, overené 6. 11. 2026. Henna = obsahuje Lawsonia. Nový odtieň: over zloženie a doplň do mapy, inak beh zastaví poistka.",
+  "kluc": {
+   "pole": "link",
+   "regex": "/vlasova-pece/barvy/([^/?]+)/"
+  },
+  "odtien": {
+   "pole": "title",
+   "regex": "^(?:Henna )?(.+?)\\s+-\\s+(?:S obalem|Bez obalu)",
+   "upravy": [
+    [
+     "\"",
+     ""
+    ],
+    [
+     "\\s+-\\s+",
+     " "
+    ]
+   ]
+  },
+  "sablony": {
+   "henna": "VOONO Henna barva na vlasy {odtien} {param:Objem} {param:Balení|lower}",
+   "prirodna": "VOONO Přírodní barva na vlasy {odtien} {param:Objem} {param:Balení|lower}",
+   "indigo": "VOONO Indigo přírodní barva na vlasy {param:Objem} {param:Balení|lower}",
+   "cassia": "VOONO Cassia Obovata bezbarvá henna {param:Objem} {param:Balení|lower}",
+   "predpigmentacni": "VOONO Předpigmentační henna barva na vlasy {param:Objem} {param:Balení|lower}",
+   "mix": "VOONO Mix at home sada přírodních barev na vlasy"
+  },
+  "mapa": {
+   "burgundy": "henna",
+   "peach-blonde": "henna",
+   "chestnut": "henna",
+   "fire-red": "henna",
+   "strawberry-blonde": "henna",
+   "henna-wine-red": "henna",
+   "henna-soft-black": "henna",
+   "henna-rose-brown": "henna",
+   "henna-orange": "henna",
+   "henna-medium-brown": "henna",
+   "henna-light-brown": "henna",
+   "henna-dark-brown": "henna",
+   "henna-copper": "henna",
+   "champagne-pink-blonde": "prirodna",
+   "light-ash-brown": "prirodna",
+   "dark-ash-blonde": "prirodna",
+   "indigo": "indigo",
+   "cassia-obovata-bezbarva": "cassia",
+   "predpigmentacni-barva": "predpigmentacni",
+   "mix-at-home-by-voono": "mix"
+  },
+  "predpona_ostatnym": "VOONO "
+ },
+ "gtin_predpona": "859"
+}
