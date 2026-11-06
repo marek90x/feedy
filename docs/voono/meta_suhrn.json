@@ -2,9 +2,9 @@
  "bez_popisu": [],
  "den": "2026-11-06",
  "kategoria": {
-  "Barvy na vlasy > Bez henny": 6,
-  "Barvy na vlasy > Henna": 28,
-  "Barvy na vlasy > Indigo, Cassia a ostatní": 5,
+  "Barvy na vlasy > Bez henny": 3,
+  "Barvy na vlasy > Henna": 15,
+  "Barvy na vlasy > Indigo, Cassia a ostatní": 4,
   "Dárkové sady": 7,
   "Ostatní > Psí kosmetika": 1,
   "Pleťová péče > Krémy": 3,
@@ -19,58 +19,41 @@
  },
  "klient": "voono",
  "opravy": {
-  "cena_z_webu": 19,
-  "gtin_odstraneny": 11,
-  "nazov_rozsireny": 90,
-  "obrazky_z_webu": 25,
+  "cena_z_webu": 2,
+  "gtin_odstraneny": 4,
+  "nazov_rozsireny": 73,
+  "obrazky_z_webu": 14,
   "popis_z_webu": 0,
-  "sklad_z_webu": 4
+  "sklad_z_webu": 1
  },
  "platforma": "meta",
  "stitky": {
   "custom_label_0": {
    "akce": 7,
-   "bez akce": 84
+   "bez akce": 67
   },
   "custom_label_1": {
-   "bezbarvá": 2,
-   "blond": 8,
-   "hnědá": 13,
+   "bezbarvá": 1,
+   "blond": 4,
+   "hnědá": 7,
    "mix": 1,
    "předpigmentace": 1,
-   "černá": 3,
-   "červená a měděná": 11
+   "černá": 2,
+   "červená a měděná": 6
   }
  },
  "vyradene": {
   "1000 g (B2B)": 22,
-  "URL nefunguje": 66,
+  "URL nefunguje": 65,
   "dárkový poukaz": 2,
   "kópia produktu": 4,
-  "nie je na webe (Woo)": 2,
-  "pomôcky (len kozmetika, Marek 6. 11.)": 7
+  "pomôcky (len kozmetika, Marek 6. 11.)": 7,
+  "varianty bez obalu (spoločná fotka vrecka bez odtieňa, Marek 6. 11.)": 20
  },
- "vystup_ponuk": 91,
+ "vystup_ponuk": 74,
  "zdroj_ponuk": 194,
  "zmeny_cien": [
-  "9888 Burgundy - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "7154 Peach blonde - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3319 Chestnut - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3308 Fire red - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3752 Light Ash Brown - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3734 Strawberry blonde - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3801 Dark Ash Blonde - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3757 Wine Red - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3762 Henna Soft Black - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3767 Henna Rose Brown - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3771 Orange - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3776 Henna Medium Brown - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3781 Henna Light Brown - HONEY - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3791 Dark Brown - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
   "3792 Dark Brown - S obalem, 500 g: feed 629.00/629.00, web 649.00/649.00",
-  "3745 Cassia Obovata - Bez obalu, 100 g: feed 229.00/229.00, web 249.00/249.00",
-  "3796 Copper - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00",
-  "3797 Copper - S obalem, 500 g: feed 629.00/629.00, web 649.00/649.00",
-  "21095 Champagne Pink Blonde - Bez obalu, 100 g: feed 249.00/249.00, web 279.00/279.00"
+  "3797 Copper - S obalem, 500 g: feed 629.00/629.00, web 649.00/649.00"
  ]
 }
