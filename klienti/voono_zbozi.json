@@ -1,0 +1,133 @@
+{
+ "klient": "voono",
+ "platforma": "zbozi",
+ "zdroj": "https://www.voono.cz/app/uploads/xml/feed_zbozi_1.xml",
+ "vystup": "voono/zbozi.xml",
+ "povolene_domeny": [
+  "voono.cz"
+ ],
+ "min_ponuk": 150,
+ "min_vystup": 80,
+ "vyradit": [
+  {
+   "pole": "PRODUCT",
+   "regex": "1000\\s?g",
+   "dovod": "1000 g (B2B)"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "Kopírovat",
+   "dovod": "kópia produktu"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "^Dárkový poukaz",
+   "dovod": "dárkový poukaz"
+  }
+ ],
+ "cistit_nazvy": {
+  "polia": [
+   "PRODUCTNAME",
+   "PRODUCT"
+  ],
+  "odstranit": [
+   "\\s*\\(#?\\d{4,8}(-\\d+)?\\)"
+  ]
+ },
+ "doplnit": {
+  "MANUFACTURER": "VOONO"
+ },
+ "ean": "len_platne",
+ "popisy": {
+  "zdroj": "woo_store",
+  "url": "https://www.voono.cz/wp-json/wc/store/v1/products"
+ },
+ "kategorie_podla_id": {},
+ "kategorie": [
+  {
+   "pole": "PRODUCT",
+   "regex": "psí šampon",
+   "kategoria": "Kultura a zábava | Volný čas | Chovatelské potřeby | Pro psy | Psí zdraví a hygiena | Kosmetika pro psy"
+  },
+  {
+   "pole": "URL",
+   "regex": "/vlasova-pece/barvy/",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Barvy na vlasy"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "^(Eko balíček|Předpigmentační set|Set pro začátečníky)",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Barvy na vlasy"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "kazeta|\\bset\\b|^dárek|^malý dárek",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Kosmetické sady"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "šamp(on|uk)",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Šampony"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "kondicionér",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Kondicionéry a balzámy"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "fixační|sea salt",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Stylingové přípravky"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "maska|^tricholog|^ibišek|^amla|hair of gaurí|oplach|balzám|keratinový sprej|detox c",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Vlasová regenerace"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "sérum",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Pleťová séra"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "toner",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Čištění pleti a očí | Pleťové vody a tonika"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "peeling",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Čištění pleti a očí | Pleťové peelingy"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "oil to milk",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Odličování pleti a očí | Odličovače"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "spf 50 tyčinka",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Opalování | Přípravky na opalování | Krémy na opalování"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "pod oči",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Péče o oční okolí"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "krém|gel",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Pleťové krémy"
+  },
+  {
+   "pole": "PRODUCT",
+   "regex": "miska|dóza|zástěra|čepice|rukavice|teploměr|kartáč",
+   "kategoria": "Kosmetika a drogerie | Kosmetika | Kosmetické pomůcky | Ostatní kosmetické pomůcky"
+  }
+ ],
+ "popis_zo_zakladneho": [
+  "\\s*[-–]?\\s*ZACHRA[ŇN] PRODUKT.*$"
+ ],
+ "over_url": true,
+ "max_podiel_mrtvych": 0.6
+}

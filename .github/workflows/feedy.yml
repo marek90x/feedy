@@ -1,0 +1,40 @@
+name: feedy
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # 4x denne (UTC)
+  workflow_dispatch:
+  push:
+    paths: ['prevod.py', 'klienti/**', '.github/workflows/feedy.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: feedy
+  cancel-in-progress: false
+
+jobs:
+  prevod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Testy poistiek
+        run: python test_prevod.py
+      - name: Prevod feedov
+        id: prevod
+        # Chyba jedného klienta nezastaví zápis ostatných; jeho feed ostane posledný dobrý.
+        run: python prevod.py --vsetky || echo "zlyhalo=1" >> "$GITHUB_OUTPUT"
+      - name: Zverejnenie
+        run: |
+          git config user.name "feed-prevodnik"
+          git config user.email "feed-prevodnik@users.noreply.github.com"
+          git add docs
+          git diff --cached --quiet || { git commit -m "feedy $(date -u +%F\ %H:%M)"; git push; }
+      - name: Poistka zastavila feed
+        if: steps.prevod.outputs.zlyhalo == '1'
+        # Neúspešný beh = GitHub pošle mail vlastníkovi repa.
+        run: exit 1
