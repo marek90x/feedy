@@ -11,7 +11,7 @@
  "woo": "https://www.voono.cz/wp-json/wc/store/v1/products",
  "min_woo": 100,
  "min_ponuk": 150,
- "min_vystup": 80,
+ "min_vystup": 65,
  "over_url": true,
  "max_podiel_mrtvych": 0.6,
  "_poznamka": "Meta katalóg CZ (nový katalóg, Marek 6. 11. 2026). ID = Woo ID, páruje sa s pixelom CZ 405460924254766; ID nikdy nemeniť. Cena, zľava a sklad sa berú z webu (Woo Store API), Google feed má staré ceny variantov.",
@@ -35,6 +35,11 @@
    "pole": "title",
    "regex": "miska|dóza|zástěra|čepice|rukavice|teploměr|kartáč",
    "dovod": "pomôcky (len kozmetika, Marek 6. 11.)"
+  },
+  {
+   "pole": "title",
+   "regex": "bez obalu",
+   "dovod": "varianty bez obalu (spoločná fotka vrecka bez odtieňa, Marek 6. 11.)"
   }
  ],
  "doplnit": {
