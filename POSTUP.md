@@ -120,7 +120,7 @@ Zboží cez Fénix `GET /nakupy/feeds/?premiseId=<id>` (`feedUrl`, `lastSuccessf
 ## Prevádzka
 
 - Beh 4× denne (`.github/workflows/feedy.yml`, cron `17 */6 * * *` UTC), ručne cez Actions → feedy → Run workflow.
-- Pri poistke alebo chybe GitHub pošle mail na petras.marek.mp@gmail.com (Actions: Failed workflows only)
+- Pri poistke alebo chybe GitHub pošle mail na Marekov mail z nastavení GitHubu (Notifications → Actions: Failed workflows only)
   a zverejnený feed ostane posledný dobrý.
 - Chyba jedného klienta nezastaví ostatných.
 - Plánované behy sa vypnú po 60 dňoch bez commitu; `den` v súhrne zaručí denný commit.
