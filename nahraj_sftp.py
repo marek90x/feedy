@@ -15,7 +15,7 @@ from urllib.parse import urlparse, unquote
 
 # kanál: (súbor v docs, secret s adresou, secret s heslom)
 CIELE = {
-    'jahodarna CZ': ('docs/jahodarna/openai_cz.jsonl.gz', 'OA_SFTP_URI_JAHODARNA_CZ', 'JAHODARNA_CZ_OPENAI'),
+    'jahodarna CZ': ('docs/jahodarna/openai_cz.jsonl.gz', 'OA_SFTP_URI_JAHODARNA_CZ', 'OA_SFTP_HESLO_JAHODARNA_CZ'),
     'jahodarna SK': ('docs/jahodarna/openai_sk.jsonl.gz', 'OA_SFTP_URI_JAHODARNA_SK', 'JAHODARNA_SK_OPENAI'),
 }
 VZDIALENY_NAZOV = 'products.jsonl.gz'
