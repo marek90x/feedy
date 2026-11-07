@@ -13,6 +13,7 @@ zverejnenie) **a [PASCE.md](PASCE.md)** (špecifikácie, validátory a pasce pre
 | `prevod.py` | jadro, len štandardná knižnica Pythonu |
 | `klienti/<klient>_<platforma>.json` | konfigurácia jedného feedu: zdroj, výstup, domény, vyradenie, čistenie, kategórie |
 | `test_prevod.py` | testy poistiek bez siete |
+| `nahraj_sftp.py` | nahrá OpenAI feedy do kanálov OpenAI Ads cez SFTP (prístupy v GitHub secrets, chýbajúci = preskočí) |
 | `docs/<klient>/<platforma>.xml` | opravený feed (GitHub Pages); OpenAI Ads ako `.jsonl.gz` |
 | `docs/<klient>/<platforma>_suhrn.json` | čo sa v poslednom behu vyradilo a opravilo |
 | `.github/workflows/feedy.yml` | beh 4× denne, commit výstupu, pri poistke mail od GitHubu |
@@ -34,8 +35,8 @@ Kód 2 = poistka alebo chyba aspoň u jedného klienta; jeho opravený feed osta
 | Voono | Zboží | https://www.voono.cz/app/uploads/xml/feed_zbozi_1.xml | https://marek90x.github.io/feedy/voono/zbozi.xml (ostrý od 6. 11. 2026) |
 | Voono CZ | Meta katalóg (nový CZ katalóg) | https://www.voono.cz/app/uploads/xml/feed_google_merchants_1.xml + Woo Store API (ceny, sklad) | https://marek90x.github.io/feedy/voono/meta.xml (ostrý od 6. 11. 2026, katalóg „VOONO CZ \| feed 2027 m“ 28998039579846275, feed 1421935526282230, hodinovo, pixel CZ 405460924254766) |
 | Voono SK | Meta katalóg (nový SK katalóg) | https://www.voono.cz/app/uploads/sites/2/xml/feed_google_merchants_2.xml + Woo Store API voono.sk (ceny, sklad) | https://marek90x.github.io/feedy/voono/meta_sk.xml (ostrý od 7. 11. 2026, katalóg „Voono SK 2027 m“ 1095933540108266, feed 4644695039143114, hodinovo, pixel SK 545771136535600) |
-| Jahodárna CZ | OpenAI Ads (kanál „Hostovaná URL adresa“) | https://www.jahodarnabrozany.cz/google/export/products.xml | https://marek90x.github.io/feedy/jahodarna/openai_cz.jsonl.gz (od 7. 11. 2026, len cibuloviny, trvalky, jahody, ruže; čaká na prepnutie kanála v Ads Manageri) |
-| Jahodárna SK | OpenAI Ads (kanál „Hostovaná URL adresa“) | https://www.zahradnictvobrozany.sk/google/export/products.xml | https://marek90x.github.io/feedy/jahodarna/openai_sk.jsonl.gz (od 7. 11. 2026, rovnaké pravidlá; čaká na prepnutie kanála) |
+| Jahodárna CZ | OpenAI Ads (kanál „Hostovaná URL adresa“) | https://www.jahodarnabrozany.cz/google/export/products.xml | https://marek90x.github.io/feedy/jahodarna/openai_cz.jsonl.gz (od 7. 11. 2026, do kanála ide cez SFTP, hostovanú URL OpenAI načítal ako 0; len cibuloviny, trvalky, jahody, ruže; čaká na prepnutie kanála v Ads Manageri) |
+| Jahodárna SK | OpenAI Ads (kanál „Hostovaná URL adresa“) | https://www.zahradnictvobrozany.sk/google/export/products.xml | https://marek90x.github.io/feedy/jahodarna/openai_sk.jsonl.gz (od 7. 11. 2026, do kanála ide cez SFTP, hostovanú URL OpenAI načítal ako 0; rovnaké pravidlá; čaká na prepnutie kanála) |
 
 ## Nový klient alebo platforma
 
