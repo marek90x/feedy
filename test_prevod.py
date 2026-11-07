@@ -204,5 +204,75 @@ class Test(unittest.TestCase):
         self.assertFalse(prevod.ean_platny('100118'))
 
 
+# --- OpenAI Ads ---------------------------------------------------------------------------------------
+
+def rss_shoptet(*polozky):
+    telo = ''.join('<item><g:id>%s</g:id><title>%s</title><description><![CDATA[%s]]></description>'
+                   '<g:product_type>%s</g:product_type><link>%s</link><g:image_link>%s</g:image_link>'
+                   '<g:availability>%s</g:availability><g:price>%s</g:price>%s</item>' % p for p in polozky)
+    return ('<?xml version="1.0"?><rss xmlns:g="http://base.google.com/ns/1.0"><channel>%s</channel></rss>' % telo).encode()
+
+
+def konf_oa(**zmena):
+    k = {'klient': 'jahodarna', 'platforma': 'openai', 'zdroj': 'x', 'vystup': 'j/openai.jsonl.gz',
+         'povolene_domeny': ['jahodarnabrozany.cz'], 'povolene_obrazky': ['cdn.myshoptet.com/usr/www.jahodarnabrozany.cz/'],
+         'mena': 'CZK', 'min_ponuk': 1, 'len_skladom': True, 'zaradit': ['^Cibuloviny', '^Růže'],
+         'vyradit': [{'pole': 'product_type', 'regex': '> Vše pro ', 'dovod': 'príslušenstvo'}],
+         'znacka_ak_chyba': 'Jahodárna Brozany', 'predajca': {'seller_name': 'Jahodárna Brozany nad Ohří s.r.o.'}}
+    k.update(zmena)
+    return k
+
+
+IMG = 'https://cdn.myshoptet.com/usr/www.jahodarnabrozany.cz/user/shop/orig/1.jpg'
+TULIPAN = ('1', 'Tulipán Oxford', 'Popis &nbsp;tulipánu', 'Cibuloviny a hlízy > Jarní cibuloviny',
+           'https://www.jahodarnabrozany.cz/t/', IMG, 'in stock', '59.00 CZK', '')
+RUZA = ('2', 'Růže Kordes', 'Popis', 'Růže > Parfuma růže', 'https://www.jahodarnabrozany.cz/r/', IMG, 'in stock',
+        '399.00 CZK', '<g:brand>Kordes Roses</g:brand><g:sale_price>299.00 CZK</g:sale_price>')
+
+
+class TestOpenAI(unittest.TestCase):
+    def preved(self, xml, k, predchadzajuce=None):
+        with mock.patch.object(prevod, 'stiahni', return_value=xml):
+            return prevod.preved_openai(k, predchadzajuce)
+
+    def riadky(self, gz):
+        import gzip, json
+        return [json.loads(r) for r in gzip.decompress(gz).decode().splitlines()]
+
+    def test_znacka_len_ked_chyba(self):
+        gz, s = self.preved(rss_shoptet(TULIPAN, RUZA), konf_oa())
+        r = {x['item_id']: x for x in self.riadky(gz)}
+        self.assertEqual(r['1']['brand'], 'Jahodárna Brozany')
+        self.assertEqual(r['2']['brand'], 'Kordes Roses')
+        self.assertEqual(r['2']['sale_price'], '299.00 CZK')
+        self.assertEqual(r['1']['description'], 'Popis tulipánu')
+        self.assertEqual(r['1']['availability'], 'in_stock')
+        self.assertTrue(r['1']['is_ads_eligible'])
+        self.assertEqual(s['opravy']['znacka_doplnena'], 1)
+
+    def test_vyber_kategorii_a_skladu(self):
+        semena = ('3', 'Semena', 'x', 'Semena a osiva', 'https://www.jahodarnabrozany.cz/s/', IMG, 'in stock', '9.00 CZK', '')
+        lopatka = ('4', 'Lopatka', 'x', 'Cibuloviny a hlízy > Vše pro květiny', 'https://www.jahodarnabrozany.cz/l/', IMG,
+                   'in stock', '9.00 CZK', '')
+        vypredane = TULIPAN[:6] + ('out of stock',) + TULIPAN[7:]
+        vypredane = ('5',) + vypredane[1:]
+        gz, s = self.preved(rss_shoptet(TULIPAN, semena, lopatka, vypredane), konf_oa())
+        self.assertEqual([x['item_id'] for x in self.riadky(gz)], ['1'])
+        self.assertEqual(s['vyradene'], {'mimo vybraných kategórií': 1, 'príslušenstvo': 1, 'nie je skladom': 1})
+
+    def test_cudzi_obrazok_zastavi(self):
+        cudzi = TULIPAN[:5] + ('https://cdn.myshoptet.com/usr/www.voono.cz/user/shop/orig/1.jpg',) + TULIPAN[6:]
+        with self.assertRaises(prevod.Poistka):
+            self.preved(rss_shoptet(cudzi), konf_oa())
+
+    def test_prepad_zastavi(self):
+        with self.assertRaises(prevod.Poistka):
+            self.preved(rss_shoptet(TULIPAN), konf_oa(), predchadzajuce={'1', '2', '3'})
+
+    def test_nulova_ponuka_zastavi(self):
+        with self.assertRaises(prevod.Poistka):
+            self.preved(rss_shoptet(), konf_oa())
+
+
 if __name__ == '__main__':
     unittest.main()

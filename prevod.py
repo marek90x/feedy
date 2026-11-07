@@ -16,6 +16,7 @@ import concurrent.futures
 import csv
 import datetime
 import glob
+import gzip
 import html
 import io
 import json
@@ -572,10 +573,184 @@ def zapis_rss(konf, vystup):
     return ET.tostring(rss, encoding='utf-8', xml_declaration=True)
 
 
+# ---------------------------------------------------------------------------------------------------
+# OpenAI Ads (kanál „Hostovaná URL adresa“): zdroj je Google Merchant RSS Shoptetu, výstup JSONL.gz.
+# Špecifikácia: https://developers.openai.com/commerce/specs/file-upload/products (pasce v PASCE.md).
+
+def povoleny_obrazok(url, konf):
+    """Obrázok na doméne klienta alebo na CDN Shoptetu v priečinku klienta (cdn.myshoptet.com/usr/www.<doména>/)."""
+    cast = urllib.parse.urlsplit(url)
+    host = cast.hostname or ''
+    if any(host == d or host.endswith('.' + d) for d in konf['povolene_domeny']):
+        return True
+    return any((host + cast.path).startswith(p) for p in konf.get('povolene_obrazky', []))
+
+
+def popis_z_parametrov(it):
+    """Čistý text z parametrov produktu (Stanoviště: Slunce, Polostín. …), keď Shoptet popis nemá."""
+    par = {}
+    for d in it.findall('{%s}product_detail' % G):
+        meno, hodn = (d.findtext('{%s}attribute_name' % G) or '').strip(), (d.findtext('{%s}attribute_value' % G) or '').strip()
+        if meno and hodn and hodn not in par.setdefault(meno, []):
+            par[meno].append(hodn)
+    return ' '.join('%s: %s.' % (m, ', '.join(v)) for m, v in par.items())
+
+
+def preved_openai(konf, predchadzajuce_id=None):
+    """Vráti (bajty JSONL.gz, súhrn). Vyberá len kategórie z konfigurácie, značku dopĺňa len tam, kde chýba."""
+    gv = lambda it, t: (it.findtext('{%s}%s' % (G, t)) or it.findtext(t) or '').strip()
+    try:
+        koren = ET.fromstring(stiahni(konf['zdroj']))
+    except Exception as e:
+        raise Poistka('zdrojový feed sa nedá stiahnuť alebo prečítať: %s' % e)
+    polozky = koren.findall('channel/item')
+    suhrn = {'klient': konf['klient'], 'platforma': konf['platforma'], 'zdroj_ponuk': len(polozky), 'vyradene': {},
+             'kategoria': {}, 'opravy': {'znacka_doplnena': 0, 'popis_z_parametrov': 0, 'gtin_odstraneny': 0},
+             'znacky': {}, 'vyradene_id': {}}
+    if len(polozky) < konf['min_ponuk']:
+        raise Poistka('zdroj má %d ponúk, minimum je %d' % (len(polozky), konf['min_ponuk']))
+
+    def vyrad(p, dovod):
+        suhrn['vyradene'][dovod] = suhrn['vyradene'].get(dovod, 0) + 1
+        suhrn['vyradene_id'].setdefault(dovod, []).append(gv(p, 'id'))
+
+    # Výber: len kategórie z konfigurácie (product_type), potom vylúčenia (príslušenstvo, letničky) a sklad.
+    vybrane = []
+    for p in polozky:
+        typ = gv(p, 'product_type')
+        if not any(re.search(r, typ) for r in konf['zaradit']):
+            suhrn['vyradene']['mimo vybraných kategórií'] = suhrn['vyradene'].get('mimo vybraných kategórií', 0) + 1
+            continue
+        dovod = next((v['dovod'] for v in konf.get('vyradit', []) if re.search(v['regex'], gv(p, v['pole']), re.I)), None)
+        if not dovod and konf.get('len_skladom') and gv(p, 'availability') != 'in stock':
+            dovod = 'nie je skladom'
+        if dovod:
+            vyrad(p, dovod)
+            continue
+        vybrane.append(p)
+
+    mrtve = set()
+    if konf.get('over_url'):
+        urls = sorted({gv(p, 'link') for p in vybrane})
+        with concurrent.futures.ThreadPoolExecutor(8) as ex:
+            stavy = dict(zip(urls, ex.map(http_ciel, urls)))
+        mrtve = {u for u, (kod, ciel) in stavy.items() if not url_ziva((kod, u, ciel))}
+        podiel = len(mrtve) / max(len(urls), 1)
+        if podiel > konf.get('max_podiel_mrtvych', 0.5):
+            raise Poistka('%d z %d URL nefunguje (%.0f %%), web je asi nedostupný' % (len(mrtve), len(urls), 100 * podiel))
+
+    stav_sklad = {'in stock': 'in_stock', 'out of stock': 'out_of_stock', 'preorder': 'pre_order', 'backorder': 'backorder'}
+    vystup, gtiny = [], {}
+    for p in vybrane:
+        pid = gv(p, 'id')
+        link, obrazok = gv(p, 'link'), gv(p, 'image_link')
+        if link in mrtve:
+            vyrad(p, 'URL nefunguje')
+            continue
+        if not obrazok:
+            vyrad(p, 'chýba obrázok')
+            continue
+        host = urllib.parse.urlsplit(link).hostname or ''
+        if not any(host == d or host.endswith('.' + d) for d in konf['povolene_domeny']):
+            raise Poistka('link %s mimo povolených domén: %s' % (pid, link))
+        if not povoleny_obrazok(obrazok, konf):
+            raise Poistka('image_link %s mimo povolených domén: %s' % (pid, obrazok))
+        try:
+            suma, mena = gv(p, 'price').split()
+            bezna = float(suma)
+        except ValueError:
+            vyrad(p, 'chýba cena')
+            continue
+        if mena != konf['mena']:
+            raise Poistka('%s má menu %s, feed je v %s' % (pid, mena, konf['mena']))
+        if bezna <= 0:
+            vyrad(p, 'nulová cena')
+            continue
+        sklad = stav_sklad.get(gv(p, 'availability'))
+        if sklad is None:
+            raise Poistka('%s: neznámy stav skladu „%s“' % (pid, gv(p, 'availability')))
+
+        popis = cisty_text(gv(p, 'description'))
+        if not popis:
+            popis = popis_z_parametrov(p)
+            if popis:
+                suhrn['opravy']['popis_z_parametrov'] += 1
+        if not popis:
+            vyrad(p, 'chýba popis')
+            continue
+
+        polia = {'item_id': pid, 'title': bez_html(gv(p, 'title')), 'description': popis[:5000], 'url': link,
+                 'image_url': obrazok, 'price': '%.2f %s' % (bezna, mena), 'availability': sklad,
+                 'condition': 'new', 'product_category': ' > '.join(x.strip() for x in gv(p, 'product_type').split('>'))}
+        dalsie = [e.text.strip() for e in p.findall('{%s}additional_image_link' % G) if (e.text or '').strip()]
+        dalsie = [u for u in dalsie if u != obrazok and povoleny_obrazok(u, konf)]
+        if dalsie:
+            polia['additional_image_urls'] = dalsie[:10]
+        if gv(p, 'sale_price'):
+            akcna = float(gv(p, 'sale_price').split()[0])
+            if 0 < akcna < bezna:
+                polia['sale_price'] = '%.2f %s' % (akcna, mena)
+
+        # Značka: skutočná zo Shoptetu (Kordes Roses, SEMO…), inak potvrdená hodnota z konfigurácie (Marek 7. 11. 2026).
+        polia['brand'] = gv(p, 'brand') or konf['znacka_ak_chyba']
+        if not gv(p, 'brand'):
+            suhrn['opravy']['znacka_doplnena'] += 1
+        suhrn['znacky'][polia['brand']] = suhrn['znacky'].get(polia['brand'], 0) + 1
+
+        gtin = gv(p, 'gtin')
+        if gtin and ean_platny(gtin):
+            polia['gtin'] = gtin
+            gtiny.setdefault(gtin, []).append(pid)
+        elif gtin:
+            suhrn['opravy']['gtin_odstraneny'] += 1
+
+        polia.update(konf['predajca'])
+        polia.update({'is_eligible_search': True, 'is_eligible_checkout': False, 'is_ads_eligible': True})
+        hlavna = polia['product_category'].split(' > ')[0]
+        suhrn['kategoria'][hlavna] = suhrn['kategoria'].get(hlavna, 0) + 1
+        vystup.append(polia)
+
+    # GTIN identifikuje jeden tovar; zdieľaný medzi rôznymi položkami sa vynechá.
+    for gtin, ids in gtiny.items():
+        if len(ids) > 1:
+            for polia in vystup:
+                if polia.get('gtin') == gtin:
+                    del polia['gtin']
+                    suhrn['opravy']['gtin_odstraneny'] += 1
+    ids = [pol['item_id'] for pol in vystup]
+    if len(ids) != len(set(ids)):
+        raise Poistka('duplicitné item_id: %s' % ', '.join(sorted({i for i in ids if ids.count(i) > 1})[:10]))
+    suhrn['sklad'] = {s: sum(1 for pol in vystup if pol['availability'] == s) for s in {pol['availability'] for pol in vystup}}
+    suhrn['vystup_ponuk'] = len(vystup)
+    if len(vystup) < konf.get('min_vystup', 1):
+        raise Poistka('po úprave ostalo %d ponúk, minimum je %d' % (len(vystup), konf['min_vystup']))
+    if predchadzajuce_id is not None:
+        suhrn['pribudlo'] = len(set(ids) - predchadzajuce_id)
+        suhrn['ubudlo'] = len(predchadzajuce_id - set(ids))
+        # Shoptet 29. 10.–4. 11. 2026 posielal OpenAI 0 produktov a kanál to bral ako úspešné nahratie.
+        if predchadzajuce_id and len(vystup) < len(predchadzajuce_id) * (1 - konf.get('max_pokles', 0.5)):
+            raise Poistka('výstup klesol z %d na %d ponúk (viac než %.0f %%)'
+                          % (len(predchadzajuce_id), len(vystup), 100 * konf.get('max_pokles', 0.5)))
+    telo = ''.join(json.dumps(pol, ensure_ascii=False, sort_keys=True) + '\n' for pol in vystup).encode('utf-8')
+    buf = io.BytesIO()
+    with gzip.GzipFile(fileobj=buf, mode='wb', mtime=0) as gz:   # mtime 0: rovnaký obsah = rovnaké bajty, žiadny prázdny commit
+        gz.write(telo)
+    return buf.getvalue(), suhrn
+
+
+def ids_z_jsonl_gz(cesta):
+    if not os.path.exists(cesta):
+        return None
+    with gzip.open(cesta, 'rt', encoding='utf-8') as f:
+        return {json.loads(r)['item_id'] for r in f if r.strip()}
+
+
 def spracuj(cesta, vystup_koren):
     with open(cesta, encoding='utf-8') as f:
         konf = json.load(f)
-    if konf['platforma'] == 'meta':
+    if konf['platforma'] == 'openai':
+        xml, suhrn = preved_openai(konf, ids_z_jsonl_gz(os.path.join(vystup_koren, konf['vystup'])))
+    elif konf['platforma'] == 'meta':
         xml, suhrn = preved_meta(konf, woo_vsetko(konf['woo']), taxonomia_google(TAXONOMIA_GOOGLE))
     else:
         pl = PLATFORMY[konf['platforma']]
@@ -593,7 +768,7 @@ def spracuj(cesta, vystup_koren):
     os.replace(docasny, ciel)
     # Deň (nie čas): aspoň jeden commit denne, inak GitHub po 60 dňoch bez aktivity vypne plánované behy.
     suhrn['den'] = datetime.date.today().isoformat()
-    with open(re.sub(r'\.xml$', '_suhrn.json', ciel), 'w', encoding='utf-8') as f:
+    with open(re.sub(r'\.(xml|jsonl\.gz)$', '_suhrn.json', ciel), 'w', encoding='utf-8') as f:
         json.dump(suhrn, f, ensure_ascii=False, indent=1, sort_keys=True)
     return suhrn
 

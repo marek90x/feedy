@@ -1,0 +1,57 @@
+{
+ "klient": "jahodarna",
+ "platforma": "openai",
+ "nazov": "Jahodárna Brozany CZ",
+ "_poznamka": "OpenAI Ads CZ (Marek 7. 11. 2026): len cibuloviny (jarní aj podzimní), trvalky, jahody a ruže. Značka zo Shoptetu, chýbajúca = Jahodárna Brozany (Marek). Zdroj je Google feed Shoptetu, lebo Shoptet OpenAI export vynecháva produkty bez značky. Len skladom ako Shoptet export.",
+ "zdroj": "https://www.jahodarnabrozany.cz/google/export/products.xml",
+ "vystup": "jahodarna/openai_cz.jsonl.gz",
+ "povolene_domeny": [
+  "jahodarnabrozany.cz"
+ ],
+ "povolene_obrazky": [
+  "cdn.myshoptet.com/usr/www.jahodarnabrozany.cz/"
+ ],
+ "mena": "CZK",
+ "min_ponuk": 2500,
+ "min_vystup": 100,
+ "max_pokles": 0.5,
+ "len_skladom": true,
+ "over_url": true,
+ "max_podiel_mrtvych": 0.3,
+ "zaradit": [
+  "^Cibuloviny a hlízy",
+  "^Trvalky",
+  "^Sazenice jahodníku",
+  "^Růže",
+  "^Prostokořenné sazenice květin a trvalek"
+ ],
+ "vyradit": [
+  {
+   "pole": "product_type",
+   "regex": "> Vše pro ",
+   "dovod": "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny"
+  },
+  {
+   "pole": "product_type",
+   "regex": "> Letničky",
+   "dovod": "letničky nie sú trvalky"
+  },
+  {
+   "pole": "title",
+   "regex": "kanvičk|konvičk|podložk|hnojiv",
+   "dovod": "príslušenstvo zaradené medzi rastlinami"
+  }
+ ],
+ "znacka_ak_chyba": "Jahodárna Brozany",
+ "predajca": {
+  "seller_name": "Jahodárna Brozany nad Ohří s.r.o.",
+  "seller_url": "https://www.jahodarnabrozany.cz/",
+  "return_policy": "https://www.jahodarnabrozany.cz/obchodni-podminky/",
+  "accepts_returns": true,
+  "return_deadline_in_days": 14,
+  "store_country": "CZ",
+  "target_countries": [
+   "CZ"
+  ]
+ }
+}
