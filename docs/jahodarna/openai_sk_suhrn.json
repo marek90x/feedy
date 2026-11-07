@@ -13,9 +13,11 @@
   "znacka_doplnena": 631
  },
  "platforma": "openai",
+ "pribudlo": 0,
  "sklad": {
   "in_stock": 680
  },
+ "ubudlo": 0,
  "vyradene": {
   "chýba obrázok": 2,
   "chýba popis": 1,
