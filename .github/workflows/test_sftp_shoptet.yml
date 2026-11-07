@@ -1,7 +1,10 @@
 name: test-sftp-shoptet
 # Jednorazová diagnostika 7. 11. 2026: nahrá kópiu Shoptet SK OpenAI exportu do SK kanála cez SFTP.
 # 594 produktov = kanál funguje, chyba v našom feede; 0 = chyba kanála. Po teste sa súbor zmaže.
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/test_sftp_shoptet.yml']
 permissions:
   contents: read
 jobs:
