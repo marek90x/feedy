@@ -5,25 +5,25 @@
   "Prostokořenné sazenice květin a trvalek": 1,
   "Růže": 52,
   "Sazenice jahodníku": 35,
-  "Trvalky": 65
+  "Trvalky": 64
  },
  "klient": "jahodarna",
  "opravy": {
   "gtin_odstraneny": 4,
   "popis_z_parametrov": 52,
-  "znacka_doplnena": 725
+  "znacka_doplnena": 724
  },
  "platforma": "openai",
  "pribudlo": 0,
  "sklad": {
-  "in_stock": 746
+  "in_stock": 745
  },
- "ubudlo": 0,
+ "ubudlo": 1,
  "vyradene": {
   "URL nefunguje": 2,
   "letničky nie sú trvalky": 12,
   "mimo vybraných kategórií": 2163,
-  "nie je skladom": 1028,
+  "nie je skladom": 1029,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 8
  },
  "vyradene_id": {
@@ -1063,6 +1063,7 @@
    "VANOCE-HVEZDNIK-06",
    "30185",
    "30191",
+   "30197",
    "30212",
    "81641",
    "30227",
@@ -1086,10 +1087,10 @@
    "80520"
   ]
  },
- "vystup_ponuk": 746,
+ "vystup_ponuk": 745,
  "zdroj_ponuk": 3959,
  "znacky": {
-  "Jahodárna Brozany": 725,
+  "Jahodárna Brozany": 724,
   "Kordes Roses": 21
  }
 }

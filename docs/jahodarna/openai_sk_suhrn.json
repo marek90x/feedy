@@ -4,26 +4,26 @@
   "Cibuľoviny a hľuzy": 552,
   "Ruže": 43,
   "Sadenice jahôd": 27,
-  "Trvalky": 58
+  "Trvalky": 57
  },
  "klient": "jahodarna",
  "opravy": {
   "gtin_odstraneny": 0,
   "popis_z_parametrov": 2,
-  "znacka_doplnena": 631
+  "znacka_doplnena": 630
  },
  "platforma": "openai",
  "pribudlo": 0,
  "sklad": {
-  "in_stock": 680
+  "in_stock": 679
  },
- "ubudlo": 0,
+ "ubudlo": 1,
  "vyradene": {
   "chýba obrázok": 2,
   "chýba popis": 1,
   "letničky nie sú trvalky": 6,
   "mimo vybraných kategórií": 1805,
-  "nie je skladom": 744,
+  "nie je skladom": 745,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 20,
   "príslušenstvo zaradené medzi rastlinami": 2
  },
@@ -787,6 +787,7 @@
    "VANOCE-HVEZDNIK-06",
    "30185",
    "30191",
+   "30197",
    "30212"
   ],
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": [
@@ -816,10 +817,10 @@
    "80379"
   ]
  },
- "vystup_ponuk": 680,
+ "vystup_ponuk": 679,
  "zdroj_ponuk": 3260,
  "znacky": {
-  "Jahodárna Brozany": 637,
+  "Jahodárna Brozany": 636,
   "Kordes Roses": 43
  }
 }
