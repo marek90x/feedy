@@ -40,9 +40,9 @@ jobs:
         if: ${{ !cancelled() }}
         env:
           OA_SFTP_URI_JAHODARNA_CZ: ${{ secrets.OA_SFTP_URI_JAHODARNA_CZ }}
-          OA_SFTP_HESLO_JAHODARNA_CZ: ${{ secrets.OA_SFTP_HESLO_JAHODARNA_CZ }}
+          JAHODARNA_CZ_OPENAI: ${{ secrets.JAHODARNA_CZ_OPENAI }}
           OA_SFTP_URI_JAHODARNA_SK: ${{ secrets.OA_SFTP_URI_JAHODARNA_SK }}
-          OA_SFTP_HESLO_JAHODARNA_SK: ${{ secrets.OA_SFTP_HESLO_JAHODARNA_SK }}
+          JAHODARNA_SK_OPENAI: ${{ secrets.JAHODARNA_SK_OPENAI }}
         run: |
           pip install --quiet paramiko
           python nahraj_sftp.py
