@@ -63,6 +63,21 @@ E-shopové feedy bývajú zanedbané. Klientovi nič neopravujeme vo feede, ale 
 | SK: „ZACHRÁŇ PRODUKT“ (zľavnená kópia) má živú URL, v CZ bola 404 | 3 | `vyradit` |
 | SK: staré ceny aj tu (Dark Brown 100 g 10,50 vs. web 12,30 €, 500 g 24,50 vs. 25,30 €) | 3 | cena z Woo voono.sk |
 
+### OpenAI Ads zo Shoptet Google feedu (Jahodárna, 7. 11. 2026)
+
+| Pasca | Jahodárna 7. 11. 2026 | Čo s tým |
+|---|---|---|
+| **Shoptet OpenAI export vynecháva produkty bez značky** (OpenAI vyžaduje `brand`) | CZ 731 z 3 959, SK 594 z 3 260; chýbali takmer všetky cibuľoviny, jahody a trvalky | zdroj je Google feed Shoptetu (`/google/export/products.xml`), značka sa dopĺňa len tam, kde chýba (`znacka_ak_chyba`, hodnotu potvrdzuje Marek) |
+| ID v Google feede (`g:id` = kód variantu `468-FRI`) ≠ `item_id` v Shoptet OpenAI exporte (interné ID) | zhoda 27 z 731 | po prepnutí kanála sa produkty v kampani vyberajú nanovo |
+| **Kanál ukazuje „Nahrané“ aj pri 0 produktoch** | CZ kanál 29. 10.–4. 11. 2026 sedem dní 0 | `max_pokles` (0,5): pri prepade oproti minulému behu sa feed neprepíše |
+| Obrázky sú na `cdn.myshoptet.com`, nie na doméne obchodu | všetky | `povolene_obrazky`: len priečinok klienta `cdn.myshoptet.com/usr/www.<doména>/`; iný priečinok na CDN zastaví beh |
+| `product_type` e-shopu mieša rastliny s príslušenstvom | „Vše pro květiny/trvalky/růže“, „Všetko na pestovanie jahôd“ (iné slovo než CZ), Fiskars kanvička priamo v „Cibuľoviny a hľuzy“, podložka pod jahody | `vyradit` podľa podkategórie aj názvu; po každom behu prejdi názvy, ktoré nie sú rastlina |
+| Letničky sú v e-shope pod Trvalkami | CZ 12, SK 6 | `vyradit` (Marek chce trvalky) |
+| Ruže Kordes bez popisu (povinný) | CZ 52 | popis z parametrov `g:product_detail` (Stanoviště, Termín výsadby, Doba květu); bez parametrov = vyradiť |
+| Link v Google feede presmeruje na 404 (`/nerine/…` → `/trvalky/…` 404) | CZ 2 | `over_url` s `url_ziva` |
+| Formát | | hostovaná URL berie `jsonl.gz` (aj `csv.gz`, `parquet`); gzip s `mtime=0`, aby rovnaký obsah nevyrobil commit |
+| Shoptet `shipping` (SK „Doobjednanie tovaru…: 0.04 EUR“) | | neposiela sa; tvar `shipping` vyžaduje nastavenie kanála |
+
 ### Ďalej platí
 
 - Ponuka bez cieľovej kategórie **zastaví celý beh**: nový produkt na webe = doplniť pravidlo, nie hádať.
