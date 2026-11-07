@@ -685,7 +685,8 @@ def preved_openai(konf, predchadzajuce_id=None):
         dalsie = [e.text.strip() for e in p.findall('{%s}additional_image_link' % G) if (e.text or '').strip()]
         dalsie = [u for u in dalsie if u != obrazok and povoleny_obrazok(u, konf)]
         if dalsie:
-            polia['additional_image_urls'] = dalsie[:10]
+            # Ako Shoptet OpenAI export (kanál ho číta): reťazec oddelený čiarkou, čiarka v URL ako %2C.
+            polia['additional_image_urls'] = ','.join(u.replace(',', '%2C') for u in dalsie[:10])
         if gv(p, 'sale_price'):
             akcna = float(gv(p, 'sale_price').split()[0])
             if 0 < akcna < bezna:
@@ -731,11 +732,15 @@ def preved_openai(konf, predchadzajuce_id=None):
         if predchadzajuce_id and len(vystup) < len(predchadzajuce_id) * (1 - konf.get('max_pokles', 0.5)):
             raise Poistka('výstup klesol z %d na %d ponúk (viac než %.0f %%)'
                           % (len(predchadzajuce_id), len(vystup), 100 * konf.get('max_pokles', 0.5)))
-    telo = ''.join(json.dumps(pol, ensure_ascii=False, sort_keys=True) + '\n' for pol in vystup).encode('utf-8')
+    # Tvar súboru kopíruje Shoptet OpenAI export, ktorý kanál načíta (7. 11. 2026 náš prvý tvar dal 0 produktov
+    # bez chyby): kompaktný JSON, žiadny prázdny riadok na konci, gzip hlavička OS=Unix.
+    telo = '\n'.join(json.dumps(pol, ensure_ascii=False, sort_keys=True, separators=(',', ':')) for pol in vystup).encode('utf-8')
     buf = io.BytesIO()
     with gzip.GzipFile(fileobj=buf, mode='wb', mtime=0) as gz:   # mtime 0: rovnaký obsah = rovnaké bajty, žiadny prázdny commit
         gz.write(telo)
-    return buf.getvalue(), suhrn
+    data = bytearray(buf.getvalue())
+    data[9] = 3   # OS bajt hlavičky: Unix (Python píše 255 = neznámy)
+    return bytes(data), suhrn
 
 
 def ids_z_jsonl_gz(cesta):
