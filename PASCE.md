@@ -58,6 +58,10 @@ E-shopové feedy bývajú zanedbané. Klientovi nič neopravujeme vo feede, ale 
 | Interné 8-miestne kódy prejdú kontrolnou číslicou (10000113, 10000106) | 2 | `gtin_predpona: "859"`; zdieľaný GTIN medzi produktmi sa vynechá |
 | „Hair of Gaurí 100 g“ (44294) je na webe za 0 Kč bez kategórie: darček k objednávke, nie predajný produkt; pixel ho posiela | | do feedu nepatrí, nulová cena = vyradenie |
 | Meta katalóg „VOONO katalog \| New“ plní WooCommerce plugin a mieša CZ (CZK) aj SK (EUR) | 339 položiek, 199× nesúlad meny, 500 g varianty za 0 Kč | do katalógu s pluginom sa feed s rovnakými ID nepridáva (prepisovali by sa) |
+| **SK (7. 11. 2026): obrázky sú na voono.cz**, odkazy na voono.sk (WordPress multisite, `/uploads/sites/2/`) | 182 | `povolene_domeny` obe, voono.sk prvá (kanál feedu) |
+| SK: iné ID, slugy a parametre než CZ (`/farby-na-vlasy/`, `wine-red` namiesto `henna-wine-red`, `henna-light-brown-honey`, `cassia-obovata`; parameter `objem` malým) | | mapy tónov a šablón sa nekopírujú bez prevodu slugov; `{param:objem}`; ID = Woo ID voono.sk |
+| SK: „ZACHRÁŇ PRODUKT“ (zľavnená kópia) má živú URL, v CZ bola 404 | 3 | `vyradit` |
+| SK: staré ceny aj tu (Dark Brown 100 g 10,50 vs. web 12,30 €, 500 g 24,50 vs. 25,30 €) | 3 | cena z Woo voono.sk |
 
 ### Ďalej platí
 

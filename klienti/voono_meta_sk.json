@@ -1,0 +1,251 @@
+{
+ "klient": "voono",
+ "platforma": "meta",
+ "nazov": "VOONO.SK",
+ "zdroj": "https://www.voono.cz/app/uploads/sites/2/xml/feed_google_merchants_2.xml",
+ "vystup": "voono/meta_sk.xml",
+ "povolene_domeny": [
+  "voono.sk",
+  "voono.cz"
+ ],
+ "mena": "EUR",
+ "woo": "https://www.voono.sk/wp-json/wc/store/v1/products",
+ "min_woo": 80,
+ "min_ponuk": 150,
+ "min_vystup": 65,
+ "over_url": true,
+ "max_podiel_mrtvych": 0.6,
+ "_poznamka": "Meta katalóg SK (nový katalóg, Marek 7. 11. 2026), rovnaké pravidlá ako CZ. ID = Woo ID webu voono.sk; ID nikdy nemeniť. Obrázky sú na voono.cz (multisite), preto obe domény. Cena, zľava a sklad z Woo Store API voono.sk.",
+ "vyradit": [
+  {
+   "pole": "title",
+   "regex": "1000\\s?g",
+   "dovod": "1000 g (B2B)"
+  },
+  {
+   "pole": "title",
+   "regex": "Kopírova[tť]",
+   "dovod": "kópia produktu"
+  },
+  {
+   "pole": "title",
+   "regex": "^Darčekový poukaz",
+   "dovod": "darčekový poukaz"
+  },
+  {
+   "pole": "title",
+   "regex": "miska|dóza|zástera|čiapka|rukavice|teplomer|kefa|kartáč",
+   "dovod": "pomôcky (len kozmetika, Marek 6. 11.)"
+  },
+  {
+   "pole": "title",
+   "regex": "bez obalu",
+   "dovod": "varianty bez obalu (spoločná fotka vrecka bez odtieňa, Marek 6. 11.)"
+  },
+  {
+   "pole": "title",
+   "regex": "ZACHR[ÁA][ŇN] PRODUKT",
+   "dovod": "zľavnená kópia produktu (ZACHRÁŇ PRODUKT)"
+  }
+ ],
+ "doplnit": {
+  "brand": "VOONO",
+  "condition": "new"
+ },
+ "kategorie": [
+  {
+   "pole": "title",
+   "regex": "psí šampón",
+   "kategoria": "Ostatné > Psia kozmetika",
+   "gpc": 6406
+  },
+  {
+   "pole": "link",
+   "regex": "/vlasova-pece/farby-na-vlasy/(champagne-pink-blonde|light-ash-brown|dark-ash-blonde)/",
+   "kategoria": "Farby na vlasy > Bez henny",
+   "gpc": 2814
+  },
+  {
+   "pole": "link",
+   "regex": "/vlasova-pece/farby-na-vlasy/(indigo|cassia-obovata|predpigmentacna-farba|mix-at-home-voono)/",
+   "kategoria": "Farby na vlasy > Indigo, Cassia a ostatné",
+   "gpc": 2814
+  },
+  {
+   "pole": "link",
+   "regex": "/vlasova-pece/farby-na-vlasy/",
+   "kategoria": "Farby na vlasy > Henna",
+   "gpc": 2814
+  },
+  {
+   "pole": "title",
+   "regex": "kazeta|\\bset\\b|^darček|^malý darček|balíček",
+   "kategoria": "Darčekové sady",
+   "gpc": 6069
+  },
+  {
+   "pole": "title",
+   "regex": "^(cestovný )?mini.*kondicionér",
+   "kategoria": "Vlasová starostlivosť > Cestovné mini",
+   "gpc": 543616
+  },
+  {
+   "pole": "title",
+   "regex": "^(cestovný )?mini",
+   "kategoria": "Vlasová starostlivosť > Cestovné mini",
+   "gpc": 543615
+  },
+  {
+   "pole": "title",
+   "regex": "šamp(ón|uk)",
+   "kategoria": "Vlasová starostlivosť > Šampóny",
+   "gpc": 543615
+  },
+  {
+   "pole": "title",
+   "regex": "kondicionér",
+   "kategoria": "Vlasová starostlivosť > Kondicionéry",
+   "gpc": 543616
+  },
+  {
+   "pole": "title",
+   "regex": "fixačn|sea salt",
+   "kategoria": "Vlasová starostlivosť > Styling",
+   "gpc": 1901
+  },
+  {
+   "pole": "title",
+   "regex": "maska|^tricholog|^ibištek|^amla|hair of gaurí|oplach|balzam|keratínový sprej|detox c",
+   "kategoria": "Vlasová starostlivosť > Masky a regenerácia",
+   "gpc": 486
+  },
+  {
+   "pole": "title",
+   "regex": "sérum",
+   "kategoria": "Pleťová starostlivosť > Séra",
+   "gpc": 567
+  },
+  {
+   "pole": "title",
+   "regex": "toner",
+   "kategoria": "Pleťová starostlivosť > Čistenie",
+   "gpc": 543658
+  },
+  {
+   "pole": "title",
+   "regex": "peeling",
+   "kategoria": "Pleťová starostlivosť > Čistenie",
+   "gpc": 6262
+  },
+  {
+   "pole": "title",
+   "regex": "oil to milk",
+   "kategoria": "Pleťová starostlivosť > Čistenie",
+   "gpc": 2526
+  },
+  {
+   "pole": "title",
+   "regex": "spf",
+   "kategoria": "Pleťová starostlivosť > Ochrana pred slnkom",
+   "gpc": 2844
+  },
+  {
+   "pole": "title",
+   "regex": "krém|gél",
+   "kategoria": "Pleťová starostlivosť > Krémy",
+   "gpc": 2592
+  }
+ ],
+ "stitky": {
+  "custom_label_0": {
+   "typ": "akcia",
+   "ano": "akcia",
+   "nie": "bez akcie",
+   "popis": "akcia"
+  },
+  "custom_label_1": {
+   "typ": "mapa",
+   "popis": "tón farby",
+   "pole": "link",
+   "regex": "/vlasova-pece/farby-na-vlasy/([^/?]+)/",
+   "mapa": {
+    "burgundy": "červená a medená",
+    "peach-blonde": "blond",
+    "chestnut": "hnedá",
+    "fire-red": "červená a medená",
+    "strawberry-blonde": "blond",
+    "wine-red": "červená a medená",
+    "henna-soft-black": "čierna",
+    "henna-rose-brown": "hnedá",
+    "orange": "červená a medená",
+    "henna-medium-brown": "hnedá",
+    "henna-light-brown-honey": "hnedá",
+    "dark-brown": "hnedá",
+    "copper": "červená a medená",
+    "champagne-pink-blonde": "blond",
+    "light-ash-brown": "hnedá",
+    "dark-ash-blonde": "blond",
+    "indigo": "čierna",
+    "cassia-obovata": "bezfarebná",
+    "predpigmentacna-farba": "predpigmentácia",
+    "mix-at-home-voono": "mix"
+   }
+  }
+ },
+ "premenovat": {
+  "_poznamka": "Šablóna podľa zloženia, overené na CZ webe 6. 11. 2026 (rovnaké produkty, slug podľa voono.sk). Henna = obsahuje Lawsonia. Nový odtieň: over zloženie a doplň do mapy, inak beh zastaví poistka.",
+  "kluc": {
+   "pole": "link",
+   "regex": "/vlasova-pece/farby-na-vlasy/([^/?]+)/"
+  },
+  "odtien": {
+   "pole": "title",
+   "regex": "^(?:Henna )?(.+?)\\s+-\\s+(?:S obalom|Bez obalu)",
+   "upravy": [
+    [
+     "\"",
+     ""
+    ],
+    [
+     "\\s+[-–]\\s+",
+     " "
+    ]
+   ]
+  },
+  "sablony": {
+   "henna": "VOONO Henna farba na vlasy {odtien} {param:objem} {param:Balenie|lower}",
+   "prirodna": "VOONO Prírodná farba na vlasy {odtien} {param:objem} {param:Balenie|lower}",
+   "indigo": "VOONO Indigo prírodná farba na vlasy {param:objem} {param:Balenie|lower}",
+   "cassia": "VOONO Cassia Obovata bezfarebná henna {param:objem} {param:Balenie|lower}",
+   "predpigmentacni": "VOONO Predpigmentačná henna farba na vlasy {param:objem} {param:Balenie|lower}",
+   "mix": "VOONO Mix at home sada prírodných farieb na vlasy"
+  },
+  "mapa": {
+   "burgundy": "henna",
+   "peach-blonde": "henna",
+   "chestnut": "henna",
+   "fire-red": "henna",
+   "strawberry-blonde": "henna",
+   "wine-red": "henna",
+   "henna-soft-black": "henna",
+   "henna-rose-brown": "henna",
+   "orange": "henna",
+   "henna-medium-brown": "henna",
+   "henna-light-brown-honey": "henna",
+   "dark-brown": "henna",
+   "copper": "henna",
+   "champagne-pink-blonde": "prirodna",
+   "light-ash-brown": "prirodna",
+   "dark-ash-blonde": "prirodna",
+   "indigo": "indigo",
+   "cassia-obovata": "cassia",
+   "predpigmentacna-farba": "predpigmentacni",
+   "mix-at-home-voono": "mix"
+  },
+  "predpona_ostatnym": "VOONO "
+ },
+ "gtin_predpona": "859",
+ "obrazky_z_webu": true,
+ "obrazky_vynechat": "/cover-barva-maska-miska\\.png$",
+ "_obrazky": "Galéria z Woo (variant, potom rodič). cover-barva-maska-miska.png je náhľad videa so symbolom prehrávania, v katalógu sa nedá prehrať."
+}
