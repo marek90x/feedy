@@ -1,0 +1,59 @@
+{
+ "bez_popisu": [],
+ "den": "2026-11-13",
+ "kategoria": {
+  "Barvy na vlasy > Bez henny": 3,
+  "Barvy na vlasy > Henna": 15,
+  "Barvy na vlasy > Indigo, Cassia a ostatní": 4,
+  "Dárkové sady": 7,
+  "Ostatní > Psí kosmetika": 1,
+  "Pleťová péče > Krémy": 3,
+  "Pleťová péče > Ochrana před sluncem": 2,
+  "Pleťová péče > Séra": 4,
+  "Pleťová péče > Čištění": 3,
+  "Vlasová péče > Cestovní mini": 8,
+  "Vlasová péče > Kondicionéry": 6,
+  "Vlasová péče > Masky a regenerace": 9,
+  "Vlasová péče > Styling": 2,
+  "Vlasová péče > Šampony": 7
+ },
+ "klient": "voono",
+ "opravy": {
+  "cena_z_webu": 2,
+  "gtin_odstraneny": 4,
+  "nazov_rozsireny": 73,
+  "obrazky_z_webu": 14,
+  "popis_z_webu": 0,
+  "sklad_z_webu": 1
+ },
+ "platforma": "meta",
+ "stitky": {
+  "custom_label_0": {
+   "akce": 7,
+   "bez akce": 67
+  },
+  "custom_label_1": {
+   "bezbarvá": 1,
+   "blond": 4,
+   "hnědá": 7,
+   "mix": 1,
+   "předpigmentace": 1,
+   "černá": 2,
+   "červená a měděná": 6
+  }
+ },
+ "vyradene": {
+  "1000 g (B2B)": 22,
+  "URL nefunguje": 65,
+  "dárkový poukaz": 2,
+  "kópia produktu": 4,
+  "pomôcky (len kozmetika, Marek 6. 11.)": 7,
+  "varianty bez obalu (spoločná fotka vrecka bez odtieňa, Marek 6. 11.)": 20
+ },
+ "vystup_ponuk": 74,
+ "zdroj_ponuk": 194,
+ "zmeny_cien": [
+  "3792 Dark Brown - S obalem, 500 g: feed 629.00/629.00, web 649.00/649.00",
+  "3797 Copper - S obalem, 500 g: feed 629.00/629.00, web 649.00/649.00"
+ ]
+}

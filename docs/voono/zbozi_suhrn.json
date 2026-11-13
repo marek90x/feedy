@@ -1,0 +1,48 @@
+{
+ "bez_popisu": [],
+ "den": "2026-11-13",
+ "doplnky": {
+  "darcek": 6,
+  "doprava_platena": 78,
+  "doprava_zdarma": 14,
+  "povodna_cena": 7,
+  "productno": 89
+ },
+ "kategoria": {
+  "Kosmetika a drogerie | Kosmetika | Kosmetické sady": 7,
+  "Kosmetika a drogerie | Kosmetika | Opalování | Přípravky na opalování | Krémy na opalování": 1,
+  "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Pleťová séra": 4,
+  "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Pleťové krémy": 3,
+  "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Péče o oční okolí": 1,
+  "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Odličování pleti a očí | Odličovače": 1,
+  "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Čištění pleti a očí | Pleťové peelingy": 1,
+  "Kosmetika a drogerie | Kosmetika | Pleťová kosmetika | Čištění a odličování pleti a očí | Čištění pleti a očí | Pleťové vody a tonika": 1,
+  "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Barvy na vlasy": 40,
+  "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Kondicionéry a balzámy": 8,
+  "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Stylingové přípravky": 2,
+  "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Vlasová regenerace": 9,
+  "Kosmetika a drogerie | Kosmetika | Vlasová kosmetika | Šampony": 13,
+  "Kultura a zábava | Volný čas | Chovatelské potřeby | Pro psy | Psí zdraví a hygiena | Kosmetika pro psy": 1
+ },
+ "klient": "voono",
+ "opravy": {
+  "ean_odstraneny": 23,
+  "html_v_nazve": 39,
+  "html_v_popise": 50,
+  "kod_v_nazve": 92,
+  "nazov_rozsireny": 182,
+  "popis_doplneny": 42,
+  "sklad_z_webu": 1
+ },
+ "platforma": "zbozi",
+ "vyradene": {
+  "1000 g (B2B)": 22,
+  "URL nefunguje": 70,
+  "dárkový poukaz": 2,
+  "kópia produktu": 6,
+  "nie je na webe (Woo)": 2,
+  "pomôcky (len kozmetika, Marek 6. 11.)": 7
+ },
+ "vystup_ponuk": 92,
+ "zdroj_ponuk": 201
+}

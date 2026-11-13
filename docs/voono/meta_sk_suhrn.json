@@ -1,0 +1,60 @@
+{
+ "bez_popisu": [],
+ "den": "2026-11-13",
+ "kategoria": {
+  "Darčekové sady": 7,
+  "Farby na vlasy > Bez henny": 3,
+  "Farby na vlasy > Henna": 15,
+  "Farby na vlasy > Indigo, Cassia a ostatné": 4,
+  "Ostatné > Psia kozmetika": 1,
+  "Pleťová starostlivosť > Krémy": 3,
+  "Pleťová starostlivosť > Ochrana pred slnkom": 2,
+  "Pleťová starostlivosť > Séra": 4,
+  "Pleťová starostlivosť > Čistenie": 3,
+  "Vlasová starostlivosť > Cestovné mini": 8,
+  "Vlasová starostlivosť > Kondicionéry": 6,
+  "Vlasová starostlivosť > Masky a regenerácia": 9,
+  "Vlasová starostlivosť > Styling": 2,
+  "Vlasová starostlivosť > Šampóny": 7
+ },
+ "klient": "voono",
+ "opravy": {
+  "cena_z_webu": 3,
+  "gtin_odstraneny": 5,
+  "nazov_rozsireny": 73,
+  "obrazky_z_webu": 14,
+  "popis_z_webu": 0,
+  "sklad_z_webu": 2
+ },
+ "platforma": "meta",
+ "stitky": {
+  "custom_label_0": {
+   "akcia": 7,
+   "bez akcie": 67
+  },
+  "custom_label_1": {
+   "bezfarebná": 1,
+   "blond": 4,
+   "hnedá": 7,
+   "mix": 1,
+   "predpigmentácia": 1,
+   "červená a medená": 6,
+   "čierna": 2
+  }
+ },
+ "vyradene": {
+  "1000 g (B2B)": 21,
+  "URL nefunguje": 56,
+  "darčekový poukaz": 2,
+  "pomôcky (len kozmetika, Marek 6. 11.)": 7,
+  "varianty bez obalu (spoločná fotka vrecka bez odtieňa, Marek 6. 11.)": 19,
+  "zľavnená kópia produktu (ZACHRÁŇ PRODUKT)": 3
+ },
+ "vystup_ponuk": 74,
+ "zdroj_ponuk": 182,
+ "zmeny_cien": [
+  "2241 Copper - S obalom, 500 g: feed 24.50/24.50, web 25.30/25.30",
+  "2231 Dark Brown - S obalom, 100 g: feed 10.50/10.50, web 12.30/12.30",
+  "2233 Dark Brown - S obalom, 500 g: feed 24.50/24.50, web 25.30/25.30"
+ ]
+}
