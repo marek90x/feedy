@@ -27,6 +27,7 @@
  "klient": "voono",
  "opravy": {
   "ean_odstraneny": 23,
+  "ean_rucne": 2,
   "html_v_nazve": 39,
   "html_v_popise": 50,
   "kod_v_nazve": 92,
