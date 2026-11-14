@@ -1,0 +1,29 @@
+{
+ "bez_popisu": [],
+ "den": "2026-11-14",
+ "kategoria": {
+  "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil": 454,
+  "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Nažehlovací záplaty": 19,
+  "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Ostatní galanterie": 45,
+  "Kultura a zábava | Volný čas | Oslavy a dárky | Dárkové poukazy": 3
+ },
+ "klient": "detskelatky",
+ "opravy": {
+  "ean_odstraneny": 0,
+  "html_v_nazve": 0,
+  "html_v_popise": 0,
+  "kod_v_nazve": 586,
+  "nazov_rucne": 18,
+  "pole_vymazane": 308,
+  "popis_doplneny": 0
+ },
+ "platforma": "zbozi",
+ "vyradene": {
+  "doplatok dopravy, nie produkt": 1,
+  "látky na objednávku (DELIVERY_DATE -1, všeobecný názov; Marek 12. 11.)": 378,
+  "názov na webe patrí inému variantu (14. 11.: pejsci = Zaječí balerína, stuha starorůžová = béžová, vaflový béžový = Mauve, husa na zádech 12×12 = Husa s mládětem); vrátiť po oprave webu": 4,
+  "střihy (Marek 12. 11.)": 7
+ },
+ "vystup_ponuk": 521,
+ "zdroj_ponuk": 911
+}
