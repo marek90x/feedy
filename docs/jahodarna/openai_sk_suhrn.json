@@ -1,22 +1,22 @@
 {
  "den": "2026-11-14",
  "kategoria": {
-  "Cibuľoviny a hľuzy": 1030,
+  "Cibuľoviny a hľuzy": 1029,
   "Ruže": 17,
   "Sadenice jahôd": 71,
-  "Trvalky": 42,
+  "Trvalky": 41,
   "Voľnokorenné sadenice kvetov a trvaliek": 112
  },
  "klient": "jahodarna",
  "opravy": {
   "gtin_odstraneny": 8,
   "popis_z_parametrov": 2,
-  "znacka_doplnena": 1240
+  "znacka_doplnena": 1238
  },
  "platforma": "openai",
  "pribudlo": 0,
  "sklad": {
-  "in_stock": 1272
+  "in_stock": 1270
  },
  "ubudlo": 2,
  "vyradene": {
@@ -24,7 +24,7 @@
   "chýba popis": 1,
   "letničky nie sú trvalky": 6,
   "mimo vybraných kategórií": 1828,
-  "nie je skladom": 626,
+  "nie je skladom": 628,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 20,
   "príslušenstvo zaradené medzi rastlinami": 2
  },
@@ -307,6 +307,7 @@
    "19862/14/",
    "19880/12/",
    "19880/14/",
+   "19886/12/",
    "19889/12/",
    "19889/14/",
    "79478",
@@ -485,6 +486,7 @@
    "78-3606",
    "81323",
    "81324",
+   "81330",
    "81363",
    "81364",
    "81365",
@@ -698,10 +700,10 @@
    "80379"
   ]
  },
- "vystup_ponuk": 1272,
+ "vystup_ponuk": 1270,
  "zdroj_ponuk": 3756,
  "znacky": {
-  "Jahodárna Brozany": 1254,
+  "Jahodárna Brozany": 1252,
   "Kordes Roses": 17,
   "Semo": 1
  }
