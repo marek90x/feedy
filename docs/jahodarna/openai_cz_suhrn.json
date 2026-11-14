@@ -5,25 +5,25 @@
   "Prostokořenné sazenice květin a trvalek": 150,
   "Růže": 26,
   "Sazenice jahodníku": 79,
-  "Trvalky": 47
+  "Trvalky": 46
  },
  "klient": "jahodarna",
  "opravy": {
   "gtin_odstraneny": 12,
   "popis_z_parametrov": 26,
-  "znacka_doplnena": 1286
+  "znacka_doplnena": 1285
  },
  "platforma": "openai",
  "pribudlo": 0,
  "sklad": {
-  "in_stock": 1299
+  "in_stock": 1298
  },
- "ubudlo": 0,
+ "ubudlo": 1,
  "vyradene": {
   "URL nefunguje": 2,
   "letničky nie sú trvalky": 12,
   "mimo vybraných kategórií": 2178,
-  "nie je skladom": 880,
+  "nie je skladom": 881,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 8
  },
  "vyradene_id": {
@@ -895,6 +895,7 @@
    "30197",
    "30203",
    "30206",
+   "30209",
    "30212",
    "30221",
    "81641",
@@ -938,10 +939,10 @@
    "80520"
   ]
  },
- "vystup_ponuk": 1299,
+ "vystup_ponuk": 1298,
  "zdroj_ponuk": 4379,
  "znacky": {
-  "Jahodárna Brozany": 1286,
+  "Jahodárna Brozany": 1285,
   "Kordes Roses": 12,
   "SEMO": 1
  }
