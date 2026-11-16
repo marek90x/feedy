@@ -19,7 +19,7 @@
  },
  "klient": "voono",
  "opravy": {
-  "cena_z_webu": 4,
+  "cena_z_webu": 2,
   "gtin_odstraneny": 4,
   "nazov_rozsireny": 73,
   "obrazky_z_webu": 15,
@@ -53,8 +53,6 @@
  "vystup_ponuk": 74,
  "zdroj_ponuk": 194,
  "zmeny_cien": [
-  "3454 Hydratační kondicionér pro poškozené vlasy 250ml: feed 300.30/300.30, web 429.00/429.00",
-  "3450 Hydratační šampon pro poškozené vlasy 250ml: feed 272.30/272.30, web 389.00/389.00",
   "3792 Dark Brown - S obalem, 500 g: feed 629.00/629.00, web 649.00/649.00",
   "3797 Copper - S obalem, 500 g: feed 629.00/629.00, web 649.00/649.00"
  ]

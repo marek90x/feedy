@@ -15198,50 +15198,6 @@ snadno kombinovatelná s jednobarevnými i</DESCRIPTION>
     </PARAM>
 </SHOPITEM>
 <SHOPITEM>
-    <PRODUCTNAME>Lemovací bambulky Ø 2cm JASNÁ HOŘČICE</PRODUCTNAME>
-    <DESCRIPTION>Velmi kvalitní lemovací prýmek s bambulkami.
-Jedná se o velmi stylové dozdobení např. polštářků, hracích dek, teepee aj.</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/lemovaci-bambulky--2cm-jasna-horcice/</URL>
-    <PRICE_VAT>39,00</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <SHOP_DEPOTS>144578</SHOP_DEPOTS>
-    <ITEM_ID>P00588</ITEM_ID>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16631_w61b0d59584c6a-img-20211207-162046-edit-144782994563322.jpg?6901115a</IMGURL>
-    <ITEMGROUP_ID>16631</ITEMGROUP_ID>
-    <CATEGORYTEXT>Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Ostatní galanterie</CATEGORYTEXT>
-    <CUSTOM_LABEL_0>Galanterie | Lemovací prýmek s bambulkami</CUSTOM_LABEL_0>
-    <PRODUCT>Lemovací bambulky Ø 2cm JASNÁ HOŘČICE</PRODUCT>
-    <DELIVERY>
-        <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
-        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <VISIBILITY>1</VISIBILITY>
-    <PARAM>
-        <PARAM_NAME>Barva</PARAM_NAME>
-        <VAL>hořčičná žlutá</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Materiál</PARAM_NAME>
-        <VAL>Polypropylen, Elasthan</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Výrobce</PARAM_NAME>
-        <VAL>Pasmateria, 91-613 Łódź, Polsko, sklep@pasmateria.pl</VAL>
-    </PARAM>
-</SHOPITEM>
-<SHOPITEM>
     <PRODUCTNAME>Prémiová bavlna - šalvějová (doprodej)</PRODUCTNAME>
     <DESCRIPTION>Jednobarevná prémiová bavlna šalvějová – 100% bavlna | šíře 150 cm
 Kvalitní jednobarevná bavlna v šalvějové barvě je ideální pro všechny, kdo hledají hebkou, příjemnou a odolnou látku pro šití nejrůznějších projektů. Tento prémiový bavlněný materiál je měkký na dotek, prodyšný a vhodný i pro citlivou dětskou pokožku.
@@ -17198,65 +17154,6 @@ Materiál má certifikaci OEKO-TEX® STANDARD 100, třída I, která stanovuje p
     </PARAM>
 </SHOPITEM>
 <SHOPITEM>
-    <PRODUCTNAME>Bavlněný beránek premium - bílý</PRODUCTNAME>
-    <DESCRIPTION>Bílá – bavlněný beránek premium
-Dopřejte svému šití hebkost a příjemné teplo! ♥ Bavlněný beránek premium v bílé barvě je měkký, hřejivý materiál s typickou beránkovou strukturou. Díky 95% podílu kvalitní bavlny je příjemný na dotek a hodí se na zimní deky, podšívky fusaků i další doplňky do chladných dnů.
-Čistá bílá barva se snadno kombinuje s jemnými i výraznými vzory. Krásně doplní dětskou výbavičku a nechá vyniknout barvy druhé látky, ať už zvolíte bavlnu, mušelín nebo kočárkovinu.
-Proč si tento beránek zamilujete? ♥
-♥ 95 % kvalitní bavlny
-♥ Hebký a měkký povrch s beránkovou strukturou
-♥ Hřejivý materiál do chladnějšího období
-♥ Univerzální bílá barva
-♥ Vhodný na dětské deky a podšívky fusaků
-♥ Certifikace OEKO-TEX® STANDARD 100, třída I
-Kvalita a certifikace
-Materiál má certifikaci OEKO-TEX® STANDARD 100, třída I, která stanovuje přísné limity pro textilie určené kojencům a dětem do 3 let.
-Certifikace potvrzuje testování textilie na škodlivé látky podle stanovených</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/bila-bavlneny-beranek-premium-315g/</URL>
-    <PRICE_VAT>399,00</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <SHOP_DEPOTS>144578</SHOP_DEPOTS>
-    <ITEM_ID>P00490</ITEM_ID>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16778_v66b23622d3110-beranek-bily.png?6901115b</IMGURL>
-    <ITEMGROUP_ID>16778</ITEMGROUP_ID>
-    <CATEGORYTEXT>Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil</CATEGORYTEXT>
-    <CUSTOM_LABEL_0>Látky</CUSTOM_LABEL_0>
-    <PRODUCT>Bavlněný beránek premium - bílý</PRODUCT>
-    <DELIVERY>
-        <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
-        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <VISIBILITY>1</VISIBILITY>
-    <PARAM>
-        <PARAM_NAME>Materiál</PARAM_NAME>
-        <VAL>95% Bavlna, 5% PES</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Hmotnost</PARAM_NAME>
-        <VAL>315g/m2</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Šířka</PARAM_NAME>
-        <VAL>150cm</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Výrobce</PARAM_NAME>
-        <VAL>Textiel B.V., Tradepark 58, Tilburg, Nizozemsko, customcare@textielbv.com</VAL>
-    </PARAM>
-</SHOPITEM>
-<SHOPITEM>
     <PRODUCTNAME>Hladký sametový velvet - šalvějová</PRODUCTNAME>
     <DESCRIPTION>Hladký sametový velvet šalvějový – jemný a elegantní materiál
 Krásně jemný a hebký hladký velvet v šalvějové barvě zaujme na první dotek svým příjemným sametovým povrchem. Látka působí elegantně a luxusně, zároveň je příjemná a nabízí široké možnosti využití při šití dětských i bytových doplňků.
@@ -18670,65 +18567,6 @@ Jedná se o velmi stylové dozdobení např. polštářků, hracích dek, teepee
     <PARAM>
         <PARAM_NAME>Výrobce</PARAM_NAME>
         <VAL>Pasmateria, 91-613 Łódź, Polsko, sklep@pasmateria.pl</VAL>
-    </PARAM>
-</SHOPITEM>
-<SHOPITEM>
-    <PRODUCTNAME>Prémiová bavlna – Eukalypt | jemná látka na povlečení, závěsy a dětskou výbavičku</PRODUCTNAME>
-    <DESCRIPTION>Prémiová bavlna – Eukalypt (autorský vzor)
-Tato prémiová bavlna s autorským vzorem Eukalypt v odstínech zelené přináší do dětského pokoje přírodní a osvěžující atmosféru. Vzor zobrazuje jemné eukalyptové listy v různých zelených tónech, což dává látce klidný a harmonický vzhled. Digitální tisk zajišťuje, že barvy zůstanou živé i po několika praních. Tkanina je jemná, pevná a odolná, což ji činí ideální pro šití povlečení, závěsů, polštářků, hnízdeček a výbavičky pro miminka. Certifikováno Öko-Tex Standard 100, což znamená, že je bezpečná pro děti.
-Vlastnosti materiálu:
-Materiál: Prémiová bavlna
-Vzor: Eukalypt – odstíny zelené, jemné eukalyptové listy
-Tisk: Digitální reaktivní tisk pro dlouhou životnost barev
-Jemnost: Velmi jemná a hebká na dotek
-Pevnost: Hustě tkaná, odolná a pevná
-Údržba: Praní na max. 40°C, nebělit, chemicky nečistit
-Certifikace: Öko-Tex Standard 100, třída I (pro kojence a děti do 3 let)
-Použití:
-Povlečení, závěsy,</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/eukalypt-premiova-bavlna/</URL>
-    <PRICE_VAT>339,00</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <SHOP_DEPOTS>144578</SHOP_DEPOTS>
-    <ITEM_ID>P00389</ITEM_ID>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16886_1605cdb9a58bfa-eukalypty-a-motylci.jpg?6901115c</IMGURL>
-    <IMGURL_ALTERNATIVE>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16886-1_c60c701320e201-eukalypty-1.jpg?6901115c</IMGURL_ALTERNATIVE>
-    <ITEMGROUP_ID>16886</ITEMGROUP_ID>
-    <CATEGORYTEXT>Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil</CATEGORYTEXT>
-    <CUSTOM_LABEL_0>Látky | Prémiová bavlna (plátno)</CUSTOM_LABEL_0>
-    <PRODUCT>Prémiová bavlna – Eukalypt | jemná látka na povlečení, závěsy a dětskou výbavičku</PRODUCT>
-    <DELIVERY>
-        <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
-        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <VISIBILITY>1</VISIBILITY>
-    <PARAM>
-        <PARAM_NAME>Materiál</PARAM_NAME>
-        <VAL>100% Bavlna</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Hmotnost</PARAM_NAME>
-        <VAL>153g/m2</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Šířka</PARAM_NAME>
-        <VAL>155cm-160cm</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Výrobce</PARAM_NAME>
-        <VAL>Drukarnia dzianin, 93-469 Łódź, Polsko, drukarniacyfrowa@lodz.pl</VAL>
     </PARAM>
 </SHOPITEM>
 <SHOPITEM>
@@ -27447,12 +27285,14 @@ Tento prémiový bavlněný úplet s přírodním vzorem má certifikaci OEKO-TE
     </PARAM>
 </SHOPITEM>
 <SHOPITEM>
-    <PRODUCTNAME>Dárkový poukaz Hodnota: 500,-</PRODUCTNAME>
+    <PRODUCTNAME>Dárkový poukaz - online odeslání Hodnota: 500 Kč</PRODUCTNAME>
     <DESCRIPTION>Dárkový poukaz na nákup látek a galanterie | Dětské-látky.cz
-Hledáte originální dárek pro milovníky šití? Dárkový poukaz do e-shopu Dětské-látky.cz potěší každého, kdo rád tvoří, šije oblečení, bytové doplňky nebo dětskou výbavičku.
+Hledáte originální dárek pro milovníky šití? Dárkový poukaz do e-shopu Dětské-látky.cz potěší každého, kdo rád tvoří, šije oblečení, bytové doplňky nebo dětskou výbavičku. Poukaz odesíláme online ihned po zakoupení.
 Obdarovaný si může vybrat z široké nabídky kvalitních látek, metráže, galanterie, střihů a dalších šicích potřeb. Specializujeme se na látky pro děti a miminka, ale v našem sortimentu najdou inspiraci i dospělí švadlenky a kreativci.
 Dárkový poukaz lze uplatnit pohodlně na e-shopu Dětské-látky.cz i v kamenné prodejně látek ve Vlašimi. Díky tomu si může každý vybrat přesně to, co potřebuje pro svůj další projekt.
-Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkami a materiály.</DESCRIPTION>
+Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkami a materiály.
+Pokud máte zájem o zakoupení i klasického zboží, prosíme o vytvoření dvou samostatných objednávek. Poukaz vám pošleme zdarma obratem po uhrazení do e-mailu. On-line odeslání se týká pouze dárkových poukazů.
+Jak</DESCRIPTION>
     <URL>https://www.detske-latky.cz/darkovy-poukaz/?variantId=11478</URL>
     <PRICE_VAT>500,00</PRICE_VAT>
     <DELIVERY_DATE>0</DELIVERY_DATE>
@@ -27462,36 +27302,26 @@ Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkam
     <ITEMGROUP_ID>18189</ITEMGROUP_ID>
     <CATEGORYTEXT>Kultura a zábava | Volný čas | Oslavy a dárky | Dárkové poukazy</CATEGORYTEXT>
     <CUSTOM_LABEL_0>Látky | Dárkové poukazy</CUSTOM_LABEL_0>
-    <PRODUCT>Dárkový poukaz Hodnota: 500,-</PRODUCT>
+    <PRODUCT>Dárkový poukaz - online odeslání Hodnota: 500 Kč</PRODUCT>
     <DELIVERY>
         <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
         <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
     </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
     <VISIBILITY>1</VISIBILITY>
     <PARAM>
         <PARAM_NAME>Hodnota</PARAM_NAME>
-        <VAL>500,-</VAL>
+        <VAL>500 Kč</VAL>
     </PARAM>
 </SHOPITEM>
 <SHOPITEM>
-    <PRODUCTNAME>Dárkový poukaz Hodnota: 1000,-</PRODUCTNAME>
+    <PRODUCTNAME>Dárkový poukaz - online odeslání Hodnota: 1000 Kč</PRODUCTNAME>
     <DESCRIPTION>Dárkový poukaz na nákup látek a galanterie | Dětské-látky.cz
-Hledáte originální dárek pro milovníky šití? Dárkový poukaz do e-shopu Dětské-látky.cz potěší každého, kdo rád tvoří, šije oblečení, bytové doplňky nebo dětskou výbavičku.
+Hledáte originální dárek pro milovníky šití? Dárkový poukaz do e-shopu Dětské-látky.cz potěší každého, kdo rád tvoří, šije oblečení, bytové doplňky nebo dětskou výbavičku. Poukaz odesíláme online ihned po zakoupení.
 Obdarovaný si může vybrat z široké nabídky kvalitních látek, metráže, galanterie, střihů a dalších šicích potřeb. Specializujeme se na látky pro děti a miminka, ale v našem sortimentu najdou inspiraci i dospělí švadlenky a kreativci.
 Dárkový poukaz lze uplatnit pohodlně na e-shopu Dětské-látky.cz i v kamenné prodejně látek ve Vlašimi. Díky tomu si může každý vybrat přesně to, co potřebuje pro svůj další projekt.
-Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkami a materiály.</DESCRIPTION>
+Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkami a materiály.
+Pokud máte zájem o zakoupení i klasického zboží, prosíme o vytvoření dvou samostatných objednávek. Poukaz vám pošleme zdarma obratem po uhrazení do e-mailu. On-line odeslání se týká pouze dárkových poukazů.
+Jak</DESCRIPTION>
     <URL>https://www.detske-latky.cz/darkovy-poukaz/?variantId=11481</URL>
     <PRICE_VAT>1000,00</PRICE_VAT>
     <DELIVERY_DATE>0</DELIVERY_DATE>
@@ -27501,36 +27331,26 @@ Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkam
     <ITEMGROUP_ID>18189</ITEMGROUP_ID>
     <CATEGORYTEXT>Kultura a zábava | Volný čas | Oslavy a dárky | Dárkové poukazy</CATEGORYTEXT>
     <CUSTOM_LABEL_0>Látky | Dárkové poukazy</CUSTOM_LABEL_0>
-    <PRODUCT>Dárkový poukaz Hodnota: 1000,-</PRODUCT>
+    <PRODUCT>Dárkový poukaz - online odeslání Hodnota: 1000 Kč</PRODUCT>
     <DELIVERY>
         <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
         <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
     </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
     <VISIBILITY>1</VISIBILITY>
     <PARAM>
         <PARAM_NAME>Hodnota</PARAM_NAME>
-        <VAL>1000,-</VAL>
+        <VAL>1000 Kč</VAL>
     </PARAM>
 </SHOPITEM>
 <SHOPITEM>
-    <PRODUCTNAME>Dárkový poukaz Hodnota: 2000,-</PRODUCTNAME>
+    <PRODUCTNAME>Dárkový poukaz - online odeslání Hodnota: 2000 Kč</PRODUCTNAME>
     <DESCRIPTION>Dárkový poukaz na nákup látek a galanterie | Dětské-látky.cz
-Hledáte originální dárek pro milovníky šití? Dárkový poukaz do e-shopu Dětské-látky.cz potěší každého, kdo rád tvoří, šije oblečení, bytové doplňky nebo dětskou výbavičku.
+Hledáte originální dárek pro milovníky šití? Dárkový poukaz do e-shopu Dětské-látky.cz potěší každého, kdo rád tvoří, šije oblečení, bytové doplňky nebo dětskou výbavičku. Poukaz odesíláme online ihned po zakoupení.
 Obdarovaný si může vybrat z široké nabídky kvalitních látek, metráže, galanterie, střihů a dalších šicích potřeb. Specializujeme se na látky pro děti a miminka, ale v našem sortimentu najdou inspiraci i dospělí švadlenky a kreativci.
 Dárkový poukaz lze uplatnit pohodlně na e-shopu Dětské-látky.cz i v kamenné prodejně látek ve Vlašimi. Díky tomu si může každý vybrat přesně to, co potřebuje pro svůj další projekt.
-Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkami a materiály.</DESCRIPTION>
+Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkami a materiály.
+Pokud máte zájem o zakoupení i klasického zboží, prosíme o vytvoření dvou samostatných objednávek. Poukaz vám pošleme zdarma obratem po uhrazení do e-mailu. On-line odeslání se týká pouze dárkových poukazů.
+Jak</DESCRIPTION>
     <URL>https://www.detske-latky.cz/darkovy-poukaz/?variantId=11484</URL>
     <PRICE_VAT>2000,00</PRICE_VAT>
     <DELIVERY_DATE>0</DELIVERY_DATE>
@@ -27540,27 +27360,15 @@ Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkam
     <ITEMGROUP_ID>18189</ITEMGROUP_ID>
     <CATEGORYTEXT>Kultura a zábava | Volný čas | Oslavy a dárky | Dárkové poukazy</CATEGORYTEXT>
     <CUSTOM_LABEL_0>Látky | Dárkové poukazy</CUSTOM_LABEL_0>
-    <PRODUCT>Dárkový poukaz Hodnota: 2000,-</PRODUCT>
+    <PRODUCT>Dárkový poukaz - online odeslání Hodnota: 2000 Kč</PRODUCT>
     <DELIVERY>
         <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
-        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
         <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
     </DELIVERY>
     <VISIBILITY>1</VISIBILITY>
     <PARAM>
         <PARAM_NAME>Hodnota</PARAM_NAME>
-        <VAL>2000,-</VAL>
+        <VAL>2000 Kč</VAL>
     </PARAM>
 </SHOPITEM>
 <SHOPITEM>
@@ -28153,6 +27961,129 @@ Materiál má certifikaci OEKO-TEX® STANDARD 100, třída I, která stanovuje p
     <PARAM>
         <PARAM_NAME>Výrobce</PARAM_NAME>
         <VAL>Textiel B.V., Tradepark 58, Tilburg, Nizozemsko, customcare@textielbv.com</VAL>
+    </PARAM>
+</SHOPITEM>
+<SHOPITEM>
+    <PRODUCTNAME>Dárkový poukaz - odeslání na adresu Hodnota: 500 Kč</PRODUCTNAME>
+    <DESCRIPTION>Dárkový poukaz na nákup látek a galanterie | Dětské-látky.cz
+Hledáte originální dárek pro milovníky šití? Dárkový poukaz do e-shopu Dětské-látky.cz potěší každého, kdo rád tvoří, šije oblečení, bytové doplňky nebo dětskou výbavičku. Poukaz odesíláme online ihned po zakoupení.
+Obdarovaný si může vybrat z široké nabídky kvalitních látek, metráže, galanterie, střihů a dalších šicích potřeb. Specializujeme se na látky pro děti a miminka, ale v našem sortimentu najdou inspiraci i dospělí švadlenky a kreativci.
+Dárkový poukaz lze uplatnit pohodlně na e-shopu Dětské-látky.cz i v kamenné prodejně látek ve Vlašimi. Díky tomu si může každý vybrat přesně to, co potřebuje pro svůj další projekt.
+Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkami a materiály.
+Poukaz vám pošleme přepravní společnosti na vámi zvolenou adresu nebo do boxu.
+Jak postupovat pro uplatnění poukazu: Na poukazu bude uvedené číslo poukazu. Číslo obdarovaný vloží do košíku při</DESCRIPTION>
+    <URL>https://www.detske-latky.cz/darkovy-poukaz-online-na-adresu/?variantId=11524</URL>
+    <PRICE_VAT>500,00</PRICE_VAT>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <SHOP_DEPOTS>144578</SHOP_DEPOTS>
+    <ITEM_ID>18229_500</ITEM_ID>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/18229_poukaz-500.jpg?6afb1aa5</IMGURL>
+    <ITEMGROUP_ID>18229</ITEMGROUP_ID>
+    <CATEGORYTEXT>Kultura a zábava | Volný čas | Oslavy a dárky | Dárkové poukazy</CATEGORYTEXT>
+    <CUSTOM_LABEL_0>Látky | Dárkové poukazy</CUSTOM_LABEL_0>
+    <PRODUCT>Dárkový poukaz - odeslání na adresu Hodnota: 500 Kč</PRODUCT>
+    <DELIVERY>
+        <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
+        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
+        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS</DELIVERY_ID>
+        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
+        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <VISIBILITY>1</VISIBILITY>
+    <PARAM>
+        <PARAM_NAME>Hodnota</PARAM_NAME>
+        <VAL>500 Kč</VAL>
+    </PARAM>
+</SHOPITEM>
+<SHOPITEM>
+    <PRODUCTNAME>Dárkový poukaz - odeslání na adresu Hodnota: 1000 Kč</PRODUCTNAME>
+    <DESCRIPTION>Dárkový poukaz na nákup látek a galanterie | Dětské-látky.cz
+Hledáte originální dárek pro milovníky šití? Dárkový poukaz do e-shopu Dětské-látky.cz potěší každého, kdo rád tvoří, šije oblečení, bytové doplňky nebo dětskou výbavičku. Poukaz odesíláme online ihned po zakoupení.
+Obdarovaný si může vybrat z široké nabídky kvalitních látek, metráže, galanterie, střihů a dalších šicích potřeb. Specializujeme se na látky pro děti a miminka, ale v našem sortimentu najdou inspiraci i dospělí švadlenky a kreativci.
+Dárkový poukaz lze uplatnit pohodlně na e-shopu Dětské-látky.cz i v kamenné prodejně látek ve Vlašimi. Díky tomu si může každý vybrat přesně to, co potřebuje pro svůj další projekt.
+Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkami a materiály.
+Poukaz vám pošleme přepravní společnosti na vámi zvolenou adresu nebo do boxu.
+Jak postupovat pro uplatnění poukazu: Na poukazu bude uvedené číslo poukazu. Číslo obdarovaný vloží do košíku při</DESCRIPTION>
+    <URL>https://www.detske-latky.cz/darkovy-poukaz-online-na-adresu/?variantId=11527</URL>
+    <PRICE_VAT>1000,00</PRICE_VAT>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <SHOP_DEPOTS>144578</SHOP_DEPOTS>
+    <ITEM_ID>18229_100</ITEM_ID>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/18229_poukaz-500.jpg?6afb1aa5</IMGURL>
+    <ITEMGROUP_ID>18229</ITEMGROUP_ID>
+    <CATEGORYTEXT>Kultura a zábava | Volný čas | Oslavy a dárky | Dárkové poukazy</CATEGORYTEXT>
+    <CUSTOM_LABEL_0>Látky | Dárkové poukazy</CUSTOM_LABEL_0>
+    <PRODUCT>Dárkový poukaz - odeslání na adresu Hodnota: 1000 Kč</PRODUCT>
+    <DELIVERY>
+        <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
+        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
+        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS</DELIVERY_ID>
+        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
+        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <VISIBILITY>1</VISIBILITY>
+    <PARAM>
+        <PARAM_NAME>Hodnota</PARAM_NAME>
+        <VAL>1000 Kč</VAL>
+    </PARAM>
+</SHOPITEM>
+<SHOPITEM>
+    <PRODUCTNAME>Dárkový poukaz - odeslání na adresu Hodnota: 2000 Kč</PRODUCTNAME>
+    <DESCRIPTION>Dárkový poukaz na nákup látek a galanterie | Dětské-látky.cz
+Hledáte originální dárek pro milovníky šití? Dárkový poukaz do e-shopu Dětské-látky.cz potěší každého, kdo rád tvoří, šije oblečení, bytové doplňky nebo dětskou výbavičku. Poukaz odesíláme online ihned po zakoupení.
+Obdarovaný si může vybrat z široké nabídky kvalitních látek, metráže, galanterie, střihů a dalších šicích potřeb. Specializujeme se na látky pro děti a miminka, ale v našem sortimentu najdou inspiraci i dospělí švadlenky a kreativci.
+Dárkový poukaz lze uplatnit pohodlně na e-shopu Dětské-látky.cz i v kamenné prodejně látek ve Vlašimi. Díky tomu si může každý vybrat přesně to, co potřebuje pro svůj další projekt.
+Darujte možnost svobodného výběru a radost z tvoření s kvalitními látkami a materiály.
+Poukaz vám pošleme přepravní společnosti na vámi zvolenou adresu nebo do boxu.
+Jak postupovat pro uplatnění poukazu: Na poukazu bude uvedené číslo poukazu. Číslo obdarovaný vloží do košíku při</DESCRIPTION>
+    <URL>https://www.detske-latky.cz/darkovy-poukaz-online-na-adresu/?variantId=11530</URL>
+    <PRICE_VAT>2000,00</PRICE_VAT>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <SHOP_DEPOTS>144578</SHOP_DEPOTS>
+    <ITEM_ID>18229_200</ITEM_ID>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/18229_poukaz-500.jpg?6afb1aa5</IMGURL>
+    <ITEMGROUP_ID>18229</ITEMGROUP_ID>
+    <CATEGORYTEXT>Kultura a zábava | Volný čas | Oslavy a dárky | Dárkové poukazy</CATEGORYTEXT>
+    <CUSTOM_LABEL_0>Látky | Dárkové poukazy</CUSTOM_LABEL_0>
+    <PRODUCT>Dárkový poukaz - odeslání na adresu Hodnota: 2000 Kč</PRODUCT>
+    <DELIVERY>
+        <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
+        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
+        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS</DELIVERY_ID>
+        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
+        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <VISIBILITY>1</VISIBILITY>
+    <PARAM>
+        <PARAM_NAME>Hodnota</PARAM_NAME>
+        <VAL>2000 Kč</VAL>
     </PARAM>
 </SHOPITEM>
 </SHOP>
