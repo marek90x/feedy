@@ -2,7 +2,7 @@
  "bez_popisu": [],
  "den": "2026-11-18",
  "kategoria": {
-  "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil": 450,
+  "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil": 449,
   "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Nažehlovací záplaty": 19,
   "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Ostatní galanterie": 44,
   "Kultura a zábava | Volný čas | Oslavy a dárky | Dárkové poukazy": 6
@@ -14,7 +14,10 @@
   "html_v_popise": 0,
   "kod_v_nazve": 582,
   "nazov_rucne": 17,
-  "pole_vymazane": 306,
+  "param_doplneny": 990,
+  "param_premenovany": 1325,
+  "param_vyhodeny": 562,
+  "pole_vymazane": 824,
   "popis_doplneny": 0
  },
  "platforma": "zbozi",
@@ -24,6 +27,6 @@
   "názov na webe patrí inému variantu (14. 11.: pejsci = Zaječí balerína, stuha starorůžová = béžová, vaflový béžový = Mauve, husa na zádech 12×12 = Husa s mládětem); vrátiť po oprave webu": 4,
   "střihy (Marek 12. 11.)": 7
  },
- "vystup_ponuk": 519,
- "zdroj_ponuk": 909
+ "vystup_ponuk": 518,
+ "zdroj_ponuk": 908
 }
