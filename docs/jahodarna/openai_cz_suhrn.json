@@ -1,29 +1,29 @@
 {
  "den": "2026-11-19",
  "kategoria": {
-  "Cibuloviny a hlízy": 1015,
+  "Cibuloviny a hlízy": 1014,
   "Prostokořenné sazenice květin a trvalek": 155,
   "Růže": 12,
   "Sazenice jahodníku": 79,
-  "Trvalky": 50
+  "Trvalky": 53
  },
  "klient": "jahodarna",
  "opravy": {
   "gtin_odstraneny": 8,
   "popis_z_parametrov": 12,
-  "znacka_doplnena": 1306
+  "znacka_doplnena": 1308
  },
  "platforma": "openai",
- "pribudlo": 1,
+ "pribudlo": 3,
  "sklad": {
-  "in_stock": 1311
+  "in_stock": 1313
  },
- "ubudlo": 0,
+ "ubudlo": 1,
  "vyradene": {
   "URL nefunguje": 1,
   "letničky nie sú trvalky": 12,
   "mimo vybraných kategórií": 2140,
-  "nie je skladom": 875,
+  "nie je skladom": 873,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 8
  },
  "vyradene_id": {
@@ -261,6 +261,7 @@
    "78867",
    "78902",
    "14190-14",
+   "78908",
    "16187/10/",
    "16187/12-",
    "78-941",
@@ -893,9 +894,7 @@
    "VANOCE-HVEZDNIK-05",
    "VANOCE-HVEZDNIK-06",
    "30185",
-   "30188",
    "30191",
-   "81640",
    "30197",
    "30203",
    "30209",
@@ -913,7 +912,6 @@
    "30269",
    "30628",
    "30640",
-   "30646",
    "30649",
    "30661",
    "30664",
@@ -932,10 +930,10 @@
    "80520"
   ]
  },
- "vystup_ponuk": 1311,
+ "vystup_ponuk": 1313,
  "zdroj_ponuk": 4347,
  "znacky": {
-  "Jahodárna Brozany": 1306,
+  "Jahodárna Brozany": 1308,
   "Kordes Roses": 4,
   "SEMO": 1
  }
