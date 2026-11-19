@@ -2361,56 +2361,6 @@ Tisk: Digitální reaktivní tisk s vysokou stálostí</DESCRIPTION>
     <UNIT>cm</UNIT></PARAM>
     <PARAM><PARAM_NAME>dětská</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>vzor látky</PARAM_NAME><VAL>zvířata</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
-    <PRODUCTNAME>Prémiová bavlna – Teddy Boy (hnědo-modří medvídci) | dětská látka na povlečení a dekorace</PRODUCTNAME>
-    <DESCRIPTION>Prémiová bavlna – Teddy Boy (hnědo-modří medvídci, autorský vzor)
-Tato prémiová bavlna s autorským vzorem Teddy Boy přináší do dětského pokoje roztomilý a hravý motiv medvídků v odstínech hnědé a modré, který působí veselě a nadčasově. Vzor je univerzální a snadno kombinovatelný s dalšími barvami, ideální pro dětské pokoje i výbavičky pro miminka.
-Látka je potištěna digitálním reaktivním tiskem, který zajišťuje trvalou sytost barev i po mnoha praních. Prémiová bavlna je oproti klasické bavlně jemnější, hebčí a méně se mačká, zároveň je hustě tkaná a pevná, ideální pro šití povlečení, závěsů, polštářků, mantinelů, hnízdeček, hracích podložek nebo výbavičky pro miminko.
-Materiál má certifikaci Öko-Tex Standard 100 – třída I, což znamená, že je bezpečný i pro kojence a děti do 3 let.
-Vlastnosti materiálu:
-Materiál: Prémiová bavlna
-Vzor: Teddy Boy – hnědo-modří medvídci, univerzální motiv
-Tisk: Digitální reaktivní tisk s vysokou stálostí barev
-Jemnost: Velmi hebká a</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/teddy-boy-premiova-bavlna/</URL>
-    <PRICE_VAT>339,00</PRICE_VAT>
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <ITEM_ID>P01178</ITEM_ID>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/15596_r66b24a6fada1b-teddy-boy-promo.jpg?69011151</IMGURL>
-    <ITEMGROUP_ID>15596</ITEMGROUP_ID>
-    <SHOP_DEPOTS>14100943</SHOP_DEPOTS><CATEGORYTEXT>Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil</CATEGORYTEXT>
-    <CUSTOM_LABEL_0>Látky | Prémiová bavlna (plátno)</CUSTOM_LABEL_0>
-    <PRODUCT>Prémiová bavlna – Teddy Boy (hnědo-modří medvídci) | dětská látka na povlečení a dekorace</PRODUCT>
-    <DELIVERY>
-        <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
-        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <VISIBILITY>1</VISIBILITY>
-    <PARAM>
-        <PARAM_NAME>materiál látky</PARAM_NAME>
-        <VAL>bavlna</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>gramáž látky</PARAM_NAME>
-        <VAL>150</VAL>
-    <UNIT>g/m2</UNIT></PARAM>
-    <PARAM>
-        <PARAM_NAME>šířka</PARAM_NAME>
-        <VAL>155</VAL>
-    <UNIT>cm</UNIT></PARAM>
-    <PARAM><PARAM_NAME>dětská</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>vzor látky</PARAM_NAME><VAL>zvířata</VAL></PARAM></SHOPITEM>
-<SHOPITEM>
     <PRODUCTNAME>Dřevěné hračky - nepromokavý polyester/kočárkovina</PRODUCTNAME>
     <DESCRIPTION>Dřevěné hračky – nepromokavý polyester / kočárkovina
 Kouzlo tradičních dětských hraček v něžném a nadčasovém provedení. ♥ Nepromokavá kočárkovina Dřevěné hračky zaujme roztomilým motivem inspirovaným dětským světem plným her a fantazie. Je ideální pro šití originálních doplňků pro miminka i větší děti.
@@ -16347,6 +16297,61 @@ Vhodná pro miminka a alergiky</DESCRIPTION>
     <SHOP_DEPOTS>14100943</SHOP_DEPOTS><CATEGORYTEXT>Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil</CATEGORYTEXT>
     <CUSTOM_LABEL_0>Látky</CUSTOM_LABEL_0>
     <PRODUCT>Prémiová bavlna jednobarevná – světle růžová</PRODUCT>
+    <DELIVERY>
+        <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
+        <DELIVERY_PRICE>0,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
+        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS</DELIVERY_ID>
+        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
+        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <VISIBILITY>1</VISIBILITY>
+    <PARAM>
+        <PARAM_NAME>materiál látky</PARAM_NAME>
+        <VAL>bavlna</VAL>
+    </PARAM>
+    <PARAM>
+        <PARAM_NAME>gramáž látky</PARAM_NAME>
+        <VAL>153</VAL>
+    <UNIT>g/m2</UNIT></PARAM>
+    <PARAM>
+        <PARAM_NAME>šířka</PARAM_NAME>
+        <VAL>158</VAL>
+    <UNIT>cm</UNIT></PARAM>
+    <PARAM><PARAM_NAME>dětská</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>barva</PARAM_NAME><VAL>růžová</VAL></PARAM><PARAM><PARAM_NAME>vzor látky</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
+<SHOPITEM>
+    <PRODUCTNAME>Bavlněná látka jednobarevná Sepia Rose metráž 100% bavlna šíře 150 cm</PRODUCTNAME>
+    <DESCRIPTION>Jednobarevná prémiová bavlna Sepia Rose – 100% bavlna | šíře 150 cm
+Kvalitní jednobarevná bavlna Sepia Rose je ideální pro všechny, kdo hledají hebkou, příjemnou a odolnou látku pro šití oděvů. Tento prémiový bavlněný materiál je měkký na dotek, prodyšný a vhodný i pro citlivou dětskou pokožku.
+Elegantní odstín Sepia Rose dodá vašim projektům jemný a sofistikovaný vzhled. Látka je vhodná na dětské oblečení, trička, šaty, mikiny, doplňky i bytový textil. Díky vysoké kvalitě bavlny si zachovává tvar i po opakovaném praní a je snadno zpracovatelná.
+✔ Vlastnosti produktu
+materiál: 100% bavlna
+barva: Sepia Rose
+šířka: 150 cm
+vlastnosti: hebká, prodyšná, odolná, příjemná na šití
+použití: dětské oblečení, šaty, trička, mikiny, doplňky, bytový textil
+✔ Údržba
+praní na 40 °C
+nebělit
+nečistit chemicky</DESCRIPTION>
+    <URL>https://www.detske-latky.cz/premiova-bavlna-sepia-rose-staroruzova/</URL>
+    <PRICE_VAT>229,00</PRICE_VAT>
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <ITEM_ID>16856</ITEM_ID>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16856_sepia-rose-premiova-bavlna-staroruzova.jpg?6901115c</IMGURL>
+    <IMGURL_ALTERNATIVE>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16856-1_sepia-rose-premiova-bavlna-staroruzova.jpg?6901115c</IMGURL_ALTERNATIVE>
+    <ITEMGROUP_ID>16856</ITEMGROUP_ID>
+    <SHOP_DEPOTS>14100943</SHOP_DEPOTS><CATEGORYTEXT>Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil</CATEGORYTEXT>
+    <CUSTOM_LABEL_0>Látky</CUSTOM_LABEL_0>
+    <PRODUCT>Bavlněná látka jednobarevná Sepia Rose metráž 100% bavlna šíře 150 cm</PRODUCT>
     <DELIVERY>
         <DELIVERY_ID>VLASTNI_VYDEJNI_MISTA</DELIVERY_ID>
         <DELIVERY_PRICE>0,00</DELIVERY_PRICE>

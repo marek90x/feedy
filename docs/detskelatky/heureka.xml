@@ -2786,68 +2786,6 @@ kočárkovina (nepromokavý polyester)</DESCRIPTION>
     <ACCESSORY>P00167</ACCESSORY>
 <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>zvířata</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
-    <ITEM_ID>P01178</ITEM_ID>
-    <PRODUCTNAME>Prémiová bavlna – Teddy Boy (hnědo-modří medvídci), dětská látka metráž, šíře 155 cm, 150 g/m²</PRODUCTNAME>
-    <PRODUCT>Prémiová bavlna – Teddy Boy (hnědo-modří medvídci), dětská látka metráž, šíře 155 cm, 150 g/m²</PRODUCT>
-    <DESCRIPTION>Prémiová bavlna – Teddy Boy (hnědo-modří medvídci, autorský vzor)
-Tato prémiová bavlna s autorským vzorem Teddy Boy přináší do dětského pokoje roztomilý a hravý motiv medvídků v odstínech hnědé a modré , který působí veselě a nadčasově . Vzor je univerzální a snadno kombinovatelný s dalšími barvami , ideální pro dětské pokoje i výbavičky pro miminka .
-Látka je potištěna digitálním reaktivním tiskem , který zajišťuje trvalou sytost barev i po mnoha praních . Prémiová bavlna je oproti klasické bavlně jemnější, hebčí a méně se mačká , zároveň je hustě tkaná a pevná , ideální pro šití povlečení, závěsů, polštářků, mantinelů, hnízdeček, hracích podložek nebo výbavičky pro miminko .
-Materiál má certifikaci Öko-Tex Standard 100 – třída I , což znamená, že je bezpečný i pro kojence a děti do 3 let .
-Vlastnosti materiálu:
-Materiál: Prémiová bavlna
-Vzor: Teddy Boy – hnědo-modří medvídci, univerzální motiv
-Tisk: Digitální reaktivní tisk s vysokou stálostí barev
-Jemnost: Velmi hebká a příjemná na dotek
-Pevnost: Hustě tkaná a odolná látka
-Údržba: praní max. 40 °C, nebělit, chemicky nečistit
-Certifikace: Öko-Tex Standard 100, třída I
-Použití:
-dětské povlečení
-závěsy do pokoje
-polštářky a dekorace
-mantinely a hnízdečka
-hrací podložky
-výbavička pro miminko
-Další dostupné materiály:
-kočárkovina (nepromokavý polyester)</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/teddy-boy-premiova-bavlna/</URL>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/15596_r66b24a6fada1b-teddy-boy-promo.jpg?69011151</IMGURL>
-    <PRICE_VAT>339,00</PRICE_VAT>
-    <VAT>21%</VAT>
-    <PARAM>
-        <PARAM_NAME>Materiál</PARAM_NAME>
-        <VAL>bavlna</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Gramáž</PARAM_NAME>
-        <VAL>150 g/m²</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Šířka</PARAM_NAME>
-        <VAL>155 cm</VAL>
-    </PARAM>
-    <CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
-    <ISBN>P01178</ISBN>
-
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <ACCESSORY>P00843</ACCESSORY>
-    <ACCESSORY>P00169</ACCESSORY>
-    <ACCESSORY>P00140</ACCESSORY>
-    <ACCESSORY>P01256</ACCESSORY>
-<PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>zvířata</VAL></PARAM></SHOPITEM>
-<SHOPITEM>
     <ITEM_ID>P01172</ITEM_ID>
     <PRODUCTNAME>Dřevěné hračky - nepromokavý polyester/kočárkovina, dětská látka metráž, šíře 160 cm, 190 g/m²</PRODUCTNAME>
     <PRODUCT>Dřevěné hračky - nepromokavý polyester/kočárkovina, dětská látka metráž, šíře 160 cm, 190 g/m²</PRODUCT>
@@ -19035,6 +18973,62 @@ Vhodná pro miminka a alergiky</DESCRIPTION>
         <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
     </DELIVERY>
     <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>růžová</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
+<SHOPITEM>
+    <ITEM_ID>16856</ITEM_ID>
+    <PRODUCTNAME>Bavlněná látka jednobarevná Sepia Rose metráž 100% bavlna šíře 150 cm, 153 g/m²</PRODUCTNAME>
+    <PRODUCT>Bavlněná látka jednobarevná Sepia Rose metráž 100% bavlna šíře 150 cm, 153 g/m²</PRODUCT>
+    <DESCRIPTION>Jednobarevná prémiová bavlna Sepia Rose – 100% bavlna | šíře 150 cm
+Kvalitní jednobarevná bavlna Sepia Rose je ideální pro všechny, kdo hledají hebkou, příjemnou a odolnou látku pro šití oděvů . Tento prémiový bavlněný materiál je měkký na dotek, prodyšný a vhodný i pro citlivou dětskou pokožku.
+Elegantní odstín Sepia Rose dodá vašim projektům jemný a sofistikovaný vzhled. Látka je vhodná na dětské oblečení, trička, šaty, mikiny, doplňky i bytový textil . Díky vysoké kvalitě bavlny si zachovává tvar i po opakovaném praní a je snadno zpracovatelná.
+✔ Vlastnosti produktu
+materiál: 100% bavlna
+barva: Sepia Rose
+šířka: 150 cm
+vlastnosti: hebká, prodyšná, odolná, příjemná na šití
+použití: dětské oblečení, šaty, trička, mikiny, doplňky, bytový textil
+✔ Údržba
+praní na 40 °C
+nebělit
+nečistit chemicky</DESCRIPTION>
+    <URL>https://www.detske-latky.cz/premiova-bavlna-sepia-rose-staroruzova/</URL>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16856_sepia-rose-premiova-bavlna-staroruzova.jpg?6901115c</IMGURL>
+    <IMGURL_ALTERNATIVE>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16856-1_sepia-rose-premiova-bavlna-staroruzova.jpg?6901115c</IMGURL_ALTERNATIVE>
+    <PRICE_VAT>229,00</PRICE_VAT>
+    <VAT>21%</VAT>
+    <PARAM>
+        <PARAM_NAME>Materiál</PARAM_NAME>
+        <VAL>bavlna</VAL>
+    </PARAM>
+    <PARAM>
+        <PARAM_NAME>Gramáž</PARAM_NAME>
+        <VAL>153 g/m²</VAL>
+    </PARAM>
+    <PARAM>
+        <PARAM_NAME>Šířka</PARAM_NAME>
+        <VAL>158 cm</VAL>
+    </PARAM>
+    <CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
+    <ISBN>P00222</ISBN>
+
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <DELIVERY>
+        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
+        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS</DELIVERY_ID>
+        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
+        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <ACCESSORY>P01026</ACCESSORY>
+    <ACCESSORY>P00990</ACCESSORY>
+    <ACCESSORY>P00645</ACCESSORY>
+    <ACCESSORY>P00595</ACCESSORY>
+    <ACCESSORY>P01244</ACCESSORY>
+<PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>růžová</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
     <ITEM_ID>16859</ITEM_ID>
     <PRODUCTNAME>Pomněnková modrá 260g - prémiová teplákovina, dětská látka metráž, šíře 170 cm</PRODUCTNAME>
