@@ -1,29 +1,29 @@
 {
- "den": "2026-11-19",
+ "den": "2026-11-20",
  "kategoria": {
-  "Cibuloviny a hlízy": 1028,
+  "Cibuloviny a hlízy": 1033,
   "Prostokořenné sazenice květin a trvalek": 174,
-  "Růže": 10,
+  "Růže": 16,
   "Sazenice jahodníku": 79,
-  "Trvalky": 36
+  "Trvalky": 35
  },
  "klient": "jahodarna",
  "opravy": {
   "gtin_odstraneny": 8,
-  "popis_z_parametrov": 10,
-  "znacka_doplnena": 1323
+  "popis_z_parametrov": 16,
+  "znacka_doplnena": 1331
  },
  "platforma": "openai",
- "pribudlo": 39,
+ "pribudlo": 11,
  "sklad": {
-  "in_stock": 1327
+  "in_stock": 1337
  },
- "ubudlo": 25,
+ "ubudlo": 1,
  "vyradene": {
   "URL nefunguje": 1,
   "letničky nie sú trvalky": 12,
   "mimo vybraných kategórií": 2180,
-  "nie je skladom": 842,
+  "nie je skladom": 832,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 8
  },
  "vyradene_id": {
@@ -73,14 +73,12 @@
    "3221",
    "78-132",
    "78-134",
-   "78-135",
    "78-136",
    "78-137",
    "78-141",
    "78-142",
    "78-143",
    "78-144",
-   "78-145",
    "78-146",
    "78-147",
    "78-148",
@@ -164,9 +162,7 @@
    "78-649",
    "78-651",
    "78-653",
-   "78-657",
    "78-658",
-   "78-659",
    "78-677",
    "78-678",
    "78-679",
@@ -237,10 +233,8 @@
    "78-870",
    "78796",
    "78-871",
-   "78-873",
    "78-875",
    "13353-12",
-   "13353/8/1",
    "13356-12",
    "13356-14",
    "13365-12",
@@ -277,9 +271,7 @@
    "78-982",
    "78-984",
    "78-985",
-   "78-986",
    "78-987",
-   "78-988",
    "17814/14",
    "17814/12/",
    "17814/8/2",
@@ -330,7 +322,6 @@
    "78-3387",
    "78-3393",
    "79565",
-   "78-3395",
    "79658",
    "78-3404",
    "78-3415",
@@ -374,7 +365,6 @@
    "80570",
    "78-3493",
    "78-3497",
-   "78-3500",
    "78-3502",
    "80580",
    "78-3504",
@@ -858,6 +848,7 @@
    "29876",
    "81621",
    "29906",
+   "81623",
    "78-3652",
    "78-3653",
    "81630",
@@ -885,8 +876,7 @@
    "30245",
    "30254",
    "30257",
-   "30356",
-   "81713"
+   "30356"
   ],
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": [
    "11286",
@@ -899,11 +889,11 @@
    "80520"
   ]
  },
- "vystup_ponuk": 1327,
+ "vystup_ponuk": 1337,
  "zdroj_ponuk": 4370,
  "znacky": {
-  "Jahodárna Brozany": 1323,
-  "Kordes Roses": 3,
+  "Jahodárna Brozany": 1331,
+  "Kordes Roses": 5,
   "SEMO": 1
  }
 }

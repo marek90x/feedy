@@ -1,8 +1,8 @@
 {
- "den": "2026-11-19",
+ "den": "2026-11-20",
  "kategoria": {
-  "Cibuľoviny a hľuzy": 1058,
-  "Ruže": 5,
+  "Cibuľoviny a hľuzy": 1061,
+  "Ruže": 11,
   "Sadenice jahôd": 71,
   "Trvalky": 58,
   "Voľnokorenné sadenice kvetov a trvaliek": 123
@@ -11,26 +11,25 @@
  "opravy": {
   "gtin_odstraneny": 8,
   "popis_z_parametrov": 2,
-  "znacka_doplnena": 1295
+  "znacka_doplnena": 1298
  },
  "platforma": "openai",
- "pribudlo": 24,
+ "pribudlo": 9,
  "sklad": {
-  "in_stock": 1315
+  "in_stock": 1324
  },
- "ubudlo": 4,
+ "ubudlo": 0,
  "vyradene": {
-  "chýba obrázok": 11,
+  "chýba obrázok": 10,
   "chýba popis": 1,
   "letničky nie sú trvalky": 6,
-  "mimo vybraných kategórií": 1844,
-  "nie je skladom": 594,
+  "mimo vybraných kategórií": 1843,
+  "nie je skladom": 586,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 20,
   "príslušenstvo zaradené medzi rastlinami": 2
  },
  "vyradene_id": {
   "chýba obrázok": [
-   "81623",
    "30260",
    "30263",
    "30637",
@@ -82,13 +81,11 @@
    "3221",
    "78-132",
    "78-134",
-   "78-135",
    "78-136",
    "78-137",
    "78-142",
    "78-143",
    "78-144",
-   "78-145",
    "78-146",
    "78-147",
    "78-148",
@@ -164,8 +161,6 @@
    "78-651",
    "78-653",
    "78-654",
-   "78-657",
-   "78-659",
    "78-660",
    "78-677",
    "78-678",
@@ -220,9 +215,7 @@
    "78-860",
    "78791",
    "78-871",
-   "78-873",
    "13353-12",
-   "13353/8/1",
    "13356-12",
    "13356-14",
    "13365-12",
@@ -254,11 +247,9 @@
    "17847/14",
    "17850/12",
    "17850/14",
-   "78-988",
    "78-982",
    "78-984",
    "78-985",
-   "78-986",
    "17997",
    "79224",
    "79207",
@@ -323,7 +314,6 @@
    "20009/12-",
    "79561",
    "79565",
-   "78-3395",
    "79658",
    "78-3404",
    "4046",
@@ -614,6 +604,7 @@
    "81620",
    "81621",
    "29906",
+   "81623",
    "29960",
    "29969",
    "29975",
@@ -676,11 +667,11 @@
    "80379"
   ]
  },
- "vystup_ponuk": 1315,
- "zdroj_ponuk": 3793,
+ "vystup_ponuk": 1324,
+ "zdroj_ponuk": 3792,
  "znacky": {
-  "Jahodárna Brozany": 1309,
-  "Kordes Roses": 5,
+  "Jahodárna Brozany": 1312,
+  "Kordes Roses": 11,
   "Semo": 1
  }
 }
