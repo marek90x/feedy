@@ -21,6 +21,7 @@
   "popis_doplneny": 0
  },
  "platforma": "zbozi",
+ "vypadky_zdroja": 1,
  "vyradene": {
   "doplatok dopravy, nie produkt": 1,
   "látky na objednávku (DELIVERY_DATE -1, všeobecný názov; Marek 12. 11.)": 378,
