@@ -11220,52 +11220,6 @@ nežehlit</DESCRIPTION>
     <ACCESSORY>P01247</ACCESSORY>
 <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
-    <ITEM_ID>P00835</ITEM_ID>
-    <PRODUCTNAME>Mušelín světle béžový – 100% bavlna, jemná a prodyšná látka, dětská látka metráž, šíře 135 cm, 140 g/m²</PRODUCTNAME>
-    <PRODUCT>Mušelín světle béžový – 100% bavlna, jemná a prodyšná látka, dětská látka metráž, šíře 135 cm, 140 g/m²</PRODUCT>
-    <DESCRIPTION>Světle béžový mušelín je lehká, měkká a vzdušná mušelínová látka ze 100% bavlny, která vyniká svou přírodní, neutrální barvou a univerzálním využitím. Díky typické jemně mačkané struktuře není potřeba žehlení, což z něj dělá velmi praktický materiál pro každodenní šití.
-Tento mušelín ve světlé béžové barvě je ideální pro šití dětského i dospělého oblečení – například šatů, halenek, košil, šátků nebo letních overálů. Skvěle se hodí také na výrobu plenek, dek, zavinovaček či lehkých přikrývek. Materiál je velmi příjemný na dotek, hypoalergenní a vysoce prodyšný, takže poskytuje maximální komfort i během teplých letních dnů.
-Tato velmi jemná a vzdušná mušelínová látka je vhodná jak na šití povlaků, dekorací, polštářků aj., tak je široce používaná i k šití nejen dětského oblečení. Je extrémně příjemná a vzdušná obzvlášť v letních měsících. Látka je opatřena certifikátem nezávadnosti Oeko-Tex Standard 100 I. třídy a je tak vhodná i pro kojence a batolata.
-Složení:
-100% bavlna (mušelín / double gauze)
-Čištění a údržba:
-praní max na 30 °C
-nesušit v sušičce
-nežehlit</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/dvojita-gazovina-svetla-bezova/</URL>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16190_762fd27ba84c25-muselin-bezova.jpg?69011156</IMGURL>
-    <PRICE_VAT>229,00</PRICE_VAT>
-    <VAT>21%</VAT>
-    <PARAM>
-        <PARAM_NAME>Materiál</PARAM_NAME>
-        <VAL>bavlna</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Gramáž</PARAM_NAME>
-        <VAL>140 g/m²</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Šířka</PARAM_NAME>
-        <VAL>135 cm</VAL>
-    </PARAM>
-    <CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
-    <ISBN>P00835</ISBN>
-
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM></SHOPITEM>
-<SHOPITEM>
     <ITEM_ID>P00820</ITEM_ID>
     <PRODUCTNAME>Mušelín petrolejově zelený – 100% bavlna, jemná a prodyšná látka, dětská látka metráž, šíře 135 cm, 140 g/m²</PRODUCTNAME>
     <PRODUCT>Mušelín petrolejově zelený – 100% bavlna, jemná a prodyšná látka, dětská látka metráž, šíře 135 cm, 140 g/m²</PRODUCT>

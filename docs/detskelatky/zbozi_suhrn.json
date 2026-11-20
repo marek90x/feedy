@@ -2,7 +2,7 @@
  "bez_popisu": [],
  "den": "2026-11-20",
  "kategoria": {
-  "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil": 448,
+  "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Látky a metrový textil": 447,
   "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Nažehlovací záplaty": 19,
   "Kultura a zábava | Volný čas | Galanterie a šití | Galanterie | Ostatní galanterie": 44,
   "Kultura a zábava | Volný čas | Oslavy a dárky | Dárkové poukazy": 6
@@ -14,20 +14,19 @@
   "html_v_popise": 0,
   "kod_v_nazve": 580,
   "nazov_rucne": 17,
-  "param_doplneny": 989,
-  "param_premenovany": 1322,
-  "param_vyhodeny": 561,
-  "pole_vymazane": 822,
+  "param_doplneny": 988,
+  "param_premenovany": 1319,
+  "param_vyhodeny": 560,
+  "pole_vymazane": 821,
   "popis_doplneny": 0
  },
  "platforma": "zbozi",
- "vypadky_zdroja": 1,
  "vyradene": {
   "doplatok dopravy, nie produkt": 1,
   "látky na objednávku (DELIVERY_DATE -1, všeobecný názov; Marek 12. 11.)": 378,
   "názov na webe patrí inému variantu (14. 11.: pejsci = Zaječí balerína, stuha starorůžová = béžová, vaflový béžový = Mauve, husa na zádech 12×12 = Husa s mládětem); vrátiť po oprave webu": 4,
   "střihy (Marek 12. 11.)": 7
  },
- "vystup_ponuk": 517,
- "zdroj_ponuk": 907
+ "vystup_ponuk": 516,
+ "zdroj_ponuk": 906
 }
