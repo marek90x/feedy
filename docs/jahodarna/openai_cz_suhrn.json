@@ -1,5 +1,5 @@
 {
- "den": "2026-11-20",
+ "den": "2026-11-21",
  "kategoria": {
   "Cibuloviny a hlízy": 1030,
   "Prostokořenné sazenice květin a trvalek": 200,
@@ -14,7 +14,7 @@
   "znacka_doplnena": 1445
  },
  "platforma": "openai",
- "pribudlo": 172,
+ "pribudlo": 0,
  "sklad": {
   "in_stock": 1501,
   "out_of_stock": 62
@@ -22,7 +22,7 @@
  "stiahnute_bez_dat": 0,
  "stiahnute_bez_dat_id": [],
  "stiahnute_out_of_stock": 62,
- "ubudlo": 8,
+ "ubudlo": 0,
  "v_kanali_id": [
   "1010",
   "1034",

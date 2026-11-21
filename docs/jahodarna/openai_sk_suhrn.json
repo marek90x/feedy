@@ -1,5 +1,5 @@
 {
- "den": "2026-11-20",
+ "den": "2026-11-21",
  "kategoria": {
   "Cibuľoviny a hľuzy": 1074,
   "Ruže": 123,
@@ -14,7 +14,7 @@
   "znacka_doplnena": 1297
  },
  "platforma": "openai",
- "pribudlo": 140,
+ "pribudlo": 0,
  "sklad": {
   "in_stock": 1431,
   "out_of_stock": 69
@@ -73,7 +73,7 @@
   "16227"
  ],
  "stiahnute_out_of_stock": 69,
- "ubudlo": 33,
+ "ubudlo": 0,
  "v_kanali_id": [
   "1010",
   "1034",
