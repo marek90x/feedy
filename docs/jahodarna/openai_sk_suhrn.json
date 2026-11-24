@@ -1,22 +1,22 @@
 {
  "den": "2026-11-24",
  "kategoria": {
-  "Cibuľoviny a hľuzy": 1069,
+  "Cibuľoviny a hľuzy": 1079,
   "Ruže": 123,
   "Sadenice jahôd": 71,
-  "Trvalky": 30,
+  "Trvalky": 29,
   "Voľnokorenné sadenice kvetov a trvaliek": 131
  },
  "klient": "jahodarna",
  "opravy": {
   "gtin_odstraneny": 9,
   "popis_z_parametrov": 2,
-  "znacka_doplnena": 1290
+  "znacka_doplnena": 1299
  },
  "platforma": "openai",
- "pribudlo": 2,
+ "pribudlo": 10,
  "sklad": {
-  "in_stock": 1424,
+  "in_stock": 1433,
   "out_of_stock": 76
  },
  "stiahnute_bez_dat": 612,
@@ -73,7 +73,7 @@
   "16227"
  ],
  "stiahnute_out_of_stock": 76,
- "ubudlo": 2,
+ "ubudlo": 1,
  "v_kanali_id": [
   "1010",
   "1034",
@@ -707,6 +707,7 @@
   "29879",
   "29916",
   "29948",
+  "29960",
   "29966",
   "29972",
   "29978",
@@ -1180,7 +1181,9 @@
   "5345",
   "5348-5-6",
   "5522/10/",
+  "582",
   "5825",
+  "588",
   "5966",
   "6044",
   "6698",
@@ -1633,6 +1636,7 @@
   "78603",
   "78605",
   "78606",
+  "78613",
   "78617",
   "78624",
   "78625",
@@ -1670,6 +1674,7 @@
   "78847",
   "78848",
   "78851",
+  "78853",
   "78857",
   "78867",
   "78868",
@@ -2112,6 +2117,10 @@
   "81725",
   "81726",
   "81727",
+  "81748",
+  "81749",
+  "81750",
+  "81751",
   "8398/12/",
   "8458",
   "8461",
@@ -2191,7 +2200,7 @@
  "vyradene": {
   "chýba popis": 1,
   "letničky nie sú trvalky": 6,
-  "mimo vybraných kategórií": 1884,
+  "mimo vybraných kategórií": 1881,
   "nie je skladom": 518,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 20,
   "príslušenstvo zaradené medzi rastlinami": 2
@@ -2276,6 +2285,7 @@
    "78539",
    "78552",
    "11667",
+   "78614",
    "12048",
    "78-855",
    "78-860",
@@ -2480,7 +2490,6 @@
    "13353/8/1",
    "78-3437",
    "25511",
-   "25538",
    "80738",
    "80739",
    "25862",
@@ -2685,6 +2694,7 @@
    "29759",
    "29762",
    "29771",
+   "29774",
    "29777",
    "29786",
    "78-3651",
@@ -2695,7 +2705,6 @@
    "18366/10/",
    "26152/12-",
    "78-3413",
-   "29960",
    "29969",
    "29975",
    "29981",
@@ -2755,10 +2764,10 @@
    "80379"
   ]
  },
- "vystup_ponuk": 1424,
- "zdroj_ponuk": 3855,
+ "vystup_ponuk": 1433,
+ "zdroj_ponuk": 3861,
  "znacky": {
-  "Jahodárna Brozany": 1304,
+  "Jahodárna Brozany": 1313,
   "Kordes Roses": 119,
   "Semo": 1
  }

@@ -6292,6 +6292,75 @@ Chemicky nečistit.
     </DELIVERY>
     <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>šedá</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
+    <ITEM_ID>P01059</ITEM_ID>
+    <PRODUCTNAME>Dětské látky Bavlněný beránek premium mentolová 315 g/m² šíře 150 cm metráž</PRODUCTNAME>
+    <PRODUCT>Dětské látky Bavlněný beránek premium mentolová 315 g/m² šíře 150 cm metráž</PRODUCT>
+    <DESCRIPTION>Mentolová – bavlněný beránek premium 315 g/m²
+Dopřejte svému šití hebkost a svěží barevný nádech! ♥ Bavlněný beránek premium v mentolovém odstínu je měkký, hřejivý materiál s typickou beránkovou strukturou. Díky 95% podílu kvalitní bavlny je příjemný na dotek a hodí se na dětské deky, podšívky fusaků i další doplňky do chladných dnů.
+Gramáž 315 g/m² dodává materiálu příjemnou plnost. Jemná mentolová barva krásně doplní dětskou výbavičku pro holčičky i chlapečky a snadno ji sladíte s neutrálními odstíny i vzorovanými látkami.
+Proč si tento beránek zamilujete? ♥
+♥ 95 % kvalitní bavlny
+♥ Hebký a měkký povrch s beránkovou strukturou
+♥ Hřejivý materiál s gramáží 315 g/m²
+♥ Svěží mentolový odstín
+♥ Vhodný na deky a hřejivé podšívky
+♥ Certifikace OEKO-TEX® STANDARD 100, třída I
+Kvalita a certifikace
+Materiál má certifikaci OEKO-TEX® STANDARD 100, třída I , která stanovuje přísné limity pro textilie určené kojencům a dětem do 3 let.
+Certifikace potvrzuje testování textilie na škodlivé látky podle stanovených limitů, včetně vybraných pesticidů, rizikových barviv a dalších chemických látek.
+Co si z beránka můžete ušít?
+Dětské i dospělé zimní deky.
+Hřejivé podšívky fusaků a nánožníků.
+Rukávníky na kočárek.
+Vesty a další hřejivé oděvní doplňky.
+Dekorační povlaky na polštářky.
+Materiál a vlastnosti
+Podíl bavlny: 95 %
+Gramáž: 315 g/m²
+Barva: mentolová
+Povrch: měkká beránková struktura
+Vlastnosti: hebký a hřejivý materiál
+Certifikace: OEKO-TEX® STANDARD 100, třída I
+Doporučení pro šití
+Mentolový beránek krásně sladíte s bílou, smetanovou, béžovou, světle šedou nebo jemně růžovou látkou . Na deky jej kombinujte se vzorovanou bavlnou či mušelínem, na venkovní doplňky s kočárkovinou. Při stříhání dodržujte stejný směr vlasu u všech dílů.
+Pokyny k údržbě
+Prát maximálně na 40 °C .
+Nebělit.
+Chemicky nečistit.</DESCRIPTION>
+    <URL>https://www.detske-latky.cz/mentolova-bavlneny-beranek-premium-315g/</URL>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/15860_z66b2331d4d993-beranek-mentolovy.jpg?69011153</IMGURL>
+    <PRICE_VAT>399,00</PRICE_VAT>
+    <VAT>21%</VAT>
+    <PARAM>
+        <PARAM_NAME>Materiál</PARAM_NAME>
+        <VAL>bavlna</VAL>
+    </PARAM>
+    <PARAM>
+        <PARAM_NAME>Gramáž</PARAM_NAME>
+        <VAL>315 g/m²</VAL>
+    </PARAM>
+    <PARAM>
+        <PARAM_NAME>Šířka</PARAM_NAME>
+        <VAL>150 cm</VAL>
+    </PARAM>
+    <MANUFACTURER>Dětské látky</MANUFACTURER><CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
+    <ISBN>P01059</ISBN>
+
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <DELIVERY>
+        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
+        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS</DELIVERY_ID>
+        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
+        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>zelená</VAL></PARAM></SHOPITEM>
+<SHOPITEM>
     <ITEM_ID>P01058</ITEM_ID>
     <PRODUCTNAME>Dětské látky Minky tečky granátová 265 g/m² šíře 150 cm metráž</PRODUCTNAME>
     <PRODUCT>Dětské látky Minky tečky granátová 265 g/m² šíře 150 cm metráž</PRODUCT>
@@ -16051,6 +16120,44 @@ Hladký sametový velvet v tmavě modré barvě je skvělou volbou, pokud hledá
     </DELIVERY>
     <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
+    <ITEM_ID>P00579</ITEM_ID>
+    <PRODUCTNAME>Dětské látky Jeansová BAVLNĚNÝ BERÁNEK PREMIUM 315g šíře 150 cm metráž</PRODUCTNAME>
+    <PRODUCT>Dětské látky Jeansová BAVLNĚNÝ BERÁNEK PREMIUM 315g šíře 150 cm metráž</PRODUCT>
+    <DESCRIPTION>Tento jedinečný materiál vhodný na zimní deky, fusaky aj. je z 95% složen z bavlny nejvyšší kvality. Vhodné zejména pro děti a kojence!! Velmi oblíbený zimní materiál. Certifikace Öko-Tex Standard100, což je přední bezpečnostní značka na světě. Výrobky, které mají certifikát Öko-Tex Standard100, jsou mimo jiné bez škodlivých látek, pesticidů, alergenových barviv a jiných nebezpečných chemikálií. Značku dostávají pouze textilie, jejichž všechny komponenty byly testovány a získaly pozitivní výsledky v každé fázi výroby.Třídu I mají výrobky určené pro kojence a děti do 3 let. Čištění a údržba: praní max na 40° nebělit chemicky nečistit</DESCRIPTION>
+    <URL>https://www.detske-latky.cz/jeansova-bavlneny-beranek-premium-315g/</URL>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16646_066b235d98a69d-beranek-jeansovy.png?6901115a</IMGURL>
+    <PRICE_VAT>399,00</PRICE_VAT>
+    <VAT>21%</VAT>
+    <PARAM>
+        <PARAM_NAME>Materiál</PARAM_NAME>
+        <VAL>bavlna</VAL>
+    </PARAM>
+    <PARAM>
+        <PARAM_NAME>Gramáž</PARAM_NAME>
+        <VAL>315 g/m²</VAL>
+    </PARAM>
+    <PARAM>
+        <PARAM_NAME>Šířka</PARAM_NAME>
+        <VAL>150 cm</VAL>
+    </PARAM>
+    <MANUFACTURER>Dětské látky</MANUFACTURER><CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
+    <ISBN>P00579</ISBN>
+
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <DELIVERY>
+        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
+        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS</DELIVERY_ID>
+        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
+        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>modrá</VAL></PARAM></SHOPITEM>
+<SHOPITEM>
     <ITEM_ID>P00578</ITEM_ID>
     <PRODUCTNAME>Dětské látky Bavlněný beránek premium Hořčicový 315 g/m² šíře 150 cm metráž</PRODUCTNAME>
     <PRODUCT>Dětské látky Bavlněný beránek premium Hořčicový 315 g/m² šíře 150 cm metráž</PRODUCT>
@@ -17880,43 +17987,43 @@ Chemicky nečistit.</DESCRIPTION>
     </DELIVERY>
     <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>šedá</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
-    <ITEM_ID>P00525</ITEM_ID>
-    <PRODUCTNAME>Dětské látky Bavlněný fleece premium Starorůžová 260 g/m² šíře 150 cm metráž</PRODUCTNAME>
-    <PRODUCT>Dětské látky Bavlněný fleece premium Starorůžová 260 g/m² šíře 150 cm metráž</PRODUCT>
-    <DESCRIPTION>Starorůžový – bavlněný fleece premium
-Dopřejte svému šití měkkost v jemném ledově modrém odstínu! ♥ Bavlněný fleece premium je jemný, pružný a hřejivý materiál ze 100% kvalitní bavlny . Hodí se zejména k zateplení oblečení, čepiček a nákrčníků do chladných dnů.
-Díky své pružnosti a měkkému povrchu je příjemný při nošení. Využijete jej jako vnitřní vrstvu dětského i dospělého oblečení nebo na samostatné hřejivé doplňky.
-Ledově modrý odstín Ice Blue působí svěže a decentně. Krásně ladí s bílou, smetanovou, béžovou, světle šedou i tmavě modrou. Snadno jej zkombinujete s jemnými dětskými motivy i jednoduchými geometrickými vzory.
-Proč si tento fleece zamilujete? ♥
-♥ 100% bavlna
-♥ Jemný a měkký povrch
-♥ Pružný a pohodlný při nošení
+    <ITEM_ID>P00490</ITEM_ID>
+    <PRODUCTNAME>Dětské látky Bavlněný beránek premium bílý 315 g/m² šíře 150 cm metráž</PRODUCTNAME>
+    <PRODUCT>Dětské látky Bavlněný beránek premium bílý 315 g/m² šíře 150 cm metráž</PRODUCT>
+    <DESCRIPTION>Bílá – bavlněný beránek premium
+Dopřejte svému šití hebkost a příjemné teplo! ♥ Bavlněný beránek premium v bílé barvě je měkký, hřejivý materiál s typickou beránkovou strukturou. Díky 95% podílu kvalitní bavlny je příjemný na dotek a hodí se na zimní deky, podšívky fusaků i další doplňky do chladných dnů.
+Čistá bílá barva se snadno kombinuje s jemnými i výraznými vzory. Krásně doplní dětskou výbavičku a nechá vyniknout barvy druhé látky, ať už zvolíte bavlnu, mušelín nebo kočárkovinu.
+Proč si tento beránek zamilujete? ♥
+♥ 95 % kvalitní bavlny
+♥ Hebký a měkký povrch s beránkovou strukturou
 ♥ Hřejivý materiál do chladnějšího období
-♥ Jemný ledově modrý odstín Ice Blue
+♥ Univerzální bílá barva
+♥ Vhodný na dětské deky a podšívky fusaků
 ♥ Certifikace OEKO-TEX® STANDARD 100, třída I
 Kvalita a certifikace
-Materiál má certifikaci OEKO-TEX® STANDARD 100, třída I , která stanovuje přísné limity pro obsah škodlivých látek u textilií určených kojencům a dětem do 3 let.
-Certifikace zahrnuje testování na škodlivé látky podle stanovených limitů, včetně vybraných pesticidů, rizikových barviv a dalších chemických látek.
-Co si z fleecu můžete ušít?
-Hřejivé podšívky dětského i dospělého oblečení.
-Podšívky čepiček a nákrčníků.
-Čelenky a další oděvní doplňky.
-Mikiny a pohodlné domácí oblečení.
-Lehčí deky.
+Materiál má certifikaci OEKO-TEX® STANDARD 100, třída I , která stanovuje přísné limity pro textilie určené kojencům a dětem do 3 let.
+Certifikace potvrzuje testování textilie na škodlivé látky podle stanovených limitů, včetně vybraných pesticidů, rizikových barviv a dalších chemických látek.
+Co si z beránka můžete ušít?
+Dětské i dospělé zimní deky.
+Hřejivé podšívky fusaků a nánožníků.
+Rukávníky na kočárek.
+Vesty a další hřejivé oděvní doplňky.
+Dekorační povlaky na polštářky.
 Materiál a vlastnosti
-Složení: 100 % bavlna
-Vlastnosti: jemný, měkký, pružný a hřejivý materiál
+Podíl bavlny: 95 %
+Barva: bílá
+Povrch: měkká beránková struktura
+Vlastnosti: hebký a hřejivý materiál
 Certifikace: OEKO-TEX® STANDARD 100, třída I
 Doporučení pro šití
-Pro jemné barevné ladění kombinujte fleece Ice Blue s bílou, smetanovou nebo světle šedou látkou . S tmavě modrou vytvoříte výraznější kontrast, s béžovou přírodní kombinaci. Při použití jako podšívky vybírejte vrchní materiál s podobnou pružností, aby byl hotový výrobek pohodlný při nošení.
-Před stříháním doporučujeme látku vysrážet vypráním podle pokynů k údržbě.
+Na deky kombinujte bílého beránka se vzorovanou bavlnou nebo mušelínem . Pro venkovní doplňky jej využijete jako hřejivou vnitřní vrstvu ke kočárkovině. Při stříhání dodržujte stejný směr vlasu u všech dílů.
 Pokyny k údržbě
 Prát maximálně na 40 °C .
 Nebělit.
 Chemicky nečistit.</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/staroruzova-bavlneny-fleece-premium/</URL>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16763_bavlneny-fleece-staroruzovy.png?6af4565c</IMGURL>
-    <PRICE_VAT>349,00</PRICE_VAT>
+    <URL>https://www.detske-latky.cz/bila-bavlneny-beranek-premium-315g/</URL>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/16778_v66b23622d3110-beranek-bily.png?6901115b</IMGURL>
+    <PRICE_VAT>399,00</PRICE_VAT>
     <VAT>21%</VAT>
     <PARAM>
         <PARAM_NAME>Materiál</PARAM_NAME>
@@ -17924,14 +18031,14 @@ Chemicky nečistit.</DESCRIPTION>
     </PARAM>
     <PARAM>
         <PARAM_NAME>Gramáž</PARAM_NAME>
-        <VAL>260 g/m²</VAL>
+        <VAL>315 g/m²</VAL>
     </PARAM>
     <PARAM>
         <PARAM_NAME>Šířka</PARAM_NAME>
         <VAL>150 cm</VAL>
     </PARAM>
     <MANUFACTURER>Dětské látky</MANUFACTURER><CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
-    <ISBN>P00525</ISBN>
+    <ISBN>P00490</ISBN>
 
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <DELIVERY>
@@ -17946,7 +18053,7 @@ Chemicky nečistit.</DESCRIPTION>
         <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
         <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
     </DELIVERY>
-    <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>růžová</VAL></PARAM></SHOPITEM>
+    <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
     <ITEM_ID>P00484</ITEM_ID>
     <PRODUCTNAME>Dětské látky Hladký sametový velvet šalvějová 240 g/m² šíře 160 cm metráž</PRODUCTNAME>
@@ -24089,65 +24196,6 @@ Perte maximálně na 40 °C , nebělte a chemicky nečistěte.</DESCRIPTION>
     </DELIVERY>
     <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>květiny</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
-    <ITEM_ID>P01241</ITEM_ID>
-    <PRODUCTNAME>Dětské látky Bavlněná vaflovina bordó 240 g/m² šíře 150 cm metráž</PRODUCTNAME>
-    <PRODUCT>Dětské látky Bavlněná vaflovina bordó 240 g/m² šíře 150 cm metráž</PRODUCT>
-    <DESCRIPTION>Bavlněná vaflovina – bordó
-Kvalitní bavlněná vaflovina v elegantní bordó barvě zaujme svou charakteristickou plastickou strukturou připomínající drobné vafličky. Materiál je příjemný na dotek, prodyšný a dobře savý, díky čemuž nabízí široké možnosti využití při šití pro děti i dospělé.
-Vaflovina je oblíbená především pro svůj krásný strukturovaný vzhled a praktické vlastnosti. Je měkká, vzdušná a díky své savosti se skvěle hodí také na výrobky, které přicházejí do kontaktu s vodou.
-Výrazná bordó barva působí elegantně, hřejivě a nadčasově. Krásně se kombinuje se smetanovou, béžovou, bílou, starorůžovou, režnou i dalšími přírodními a neutrálními odstíny.
-Z bordó bavlněné vafloviny můžete ušít například ručníky, osušky, župany, zavinovačky, dečky, bryndáčky, přebalovací podložky, dětské oblečení, košíky, organizéry i nejrůznější bytové a dětské doplňky.
-Příjemný a savý bavlněný materiál
-Vaflovina v sobě spojuje příjemný bavlněný materiál s výraznou plastickou strukturou . Díky své prodyšnosti a savosti je praktická pro každodenní použití a zároveň krásně vypadá i bez dalších vzorů.
-Proč si tuto vaflovinu zamilujete?
-příjemná a měkká na dotek
-bavlněný materiál
-prodyšná a vzdušná
-dobře savá
-charakteristická vaflová struktura
-elegantní bordó barva
-nadčasový vzhled
-široké možnosti využití
-vhodná na dětské výrobky, oblečení i bytový textil
-Údržba
-Praní maximálně na 30 °C .
-Nebělit.
-Chemicky nečistit.
-Bordó bavlněná vaflovina je skvělou volbou, pokud hledáte příjemnou, savou a krásně strukturovanou látku. Hluboký bordó odstín krásně vynikne na osuškách, županech, zavinovačkách, dětských doplňcích i nejrůznějších originálních výrobcích do domácnosti.</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/bavlnena-vaflovina-bordo/</URL>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/17720_vaflovina-bordo--500-x-350-px-2.png?6910bdec</IMGURL>
-    <PRICE_VAT>249,00</PRICE_VAT>
-    <VAT>21%</VAT>
-    <PARAM>
-        <PARAM_NAME>Materiál</PARAM_NAME>
-        <VAL>bavlna</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Gramáž</PARAM_NAME>
-        <VAL>240 g/m²</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Šířka</PARAM_NAME>
-        <VAL>150 cm</VAL>
-    </PARAM>
-    <MANUFACTURER>Dětské látky</MANUFACTURER><CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
-    <ISBN>P00167</ISBN>
-
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>vínová</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
-<SHOPITEM>
     <ITEM_ID>P01242</ITEM_ID>
     <PRODUCTNAME>Dětské látky Prémiová bavlna Srdíčka a tečky 150 g/m² šíře 155 cm metráž</PRODUCTNAME>
     <PRODUCT>Dětské látky Prémiová bavlna Srdíčka a tečky 150 g/m² šíře 155 cm metráž</PRODUCT>
@@ -24615,27 +24663,13 @@ Hladký sametový velvet v pudrové barvě Sepia Rose je skvělou volbou, pokud 
     </DELIVERY>
     <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
-    <ITEM_ID>P01251</ITEM_ID>
-    <PRODUCTNAME>Dětské látky Jednobarevný mušelín hnědý jemná bavlněná látka na oblečení a pleny 140 g/m² šíře 135 cm metráž</PRODUCTNAME>
-    <PRODUCT>Dětské látky Jednobarevný mušelín hnědý jemná bavlněná látka na oblečení a pleny 140 g/m² šíře 135 cm metráž</PRODUCT>
-    <DESCRIPTION>Jednobarevný mušelín hnědý (dvojitá gázovina) je mimořádně jemná, lehká a prodyšná přírodní látka, která si získala velkou oblibu při šití oblečení i dětského sortimentu . Díky své měkkosti a vzdušné struktuře je velmi příjemná na nošení a šetrná i k citlivé pokožce.
-Mušelín je ideální na šití letních šatů, tunik, košil, halenek, sukní, kalhot, kraťasů, overálů , ale také dětského a kojeneckého oblečení . Skvěle se hodí rovněž na výrobu látkových plen, osušek, zavinovaček, dětských dek, plenek na odříhnutí, bryndáků, šátků, čepiček a dalšího textilu pro miminka.
-Díky svému univerzálnímu využití je mušelín oblíbený i pro bytové doplňky , jako jsou závěsy, baldachýny, polštářky, přehozy či dekorace . Jednobarevné provedení umožňuje snadné kombinování s dalšími materiály a hodí se jak do moderních, tak i přírodních interiérů.
-Látka je vyrobena z kvalitní bavlny a je opatřena certifikátem OEKO-TEX® Standard 100, třída I , což znamená, že je zcela bezpečná i pro kojence a batolata .
-Vlastnosti mušelínu:
-velmi jemný a měkký na dotek
-lehký, vzdušný a prodyšný materiál
-přírodní bavlna
-vhodný pro děti i dospělé
-ideální na oblečení, pleny i bytový textil
-Údržba a čištění:
-praní maximálně na 30 °C
-nesušit v sušičce
-nežehlit (typické mačkání je přirozenou vlastností mušelínu)</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/dvojita-gazovina-hneda--taupe-/</URL>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/17762-2_muselin-hnedy--650-x-500-px-2.png?69e9edcf</IMGURL>
-    <IMGURL_ALTERNATIVE>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/17762_muselin-hnedy-taupe.png?691b3f14</IMGURL_ALTERNATIVE>
-    <PRICE_VAT>229,00</PRICE_VAT>
+    <ITEM_ID>P01249</ITEM_ID>
+    <PRODUCTNAME>Dětské látky Bavlněný beránek premium off white (ekru) 315 g/m² šíře 150 cm metráž</PRODUCTNAME>
+    <PRODUCT>Dětské látky Bavlněný beránek premium off white (ekru) 315 g/m² šíře 150 cm metráž</PRODUCT>
+    <DESCRIPTION>Tento jedinečný materiál vhodný na zimní deky, fusaky aj. je z 95% složen z bavlny nejvyšší kvality. Vhodné zejména pro děti a kojence!! Velmi oblíbený zimní materiál. Certifikace Öko-Tex Standard100, což je přední bezpečnostní značka na světě. Výrobky, které mají certifikát Öko-Tex Standard100, jsou mimo jiné bez škodlivých látek, pesticidů, alergenových barviv a jiných nebezpečných chemikálií. Značku dostávají pouze textilie, jejichž všechny komponenty byly testovány a získaly pozitivní výsledky v každé fázi výroby.Třídu I mají výrobky určené pro kojence a děti do 3 let. Čištění a údržba: praní max na 40° nebělit chemicky nečistit</DESCRIPTION>
+    <URL>https://www.detske-latky.cz/bavlneny-beranek-premium-off-white--ekru-/</URL>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/17756_bavlneny-beranek-off-white.png?691b3bb5</IMGURL>
+    <PRICE_VAT>399,00</PRICE_VAT>
     <VAT>21%</VAT>
     <PARAM>
         <PARAM_NAME>Materiál</PARAM_NAME>
@@ -24643,14 +24677,14 @@ nežehlit (typické mačkání je přirozenou vlastností mušelínu)</DESCRIPTI
     </PARAM>
     <PARAM>
         <PARAM_NAME>Gramáž</PARAM_NAME>
-        <VAL>140 g/m²</VAL>
+        <VAL>315 g/m²</VAL>
     </PARAM>
     <PARAM>
         <PARAM_NAME>Šířka</PARAM_NAME>
-        <VAL>135 cm</VAL>
+        <VAL>150 cm</VAL>
     </PARAM>
     <MANUFACTURER>Dětské látky</MANUFACTURER><CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
-    <ISBN>P00137</ISBN>
+    <ISBN>P00490</ISBN>
 
     <DELIVERY_DATE>0</DELIVERY_DATE>
     <DELIVERY>
@@ -24665,11 +24699,7 @@ nežehlit (typické mačkání je přirozenou vlastností mušelínu)</DESCRIPTI
         <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
         <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
     </DELIVERY>
-    <ACCESSORY>P00530</ACCESSORY>
-    <ACCESSORY>P01265</ACCESSORY>
-    <ACCESSORY>P01286</ACCESSORY>
-    <ACCESSORY>17946</ACCESSORY>
-<PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>hnědá</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
+    <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
     <ITEM_ID>P01252</ITEM_ID>
     <PRODUCTNAME>Dětské látky Bavlněná Madeira květy pudrová / sepia rose metráž</PRODUCTNAME>
