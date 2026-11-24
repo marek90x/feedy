@@ -343,7 +343,8 @@ Set obsahuje retinolové sérum, peptide sérum, pleťové rozjasňující séru
       <g:id>7128</g:id>
       <g:title>VOONO 15minutová vyživující maska - ORGANIC LINE</g:title>
       <g:description>Vyživující, 15 minutová maska pro suché, poškozené a vlnité vlasy. Při pravidelném používání dokonale vyhladí.
-Díky přírodním bio olejům a extraktům budou tvé vlasy vyživené, lesklé a plné života.</g:description>
+Díky přírodním bio olejům a extraktům budou tvé vlasy vyživené, lesklé a plné života.
+Zlevněno z důvodu odchylky ve vůni, účinnost a složení beze změny.</g:description>
       <g:link>https://www.voono.cz/e-shop/vlasova-pece/masky/15-minutova-maska/</g:link>
       <g:image_link>https://www.voono.cz/app/uploads/2024/04/organic-line-maska-1080x1080px.png</g:image_link>
       <g:additional_image_link>https://www.voono.cz/app/uploads/2024/05/voono-bannery-na-e-shop-usp-maska-cz.png</g:additional_image_link>
@@ -352,11 +353,12 @@ Díky přírodním bio olejům a extraktům budou tvé vlasy vyživené, lesklé
       <g:availability>in stock</g:availability>
       <g:condition>new</g:condition>
       <g:price>659.00 CZK</g:price>
+      <g:sale_price>249.00 CZK</g:sale_price>
       <g:brand>VOONO</g:brand>
       <g:gtin>8595654000770</g:gtin>
       <g:google_product_category>486</g:google_product_category>
       <g:product_type>Vlasová péče &gt; Masky a regenerace</g:product_type>
-      <g:custom_label_0>bez akce</g:custom_label_0>
+      <g:custom_label_0>akce</g:custom_label_0>
     </item>
     <item>
       <g:id>7206</g:id>
