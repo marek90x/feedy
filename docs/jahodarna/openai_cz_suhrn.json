@@ -1,28 +1,28 @@
 {
- "den": "2026-11-23",
+ "den": "2026-11-24",
  "kategoria": {
-  "Cibuloviny a hlízy": 1028,
+  "Cibuloviny a hlízy": 1026,
   "Prostokořenné sazenice květin a trvalek": 200,
   "Růže": 158,
   "Sazenice jahodníku": 79,
-  "Trvalky": 32
+  "Trvalky": 31
  },
  "klient": "jahodarna",
  "opravy": {
   "gtin_odstraneny": 9,
-  "popis_z_parametrov": 155,
-  "znacka_doplnena": 1441
+  "popis_z_parametrov": 0,
+  "znacka_doplnena": 1438
  },
  "platforma": "openai",
  "pribudlo": 1,
  "sklad": {
-  "in_stock": 1497,
-  "out_of_stock": 66
+  "in_stock": 1494,
+  "out_of_stock": 69
  },
  "stiahnute_bez_dat": 0,
  "stiahnute_bez_dat_id": [],
- "stiahnute_out_of_stock": 66,
- "ubudlo": 0,
+ "stiahnute_out_of_stock": 69,
+ "ubudlo": 4,
  "v_kanali_id": [
   "1010",
   "1034",
@@ -1591,8 +1591,8 @@
  "vyradene": {
   "URL nefunguje": 1,
   "letničky nie sú trvalky": 12,
-  "mimo vybraných kategórií": 2180,
-  "nie je skladom": 758,
+  "mimo vybraných kategórií": 2171,
+  "nie je skladom": 761,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 8
  },
  "vyradene_id": {
@@ -1741,6 +1741,7 @@
    "78-873",
    "78-875",
    "13353-12",
+   "13353/8/1",
    "13356-12",
    "13356-14",
    "13365-12",
@@ -1860,6 +1861,7 @@
    "80569",
    "80570",
    "78-3493",
+   "80575",
    "78-3497",
    "78-3500",
    "78-3502",
@@ -2215,7 +2217,6 @@
    "78-3610",
    "78-3611",
    "78-3612",
-   "78-3613",
    "28642",
    "78-3618",
    "78-3622",
@@ -2320,6 +2321,7 @@
    "29561",
    "29567",
    "81610",
+   "81612",
    "29615",
    "29684",
    "29687",
@@ -2353,6 +2355,7 @@
    "29969",
    "29975",
    "29981",
+   "29984",
    "29987",
    "29993",
    "30008",
@@ -2384,10 +2387,10 @@
    "80520"
   ]
  },
- "vystup_ponuk": 1497,
- "zdroj_ponuk": 4456,
+ "vystup_ponuk": 1494,
+ "zdroj_ponuk": 4447,
  "znacky": {
-  "Jahodárna Brozany": 1441,
+  "Jahodárna Brozany": 1438,
   "Kordes Roses": 55,
   "SEMO": 1
  }
