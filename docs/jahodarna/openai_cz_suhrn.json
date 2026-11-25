@@ -1,28 +1,28 @@
 {
- "den": "2026-11-24",
+ "den": "2026-11-25",
  "kategoria": {
-  "Cibuloviny a hlízy": 1037,
-  "Prostokořenné sazenice květin a trvalek": 196,
+  "Cibuloviny a hlízy": 1040,
+  "Prostokořenné sazenice květin a trvalek": 195,
   "Růže": 157,
-  "Sazenice jahodníku": 79,
+  "Sazenice jahodníku": 75,
   "Trvalky": 31
  },
  "klient": "jahodarna",
  "opravy": {
   "gtin_odstraneny": 9,
   "popis_z_parametrov": 0,
-  "znacka_doplnena": 1444
+  "znacka_doplnena": 1442
  },
  "platforma": "openai",
- "pribudlo": 11,
+ "pribudlo": 3,
  "sklad": {
-  "in_stock": 1500,
-  "out_of_stock": 73
+  "in_stock": 1498,
+  "out_of_stock": 77
  },
  "stiahnute_bez_dat": 0,
  "stiahnute_bez_dat_id": [],
- "stiahnute_out_of_stock": 73,
- "ubudlo": 2,
+ "stiahnute_out_of_stock": 77,
+ "ubudlo": 5,
  "v_kanali_id": [
   "1010",
   "1034",
@@ -428,6 +428,8 @@
   "3065-FRI3",
   "3065-FRI4",
   "30658",
+  "30844",
+  "30847",
   "3164",
   "3197",
   "3218",
@@ -1601,8 +1603,8 @@
  "vyradene": {
   "URL nefunguje": 1,
   "letničky nie sú trvalky": 12,
-  "mimo vybraných kategórií": 2171,
-  "nie je skladom": 761,
+  "mimo vybraných kategórií": 2172,
+  "nie je skladom": 765,
   "príslušenstvo (náradie, hnojivá, kvetináče), nie rastliny": 8
  },
  "vyradene_id": {
@@ -1949,7 +1951,6 @@
    "80814",
    "80815",
    "80816",
-   "80820",
    "26006",
    "26009/BIL",
    "26009/ANT",
@@ -2030,6 +2031,7 @@
    "81116",
    "27248/9 C",
    "81155",
+   "81164",
    "78-3583",
    "27410/TUL3",
    "27410/TUL5",
@@ -2086,11 +2088,15 @@
    "27650/CAB",
    "27650/ALB",
    "27650/SEL",
+   "27656/MAR",
    "27656/DIA",
+   "27656/HAR",
+   "27656/OST",
    "27656/HAD",
    "27656/CAB",
    "27656/ALB",
    "27656/SEL",
+   "27656/SAN",
    "27659/MAR",
    "27659/DIA",
    "27659/HAD",
@@ -2397,10 +2403,10 @@
    "80520"
   ]
  },
- "vystup_ponuk": 1500,
- "zdroj_ponuk": 4453,
+ "vystup_ponuk": 1498,
+ "zdroj_ponuk": 4456,
  "znacky": {
-  "Jahodárna Brozany": 1444,
+  "Jahodárna Brozany": 1442,
   "Kordes Roses": 55,
   "SEMO": 1
  }

@@ -24196,6 +24196,65 @@ Perte maximálně na 40 °C , nebělte a chemicky nečistěte.</DESCRIPTION>
     </DELIVERY>
     <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>květiny</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
+    <ITEM_ID>P01241</ITEM_ID>
+    <PRODUCTNAME>Dětské látky Bavlněná vaflovina bordó 240 g/m² šíře 150 cm metráž</PRODUCTNAME>
+    <PRODUCT>Dětské látky Bavlněná vaflovina bordó 240 g/m² šíře 150 cm metráž</PRODUCT>
+    <DESCRIPTION>Bavlněná vaflovina – bordó
+Kvalitní bavlněná vaflovina v elegantní bordó barvě zaujme svou charakteristickou plastickou strukturou připomínající drobné vafličky. Materiál je příjemný na dotek, prodyšný a dobře savý, díky čemuž nabízí široké možnosti využití při šití pro děti i dospělé.
+Vaflovina je oblíbená především pro svůj krásný strukturovaný vzhled a praktické vlastnosti. Je měkká, vzdušná a díky své savosti se skvěle hodí také na výrobky, které přicházejí do kontaktu s vodou.
+Výrazná bordó barva působí elegantně, hřejivě a nadčasově. Krásně se kombinuje se smetanovou, béžovou, bílou, starorůžovou, režnou i dalšími přírodními a neutrálními odstíny.
+Z bordó bavlněné vafloviny můžete ušít například ručníky, osušky, župany, zavinovačky, dečky, bryndáčky, přebalovací podložky, dětské oblečení, košíky, organizéry i nejrůznější bytové a dětské doplňky.
+Příjemný a savý bavlněný materiál
+Vaflovina v sobě spojuje příjemný bavlněný materiál s výraznou plastickou strukturou . Díky své prodyšnosti a savosti je praktická pro každodenní použití a zároveň krásně vypadá i bez dalších vzorů.
+Proč si tuto vaflovinu zamilujete?
+příjemná a měkká na dotek
+bavlněný materiál
+prodyšná a vzdušná
+dobře savá
+charakteristická vaflová struktura
+elegantní bordó barva
+nadčasový vzhled
+široké možnosti využití
+vhodná na dětské výrobky, oblečení i bytový textil
+Údržba
+Praní maximálně na 30 °C .
+Nebělit.
+Chemicky nečistit.
+Bordó bavlněná vaflovina je skvělou volbou, pokud hledáte příjemnou, savou a krásně strukturovanou látku. Hluboký bordó odstín krásně vynikne na osuškách, županech, zavinovačkách, dětských doplňcích i nejrůznějších originálních výrobcích do domácnosti.</DESCRIPTION>
+    <URL>https://www.detske-latky.cz/bavlnena-vaflovina-bordo/</URL>
+    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/17720_vaflovina-bordo--500-x-350-px-2.png?6910bdec</IMGURL>
+    <PRICE_VAT>249,00</PRICE_VAT>
+    <VAT>21%</VAT>
+    <PARAM>
+        <PARAM_NAME>Materiál</PARAM_NAME>
+        <VAL>bavlna</VAL>
+    </PARAM>
+    <PARAM>
+        <PARAM_NAME>Gramáž</PARAM_NAME>
+        <VAL>240 g/m²</VAL>
+    </PARAM>
+    <PARAM>
+        <PARAM_NAME>Šířka</PARAM_NAME>
+        <VAL>150 cm</VAL>
+    </PARAM>
+    <MANUFACTURER>Dětské látky</MANUFACTURER><CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
+    <ISBN>P00167</ISBN>
+
+    <DELIVERY_DATE>0</DELIVERY_DATE>
+    <DELIVERY>
+        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
+        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS</DELIVERY_ID>
+        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <DELIVERY>
+        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
+        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
+    </DELIVERY>
+    <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Barva</PARAM_NAME><VAL>vínová</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
+<SHOPITEM>
     <ITEM_ID>P01242</ITEM_ID>
     <PRODUCTNAME>Dětské látky Prémiová bavlna Srdíčka a tečky 150 g/m² šíře 155 cm metráž</PRODUCTNAME>
     <PRODUCT>Dětské látky Prémiová bavlna Srdíčka a tečky 150 g/m² šíře 155 cm metráž</PRODUCT>
@@ -24662,44 +24721,6 @@ Hladký sametový velvet v pudrové barvě Sepia Rose je skvělou volbou, pokud 
         <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
     </DELIVERY>
     <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM><PARAM><PARAM_NAME>Vzor</PARAM_NAME><VAL>jednobarevný</VAL></PARAM></SHOPITEM>
-<SHOPITEM>
-    <ITEM_ID>P01249</ITEM_ID>
-    <PRODUCTNAME>Dětské látky Bavlněný beránek premium off white (ekru) 315 g/m² šíře 150 cm metráž</PRODUCTNAME>
-    <PRODUCT>Dětské látky Bavlněný beránek premium off white (ekru) 315 g/m² šíře 150 cm metráž</PRODUCT>
-    <DESCRIPTION>Tento jedinečný materiál vhodný na zimní deky, fusaky aj. je z 95% složen z bavlny nejvyšší kvality. Vhodné zejména pro děti a kojence!! Velmi oblíbený zimní materiál. Certifikace Öko-Tex Standard100, což je přední bezpečnostní značka na světě. Výrobky, které mají certifikát Öko-Tex Standard100, jsou mimo jiné bez škodlivých látek, pesticidů, alergenových barviv a jiných nebezpečných chemikálií. Značku dostávají pouze textilie, jejichž všechny komponenty byly testovány a získaly pozitivní výsledky v každé fázi výroby.Třídu I mají výrobky určené pro kojence a děti do 3 let. Čištění a údržba: praní max na 40° nebělit chemicky nečistit</DESCRIPTION>
-    <URL>https://www.detske-latky.cz/bavlneny-beranek-premium-off-white--ekru-/</URL>
-    <IMGURL>https://cdn.myshoptet.com/usr/www.detske-latky.cz/user/shop/orig/17756_bavlneny-beranek-off-white.png?691b3bb5</IMGURL>
-    <PRICE_VAT>399,00</PRICE_VAT>
-    <VAT>21%</VAT>
-    <PARAM>
-        <PARAM_NAME>Materiál</PARAM_NAME>
-        <VAL>bavlna</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Gramáž</PARAM_NAME>
-        <VAL>315 g/m²</VAL>
-    </PARAM>
-    <PARAM>
-        <PARAM_NAME>Šířka</PARAM_NAME>
-        <VAL>150 cm</VAL>
-    </PARAM>
-    <MANUFACTURER>Dětské látky</MANUFACTURER><CATEGORYTEXT>Heureka.cz | Hobby | Galanterie a metráž | Metráž</CATEGORYTEXT>
-    <ISBN>P00490</ISBN>
-
-    <DELIVERY_DATE>0</DELIVERY_DATE>
-    <DELIVERY>
-        <DELIVERY_ID>ZASILKOVNA</DELIVERY_ID>
-        <DELIVERY_PRICE>95,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS</DELIVERY_ID>
-        <DELIVERY_PRICE>135,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <DELIVERY>
-        <DELIVERY_ID>GLS_PARCELSHOP</DELIVERY_ID>
-        <DELIVERY_PRICE>99,00</DELIVERY_PRICE>
-    </DELIVERY>
-    <PARAM><PARAM_NAME>Pro děti</PARAM_NAME><VAL>ano</VAL></PARAM></SHOPITEM>
 <SHOPITEM>
     <ITEM_ID>P01252</ITEM_ID>
     <PRODUCTNAME>Dětské látky Bavlněná Madeira květy pudrová / sepia rose metráž</PRODUCTNAME>

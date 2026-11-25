@@ -1,6 +1,6 @@
 {
  "bez_popisu": [],
- "den": "2026-11-24",
+ "den": "2026-11-25",
  "kategoria": {
   "Heureka.cz | Hobby | Galanterie a metráž | Metráž": 449,
   "Heureka.cz | Hobby | Galanterie a metráž | Textilní galanterie | Měkká galanterie | Nášivky": 19,
@@ -13,13 +13,13 @@
   "ean_odstraneny": 0,
   "html_v_nazve": 0,
   "html_v_popise": 499,
-  "kod_v_nazve": 684,
+  "kod_v_nazve": 682,
   "nazov_doplneny": 449,
   "nazov_rucne": 20,
-  "param_doplneny": 800,
+  "param_doplneny": 802,
   "param_premenovany": 1249,
   "param_vyhodeny": 525,
-  "pole_vymazane": 893,
+  "pole_vymazane": 892,
   "popis_doplneny": 0
  },
  "platforma": "heureka",

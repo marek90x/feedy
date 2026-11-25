@@ -1,6 +1,6 @@
 {
  "bez_popisu": [],
- "den": "2026-11-24",
+ "den": "2026-11-25",
  "doplnky": {
   "darcek": 6,
   "doprava_platena": 78,
@@ -33,7 +33,7 @@
   "kod_v_nazve": 92,
   "nazov_rozsireny": 182,
   "popis_doplneny": 42,
-  "sklad_z_webu": 1
+  "sklad_z_webu": 2
  },
  "platforma": "zbozi",
  "vyradene": {
