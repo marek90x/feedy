@@ -1,11 +1,11 @@
 {
  "den": "2026-11-26",
  "kategoria": {
-  "Cibuloviny a hlízy": 1039,
+  "Cibuloviny a hlízy": 1040,
   "Prostokořenné sazenice květin a trvalek": 193,
   "Růže": 155,
   "Sazenice jahodníku": 71,
-  "Trvalky": 31
+  "Trvalky": 30
  },
  "klient": "jahodarna",
  "opravy": {
@@ -14,7 +14,7 @@
   "znacka_doplnena": 1433
  },
  "platforma": "openai",
- "pribudlo": 0,
+ "pribudlo": 2,
  "sklad": {
   "in_stock": 1489,
   "out_of_stock": 97
@@ -22,7 +22,7 @@
  "stiahnute_bez_dat": 0,
  "stiahnute_bez_dat_id": [],
  "stiahnute_out_of_stock": 97,
- "ubudlo": 0,
+ "ubudlo": 2,
  "v_kanali_id": [
   "1010",
   "1034",
@@ -1667,7 +1667,6 @@
    "78-253",
    "78-265",
    "3830/9/1",
-   "78-273",
    "3875",
    "78-279",
    "78-288",
@@ -1763,7 +1762,6 @@
    "78-873",
    "78-875",
    "13353-12",
-   "13353/8/1",
    "13356-12",
    "13356-14",
    "13365-12",
@@ -1956,6 +1954,7 @@
    "80814",
    "80815",
    "80816",
+   "80820",
    "26006",
    "26012",
    "26015",
@@ -2296,6 +2295,7 @@
    "81604",
    "29561",
    "29567",
+   "29582",
    "81610",
    "81612",
    "29615",

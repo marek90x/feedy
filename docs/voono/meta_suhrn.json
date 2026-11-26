@@ -19,7 +19,7 @@
  },
  "klient": "voono",
  "opravy": {
-  "cena_z_webu": 6,
+  "cena_z_webu": 4,
   "gtin_odstraneny": 4,
   "nazov_rozsireny": 73,
   "obrazky_z_webu": 16,
@@ -53,9 +53,7 @@
  "vystup_ponuk": 74,
  "zdroj_ponuk": 194,
  "zmeny_cien": [
-  "3321 Chestnut - S obalem, 100 g: feed 209.30/209.30, web 299.00/299.00",
   "3607 Ibišek: feed 244.30/244.30, web 349.00/349.00",
-  "3769 Henna Rose Brown - S obalem, 100 g: feed 209.30/209.30, web 299.00/299.00",
   "3792 Dark Brown - S obalem, 500 g: feed 629.00/629.00, web 649.00/649.00",
   "3747 Cassia Obovata - S obalem, 100 g: feed 181.30/181.30, web 259.00/259.00",
   "3797 Copper - S obalem, 500 g: feed 629.00/629.00, web 649.00/649.00"

@@ -2,7 +2,7 @@
  "bez_popisu": [],
  "den": "2026-11-26",
  "kategoria": {
-  "Heureka.cz | Hobby | Galanterie a metráž | Metráž": 450,
+  "Heureka.cz | Hobby | Galanterie a metráž | Metráž": 449,
   "Heureka.cz | Hobby | Galanterie a metráž | Textilní galanterie | Měkká galanterie | Nášivky": 19,
   "Heureka.cz | Hobby | Galanterie a metráž | Textilní galanterie | Měkká galanterie | Prýmky, stuhy, mašle, lemovky": 42,
   "Heureka.cz | Hobby | Galanterie a metráž | Výplňový materiál": 2,
@@ -12,14 +12,14 @@
  "opravy": {
   "ean_odstraneny": 0,
   "html_v_nazve": 0,
-  "html_v_popise": 500,
-  "kod_v_nazve": 684,
-  "nazov_doplneny": 450,
+  "html_v_popise": 499,
+  "kod_v_nazve": 682,
+  "nazov_doplneny": 449,
   "nazov_rucne": 20,
-  "param_doplneny": 803,
-  "param_premenovany": 1252,
-  "param_vyhodeny": 526,
-  "pole_vymazane": 894,
+  "param_doplneny": 802,
+  "param_premenovany": 1249,
+  "param_vyhodeny": 525,
+  "pole_vymazane": 892,
   "popis_doplneny": 0
  },
  "platforma": "heureka",
@@ -29,6 +29,6 @@
   "názov na webe patrí inému variantu (14. 11.: pejsci = Zaječí balerína, stuha starorůžová = béžová, vaflový béžový = Mauve, husa na zádech 12×12 = Husa s mládětem); vrátiť po oprave webu": 4,
   "střihy (Marek 12. 11.)": 7
  },
- "vystup_ponuk": 519,
- "zdroj_ponuk": 909
+ "vystup_ponuk": 518,
+ "zdroj_ponuk": 908
 }
